@@ -54,7 +54,7 @@ module.exports = {
     chunkFilename: '[id]-chunk.js',
 
     // Build 된 Path 기준
-    publicPath: '/public/', // ex : {[entry.index]}.bundle.js
+    publicPath: '/dist/', // ex : {[entry.index]}.bundle.js
     // library: '[name]'
     
     // [name] entry의 value 명
@@ -153,7 +153,10 @@ module.exports = {
           cache: false
         }
       }
-    })
+    }),
+
+    // global variables
+    new webpack.BannerPlugin('*******************\n Wemakeprice Frontend Bundling \n********************')
 
   ],
   

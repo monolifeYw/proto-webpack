@@ -1,1 +1,1 @@
-alert('assets!!');
+console.log('assets!!');

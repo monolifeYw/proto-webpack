@@ -10,6 +10,9 @@ var app = express();
 // set environment //
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
+console.log('DEV', env);
+console.log('Path', __dirname + '/public');
+
 // set middleware //
 // public path
 app.use(express.static(__dirname + '/public'));
@@ -29,6 +32,23 @@ app.use(logger('short'));
 
 // set router
 app.use(router);
+
+// webpack middleware
+if (env === 'development') {
+  var webpackMiddleware = require('webpack-dev-middleware');
+  var webpack = require('webpack');
+  var config = require('./webpack.config');
+  var webpackCompiler = webpack(config);
+  var opts = {
+    stats: {
+      colors: true
+    },
+    publicPath: '/dist'
+  }
+  var webpackDevMiddlewareInstance = webpackMiddleware(webpackCompiler, opts);
+  
+  app.use(webpackDevMiddlewareInstance);
+}
 
 // set error
 // 404

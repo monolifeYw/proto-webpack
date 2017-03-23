@@ -74,6 +74,15 @@ npm install morgan --save  // logger
 npm install rimraf --save  // folder/file remove
 npm install express-handlebars --save // template
 
+npm install webpack-dev-middleware --save-dev // node middleware
+
+
+// global variables
+new webpack.ProvidePlugin({
+  $: 'jquery'
+})
+
+
 
 
 
