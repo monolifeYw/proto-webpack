@@ -8,12 +8,13 @@ const path = require('path');
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 // const dist = path.resolve(process.cwd(), 'dist');
 
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-console.log(path.join(__dirname, '/static/dist'));
-
+const ExtractTextPlugin = require('extract-text-webpack-plugin');          
 
 module.exports = {
+
+  // 해당 모듈의 기본 폴더 지정
+  context: __dirname, //path.resolve(__dirname, './src'),
+
   /* 내부 사용 가능 모듚
     object { amd?, bail?, cache?, context?, dependencies?, devServer?, 
     devtool?, entry, externals?, loader?, module?, name?, node?, output?, 
@@ -31,7 +32,8 @@ module.exports = {
 
   // 웹팩이 파일을 읽어들이기 시작하는 부분
   entry: {
-    'vendor': path.join(__dirname, '/src/vendor.js'),
+    // 'vendor': path.join(__dirname, '/src/vendor.js'),
+    'vendor': './src/vendor.js',  // in context path
     'app': [
       path.join(__dirname, '/src/bootstrap_test.js'),
       path.join(__dirname, '/src/app_index.js')
@@ -45,11 +47,14 @@ module.exports = {
   },
 
   output: {
+    // Compile 된 Path 기준
     path: path.join(__dirname, '/static/dist'),
     filename: '[name].bundle.js',
     sourceMapFilename: '[name].bundle.map',
     chunkFilename: '[id]-chunk.js',
-    publicPath: '/dist/', // ex : {[entry.index]}.bundle.js
+
+    // Build 된 Path 기준
+    publicPath: '/public/', // ex : {[entry.index]}.bundle.js
     // library: '[name]'
     
     // [name] entry의 value 명
@@ -164,6 +169,7 @@ module.exports = {
    */
   devServer: {
     // 특정 컨텐츠 기반의 루트 지정
+    // 서버루트의 기준 폴더 http://localhost:8080/
     contentBase: './static',
 
     // 사용할 포트 지정 (기본값 8080)

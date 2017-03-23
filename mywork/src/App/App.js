@@ -8,7 +8,7 @@ export class App {
       rest: 'test rest',
       ...options // ES6: rest properties
     };
-    console.log(this.props);
+    // console.log(this.props);
 
     this.props.dom.innerHTML = 'Loading from github...';
   }
