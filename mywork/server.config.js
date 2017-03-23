@@ -12,11 +12,17 @@ var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 // set middleware //
 // public path
-app.use(express.static(__dirname, './public'));
+app.use(express.static(__dirname + '/public'));
 
 // set view engine
+var hbs = exphbs.create({
+    extname: '.hbs'
+  });
+
+app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
-app.set('views', __dirname + 'views');
+app.set('views', __dirname + '/views');
+app.set('view cache', false);
 
 // set logger 
 app.use(logger('short'));
