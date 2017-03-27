@@ -156,6 +156,8 @@ module.exports = {
         // test(required) : 이 로더로 처리하기 위해 일치해야 하는 파일 확장자를 비교하는 정규표현식
         test: /\.js$/,
 
+        // cacheDirectory: true, // removed
+
         // 복수 지정 가능 : /(module1|module2|module3)/
         exclude: /node_modules/,
 
@@ -305,8 +307,12 @@ module.exports = {
     }),
 
     // global variables
-    new webpack.BannerPlugin('*******************\n Wemakeprice Frontend Bundling \n********************')
+    new webpack.BannerPlugin('*******************\n Wemakeprice Frontend Bundling \n********************'),
 
+    // hmr Plugins
+    // OccurenceOrderPlugin removed.
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin() // NoErrorsPlugin deprecated
 
     // dev-server 모드에서 Hot Module Replace를 가능
     // new HotModuleReplacementPlugin()
@@ -326,13 +332,13 @@ module.exports = {
   devServer: {
     // 특정 컨텐츠 기반의 루트 지정
     // 서버루트의 기준 폴더 http://localhost:8080/
-    contentBase: './static',
+    // contentBase: './static',
 
     // host
     host: 'localhost',
 
     // 사용할 포트 지정 (기본값 8080)
-    port: '8080',
+    port: '8081',
 
     // 작은 클라이언트 엔트리를 Bundle에 삽입해 페이지 변경시(수정) 자동 새로 고침 된다.
     inline: true,
@@ -341,8 +347,17 @@ module.exports = {
     // devServer 설정이 작동하지 않는 경우 (hot, inline)
     // - package CLI : webpack-dev-server --hot --inline
     
-    // hot: true,   // 컴포넌트 수정 될 경우, 그 수정된 부분만 reload
+    hot: true,   // 컴포넌트 수정 될 경우, 그 수정된 부분만 reload
     // inline: true // 전체 페이지에 대한 실시간 리로딩(Live Reloading)
+    
+    proxy: {
+      '*': 'http://localhost:8080'
+    },
+
+    stats: {
+      colors: true
+    }
+
 
     /*watchOptions: {
       aggregateTimeout: 300,

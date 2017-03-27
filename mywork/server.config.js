@@ -9,6 +9,9 @@ var app = express();
 
 var manifestLoader = require('./middleware/manifest');
 
+// dev server
+var webpackDevServer = require('webpack-dev-server');
+
 // set environment //
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
@@ -44,7 +47,24 @@ app.use(manifestLoader('./static/dist/manifest-' + pkg.version + '.json'));
 // set router
 app.use(router);
 
+// webpack server
+// 서버를 2개로 띄우기 위함
+if (env === 'development') {
+  var config = require('./webpack.config');
+  var webpack = require('webpack');
+  var webpackCompiler = webpack(config);
+  var opts = Object.assign({}, config.devServer, {
+    publicPath: '/dist'
+  });
+  var devServer = new webpackDevServer(webpackCompiler, opts);
+  devServer.listen(8081, function () {
+    console.log('Webpack-dev-server is listening... 8081');
+  });
+}
+
+
 // webpack middleware
+/*
 if (env !== 'development') {
   var webpackMiddleware = require('webpack-dev-middleware');
   var webpack = require('webpack');
@@ -63,7 +83,7 @@ if (env !== 'development') {
   
   app.use(webpackDevMiddlewareInstance);
 }
-
+*/
 // set error
 // 404
 app.use(function (req, res, next) {
@@ -81,5 +101,5 @@ app.use(function (err, req, res, next) {
 
 // set server 
 app.listen(8080, function () {
-  console.log('Server Start!!!');
+  console.log('Server Start!!! 8080');
 });

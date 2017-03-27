@@ -1,7 +1,7 @@
 {{#each this.css}}
-    <link rel="stylesheet" type="text/css" href="{{this}}">
+    <link rel="stylesheet" type="text/css" href="{{../root}}{{this}}">
 {{/each}}
 
 {{#each this.js}}
-    <script type="text/javascript" src="{{this}}"></script>
+    <script type="text/javascript" src="{{../root}}{{this}}"></script>
 {{/each}}

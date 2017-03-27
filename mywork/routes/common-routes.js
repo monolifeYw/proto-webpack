@@ -1,5 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const fs = require('fs');
+const path = require('path');
+const pkg = require('../package.json');
+
 var assets;
 
 // Object.assign
@@ -24,14 +28,23 @@ function resourceUtil(assets) {
   }
 
   // console.log(Object.assign({}, {css: assetsCss}, {js: assetsJs}));
-  return Object.assign({}, {css: assetsCss}, {js: assetsJs});
+  return Object.assign({}, {root: 'http://localhost:8081/dist/'}, {css: assetsCss}, {js: assetsJs});
 };
 
 router.route('/')
   .get(function (req, res, next) {
-    console.log('local', res.locals.webAssets);
+
+    // console.log('local', res.locals.webAssets());
     // res.locals.webAssets();
     assets = resourceUtil(res.locals.webAssets());
+    // console.log('pkg', pkg);
+    // var manifestPath = 'http://localhost:8081/dist/manifest-' + pkg.version + '.json';
+    // console.log('manifestPath', manifestPath);
+    // assets = JSON.parse(fs.readFileSync('http://localhost:8081/dist/manifest-' + pkg.version + '.json', 'utf-8'));
+    
+
+    console.log('assets', assets);
+
     res.render('index', {
       layout: false, 
       title: 'Dummy Page', 
