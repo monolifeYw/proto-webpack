@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.aside__updown {
+	position:relative;right:-210px;
+}
+.aside__updown.fixed {
+	position:static;
+}
+.fixed_updown_btn {
+	display:none;
+	position:fixed;
+	bottom:90px;
+	z-index:1000;
+}
+.fixed .fixed_updown_btn {
+	right:50px;
+}
+.fixed_updown_btn.type2 {
+	bottom:374px;
+}
+.fixed_updown_btn .btn_updown {
+	display:block;
+	overflow:hidden;
+	width:75px;
+	height:38px;
+	background:url(//image.wemakeprice.com/images/front/common/btn_quick_updown_v3.png) no-repeat;
+	text-indent:-9999px;
+}
+.fixed_updown_btn .btn_up {
+	background-position:0 0;
+}
+.fixed_updown_btn .btn_up:hover {
+	background-position:0 -80px;
+}
+.fixed_updown_btn .btn_down {
+	height:37px;background-position:0 -40px;
+}
+.fixed_updown_btn .btn_down:hover {
+	background-position:0 -120px;
+}

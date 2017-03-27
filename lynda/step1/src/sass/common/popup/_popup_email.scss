@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* 이메일등록창 개선 120425 영아 */
+.lp_email {position:relative;padding:0;width:470px;background:#f3f3f3;}
+.lp_email div {width:370px;height:120px;padding:240px 50px 10px 50px;}
+.lp_email select {width:367px;}
+.lp_email .text {width:360px;padding:3px 2px 2px 2px;}
+.lp_email .pbtn_step1 {display:block;margin:7px 0 0 0;}
+.lp_email .pbtn_closed {position:absolute;right:50px;bottom:20px;padding:5px;}
+.lp_email .sec_lp_step1 {background:#f3f3f3 url('//image.wemakeprice.com/images/popup/img_inputmail_step1.gif') 0 0 no-repeat;}
+.lp_email .sec_lp_step2 {background:url('//image.wemakeprice.com/images/popup/img_inputmail_step2.gif') 0 0 no-repeat;}
+.lp_email .sec_lp_step3 {height:95px;padding-top:280px;background:url('//image.wemakeprice.com/images/popup/img_inputmail_step3.gif') 0 0 no-repeat;}
+.lp_email .sec_lp_step4 {height:380px;padding-top:0px;padding-bottom:0px;background:url('//image.wemakeprice.com/images/popup/img_inputmail_step4.gif') 0 0 no-repeat;}
+.lp_email .sec_lp_step4 .pbtn_closed {right:20px;}
+
+/* 이메일등록개선_120719_차석 */
+.lp_120719_befor {width:430px;padding-bottom:30px;}
+.lp_120719_befor .tit {border:0 none;}
+.lp_120719_after {width:430px;padding-bottom:30px;}
+.lp_120719_after .tit {height:3px;padding:0;margin:0;border:0 none;}
+.lp_120719_after .content .box_email {overflow:hidden;width:100%;height:68px;margin-top:31px;background-color:#eee;}
+.lp_120719_after .content .box_email .name {float:left;padding:29px 10px 0 14px;font-size:12px;color:#333;line-height:14px;}
+.lp_120719_after .content .box_email .inp {float:left;width:337px;height:35px;padding:0 0 0 17px;margin-top:16px;border:1px solid #cfcfcf;font-weight:bold;font-size:14px;line-height:35px;color:#333;}
+.lp_120719_after .content .txt {padding:16px 0 0 4px;font-size:12px;color:#666;line-height:22px;letter-spacing:-1px;}
+.lp_120719_after .content .txt a {font-weight:bold;color:#e73336;text-decoration:underline;}
+.lp_120719_after .content .txt_chk {padding:4px 0 21px;text-align:right;color:#666;letter-spacing:-1px;}
+.lp_120719_after .content .txt_chk .inp {margin-right:10px;}
+
+/* 이메일등록_120917 */
+.email_120917 {overflow:hidden;width:715px;height:448px;}
+.email_120917 .screen_out {display:block;overflow:hidden;position:absolute;left:-9999px;width:0;height:0;font-size:0;line-height:0;text-indent:-999em;}
+.email_120917 .wrap_ttl {overflow:hidden;width:669px;height:34px;padding:8px 6px 0 40px;background-color:#ef3122;font-size:0;line-height:0;vertical-align:top;}
+.email_120917 .wrap_ttl .tit_logo {float:left;}
+.email_120917 .wrap_ttl .btn_link {float:right;}
+.email_120917 .wrap_ttl .btn_link a {float:left;margin-right:3px;}
+.email_120917 .cont_email {overflow:hidden;width:665px;height:361px;padding:20px;border:5px solid #ef3122;border-top:0 none;background:url('//image.wemakeprice.com/images/popup/email/120917/bg_email.gif') no-repeat 20px 20px;}
+.email_120917 .cont_email .cont {float:left;width:460px;}
+.email_120917 .cont_email .bnr {float:right;width:194px;}
+.email_120917 .email_step1 .cont {background:url('//image.wemakeprice.com/images/popup/email/120917/bg_step1.gif') no-repeat 48px 36px;}
+.email_120917 .email_step1 .inp {display:block;width:280px;height:18px;padding:9px 10px 5px 11px;margin:127px 0 0 97px;border:1px solid #fff;background-color:#fff;font-weight:bold;font-size:14px;line-height:18px;color:#333;}
+.email_120917 .email_step1 .txt_notice {padding-top:20px;font-size:12px;color:#999;line-height:18px;text-align:center;}
+.email_120917 .email_step1 .txt_notice .link_notice {color:#333;text-decoration:underline;}
+.email_120917 .email_step1 .btn {padding-top:55px;text-align:center;}
+.email_120917 .email_step2 .cont {background:url('//image.wemakeprice.com/images/popup/email/120917/bg_step2.gif') no-repeat 57px 92px;}
+.email_120917 .email_step2 .btn {padding-top:274px;text-align:center;}
+
+.email_120917.no_bnr {width:511px;}
+.email_120917.no_bnr .wrap_ttl {width:464px;}
+.email_120917.no_bnr .cont_email {width:460px;}
+.email_120917.no_bnr .cont_email .bnr {display:none;}
+
+/* 이메일수집창 */
+.warp_email {text-align:center;background:transparent}
+.warp_email .bg{position:absolute;top:50%;left:50%;width:1160px;height:780px;margin:-390px 0 0 -580px;}
+.bg_email_cont {display:block;overflow:hidden;background:url('//image.wemakeprice.com/images/2013/common/bg_email_cont_v2.png') no-repeat;text-indent:-9999px;}
+.box_email {display:inline-block;position:relative;width:440px;height:391px;margin:175px auto 0;padding:20px 21px;background:url('//image.wemakeprice.com/images/common/email/bg_layer.png') 0 -1px no-repeat transparent;vertical-align:top;}
+.box_content {float:left;width:440px;height:391px;overflow:hidden;}
+.box_banner {float:left;width:220px;height:391px;}
+.box_form {width:339px;height:103px;padding:19px 19px 16px 0;margin:0 auto;border:1px solid #e7e7e7;background-color:#f7f7f7;}
+.list_input {display:block;overflow:hidden;}
+.list_input dt,
+.list_input dd {float:left;}
+.list_input .txt_email {width:68px;height:37px;background-position:-70px 0;}
+.list_input .txt_radio {width:68px;height:37px;background-position:0 0;}
+.list_input .cont_radio {width:221px;height:25px;padding-top:10px;border:1px solid #ccc;background-color:#fff;}
+.inp_email {float:left;width:221px;height:19px;padding:8px 14px;border:1px solid #ccc;font:bold 12px/25px dotum;}
+.btn_admore {display:inline;float:left;width:226px;height:56px;margin:10px 0 0 68px;background-position:0 -40px;}
+.inp_radio {vertical-align:top;margin-left:10px;width:13px;height:13px;}
+.lab_radio {padding:0 8px;font-weight:bold;font-size:12px;color:#333;}
+.txt_cont {padding:12px 0;font-size:11px;line-height:18px;color:#999;}
+.txt_cont a {color:#666;text-decoration:underline}
+.box_btnmore {overflow:hidden;padding-bottom:15px;}
+.btn_email_join {display:inline;float:left;width:80px;height:30px;margin-left:155px;background-position:0 -163px;}
+.btn_email_login {float:left;width:80px;height:30px;margin-left:5px;background-position:-81px -163px;}
+.btn_email_close {float:left;}
+.close_ml{margin-left:40px;}
+.btn_email_close .ico_email_close {float:left;width:11px;height:11px;background-position:-205px 0;}
+.btn_email_close .txt {float:left;padding-left:4px;font-size:11px;color:#999;}
+
+/* 이메일수집완료창 */
+.warp_email .box_user {width:358px;padding:125px 0 51px;margin:40px auto 0;border:1px solid #e7e7e7;background:#f7f7f7 url('//image.wemakeprice.com/images/common/email/txt_email_thanks.png') no-repeat 50% 37px;}
+.warp_email .box_user .user_email {font-weight:bold;font-size:16px;color:#333;line-height:20px;letter-spacing:-1px;}
+.warp_email .btn_email_conf {display:block;width:227px;height:57px;margin:40px auto 0;background-position:0 -100px;}

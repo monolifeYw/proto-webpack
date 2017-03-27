@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+/* 딜리스트 box안 노출 아이콘 및 혜택 */
+.txt_info .ico_comm {
+	background-image:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_binfo_v3.png);
+	background-repeat:no-repeat;
+}
+.txt_info .ico_limited {
+	background-position:0 13px;
+	text-indent:-9999px;
+}/*limited edition*/
+.txt_info .ico_contract {
+	background-position:0 -60px;
+	text-indent:-9999px;
+}/*약정 할인가*/
+.txt_info .ico_chancedeal {
+	background-position:0 -130px;
+	text-indent:-9999px;
+}/*위메프 찬스딜*/
+.txt_info .ico_only {
+	background-position:0 -200px;
+	text-indent:-9999px;
+}/*위메프 단독가*/
+.txt_info .ico_wprice {
+	background-position:0 -270px;
+	text-indent:-9999px;
+}/*위메프가*/
+.txt_info .ico_foreignspecial {
+	background-position:0 -340px;
+	text-indent:-9999px;
+}/*해외상품 특별가*/
+.txt_info .ico_travelspecial {
+	background-position:0 -410px;
+	text-indent:-9999px;
+}/*여행사 특별가*/
+.txt_info .ico_funding {
+	background-position:0 -480px;
+	text-indent:-9999px;
+}/*펀딩금액*/
+.txt_info .ico_special {
+	background-position:0 -550px;
+	text-indent:-9999px;
+}/*위메프특별가*/
+
+.box_desc .ico_limited .ico_comm {
+	background:url(//image.wemakeprice.com/images/2013/view/ico_limited_01.png) no-repeat 0 13px;
+	text-indent:-9999px;
+}
+.box_desc .ico_limited .price .prime {
+	visibility:hidden;
+}
+.bnr_md .box_desc .ico_limited .ico_comm {
+	background-position:0 -50px;
+}
+.member_best .box_desc .ico_limited .ico_comm {
+	background-position:0 -107px;
+}
+.member_best .box_desc .ico_comm.ico_contract {
+	background-position:0 -546px;
+}
+
+.content-main .list_combine {
+	overflow:hidden;
+	margin:0;
+}
+.content-main .section_project .list_combine {
+	margin:0;
+}
+.list_combine li {
+	float:left;
+	position:relative;
+	z-index:0;
+}
+.list_combine .link {
+	display:block;
+}
+.list_combine .box_best,
+.list_combine .search_best {
+	position:absolute;
+	top:5px;
+	left:0;
+	z-index:20;
+}
+.list_combine .box_best .ico_comm,
+.list_combine .search_best .ico_comm {
+	display:block;
+	overflow:hidden;
+	width:40px;
+	height:37px;
+	font-size:0;
+	line-height:0;
+	text-indent:-9999px;
+}
+.list_combine .box_sticker,
+.list_travel .box_sticker {
+	position:absolute;
+	z-index:20;
+}
+.list_combine .box_sticker .ico_comm,
+.list_travel .box_sticker .ico_comm {
+	display:block;
+	float:left;
+	overflow:hidden;
+	width:50px;
+	height:48px;
+	margin-right:-4px;
+	font-size:0;
+	line-height:0;
+	text-indent:-9999px;
+}
+.list_combine .box_thumb img {
+	display:block;
+}
+.list_combine .box_desc {
+	display:block;
+}
+.list_combine .box_desc .tit_desc {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.list_combine .box_desc .txt_desc {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	height:20px;
+	font-size:12px;
+	line-height:20px;
+	color:#999;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.list_combine .txt_num {
+	position:absolute;
+	font-size:12px;
+	line-height:20px;
+	color:#333;
+}
+.list_combine .txt_num .point {
+	font-size:14px;
+	font-family:Tahoma;
+	color:#ce1710;
+}
+.list_combine .box_desc .txt_info {
+	display:block;
+	overflow:hidden;
+}
+.list_combine .box_desc .discount {
+	overflow:hidden;
+	float:left;
+	width:72px;
+	height:46px;
+	padding-top:2px;
+	font-size:40px;
+	line-height:46px;
+	color:#ce1710;
+	font-family:Tahoma;
+}
+.list_combine .box_desc .discount_100 {
+	font-size:27px;
+}
+.list_combine .box_desc .discount .percent {
+	font-size:18px;
+	padding-left:2px;
+}
+.list_combine .box_desc .price {
+	float:left;
+}
+.list_combine .box_desc .prime {
+	display:block;
+	overflow:hidden;
+	height:16px;
+	font-size:14px;
+	line-height:16px;
+	font-family:Tahoma;
+	color:#999;
+	text-decoration:line-through;
+}
+.list_combine .box_desc .prime .won {
+	font-size:12px;
+	font-family:'돋움',dotum,sans-serif;
+}
+.list_combine .box_desc .sale {
+	display:block;
+	overflow:hidden;
+	height:21px;
+	font-weight:bold;
+	font-size:18px;
+	line-height:21px;
+	font-family:Tahoma;
+	color:#333;
+}
+.list_combine .box_desc .sale .won {
+	display:inline-block;
+	margin-top:0;
+	min-height:15px;
+	font-size:14px;
+	font-family:Arial;
+	vertical-align:middle;
+	*zoom:1;
+	*margin-top:4px;
+}
+.list_combine .box_desc .sale .etc {
+	margin-left:2px;
+	min-height:15px;
+	font-weight:bold;
+}
+.list_row_type4 .box_desc .sale .won {
+	font-size:13px;
+	margin-top:1px;
+	*margin-top:5px;
+}
+.list_row_type4 .box_desc .sale .etc {
+	display:inline-block;
+	line-height:1;
+	vertical-align:middle;
+	*zoom:1;
+}
+/* chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.list_combine .box_desc .sale .won {margin-top:-2px;}
+	.list_combine .box_desc .sale .etc {display:inline-block;line-height:1;vertical-align:middle;}
+}
+
+/* 딜리스트 하단 혜택 */
+.ico_delivery_card {
+	display:none;
+	background:url(//image.wemakeprice.com/images/2013/common/icon_card.png) 5px 5px no-repeat;
+	overflow:hidden;
+	float:left;
+	width:auto;
+	height:19px;
+	padding:2px 4px 0 23px;
+	font-size:12px;
+	line-height:19px;
+	color:#fff;
+}
+.card_option {
+	position:absolute;
+	left:0;
+	bottom:1px;
+	border-top:1px solid #eee;
+	display:inline-block;
+	width:100%;
+	float:left;
+	overflow:hidden;
+}
+.card_option span {
+	display:inline-block;
+	height:31px;
+	line-height:31px;
+}
+.card_option span.option_l {
+	display:inline-block;
+	float:left;
+	margin-left:13px;
+}
+.card_option span.option_l span {
+	float:left;
+	overflow:hidden;
+	width:auto;
+	height:14px;
+	margin-top:7px;
+	margin-left:2px;
+	padding:2px 4px 0;
+	color:#FFFFFF;
+	font-size:11px;
+	letter-spacing:-1px;
+	line-height:14px;
+}
+.card_option span.option_l span:first-child {
+	margin-left:0;
+}
+* + html .card_option span.option_l span {
+	color:#FFFFFF;
+	float:left;
+	font-size:11px;
+	height:14px;
+	letter-spacing:-1px;
+	line-height:14px;
+	margin-top:6px;
+	overflow:hidden;
+	padding:2px 4px 1px;
+	width:auto;
+}
+
+.card_option span.option_r {
+	border-left:1px solid #eee;
+	font-size:11px;
+	letter-spacing:-1px;
+	color:#666;
+	float:right;
+	padding-left:14px;
+	line-height:31px;
+}
+.card_option span.option_r a img {
+	margin-left:13px;
+	margin-right:14px;
+}
+.card_option span.option_r:hover {
+	text-decoration:underline;
+}
+.card_option span.option_r a:hover {
+	text-decoration:underline;
+	color:#fff;
+}
+.card_option span.option_l img {
+	float:left;
+	margin-top:7px;
+	padding-right:2px;
+}
+.card_option span.price-compare {
+	padding-right:12px;
+	padding-left:0;
+	border-left:0;
+	letter-spacing:0;
+}
+.card_option span.price-compare span {
+	height:auto;
+	line-height:14px;
+}
+.card_option span.price-compare a:hover {
+	text-decoration:none;
+}
+.card_option span.price-compare .txt-same-product {
+	overflow:hidden;
+	float:left;
+	width:38px;
+	height:11px;
+	margin:2px 5px 0 0;
+	background:url(//image.wemakeprice.com/images/resources/wmp/popup/price-compare/txt-same-product.png) no-repeat 0 0;
+	text-indent:-9999px;
+}

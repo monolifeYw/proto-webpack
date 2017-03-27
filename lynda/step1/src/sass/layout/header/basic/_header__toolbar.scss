@@ -1,0 +1,342 @@
+@charset "utf-8";
+
+.header__toolbar {
+	float:right;
+}
+.header__toolbar .ico_toolbar {
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico_toolbar_v2.png) no-repeat
+}
+.header__toolbar .link_option,
+.header__toolbar .loginBtn {
+	float:left;
+	padding:8px 10px;
+	border-bottom:1px solid transparent;
+	font-size:11px;
+	line-height:14px;
+	color:#666;
+	letter-spacing:-1px;
+	vertical-align:top
+}
+.header__toolbar .link_option:hover,
+.header__toolbar .link_option:focus,
+.header__toolbar .loginBtn:hover,
+.header__toolbar .loginBtn:focus {
+	text-decoration:underline
+}
+.header__toolbar .link_option .num {
+	display:inline;
+	padding:0;
+	font-size:11px;
+	line-height:12px;
+	font-family:Tahoma;
+	color:#ce1710;
+	font-weight:normal;
+}
+.header__toolbar .txt_bar {
+	float:left;
+	overflow:hidden;
+	width:1px;
+	height:10px;
+	margin-top:10px;
+	background-color:#aaa;
+	text-indent:-9999px;
+	vertical-align:top
+}
+.header__toolbar .box_layer {
+	float:left;
+	position:relative;
+	border:0;
+	z-index:300;
+	vertical-align:top
+}
+.header__toolbar .box_layer .link_option {
+	display:block;
+	padding:8px;
+	vertical-align:top;
+	border-bottom:1px solid transparent;
+}
+.header__toolbar .box_layer .ico_layer {
+	height:15px;
+	padding-right:22px;
+	padding-bottom:6px;
+	background-position:right 13px
+}
+.header__toolbar .box_layer.empt .ico_layer {
+	background:none;
+}
+.header__toolbar .box_layer:hover .ico_layer {
+	background-position:right -27px;
+}
+.header__toolbar .box_layer .link_name {
+	overflow:hidden;
+	text-overflow:ellipsis;
+	max-width:185px;
+	white-space:nowrap;
+	word-break:break-all;
+}
+.header__toolbar .box_layer .list_layer {
+	overflow:hidden;
+	height:0;
+	padding:0;
+	background-color:#fff;
+	clear:both;
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+}
+.header__toolbar .on .list_layer {
+	display:block;
+	height:auto;
+	padding:5px 0;
+	border:1px solid #ce1710;
+	opacity:1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter:alpha(opacity=100);
+}
+.header__toolbar .box_layer .list_layer li a {
+	display:block;
+	padding:0 0 0 8px;
+	font-size:11px;
+	line-height:18px;
+	letter-spacing:-1px;
+	color:#666;
+	text-align:left
+}
+.header__toolbar .box_layer .list_layer li a:hover {
+	color:#ce1710;
+	background-color:#f3f3f3;
+	text-decoration:underline;
+}
+.header__toolbar .box_layer .list_layer li #tcomms {
+	padding:0 0 0 20px;
+	background:url(//image.wemakeprice.com/images/front/main/ico_bookmark.gif) 5px -20px no-repeat
+}
+.header__toolbar .box_layer .list_layer li #tcomms:hover {
+	background-color:#f3f3f3
+}
+.header__toolbar .box_layer.login .list_layer {
+	position:absolute;
+	top:30px;
+	width:86px;
+}/*로그인*/
+.header__toolbar .box_layer.customer .list_layer {
+	position:absolute;
+	top:30px;
+	width:86px;
+}/*고객센터*/
+.header__toolbar .box_layer.mypage .list_layer {
+	position:absolute;
+	top:30px;
+	width:95px;
+}/*마이페이지*/
+.header__toolbar .box_layer.order_layer {
+	margin-right:-5px;
+}/*장바구니*/
+.header__toolbar .box_layer.order_layer .ico_layer {
+	padding-top:0;
+	height:24px;
+}
+.header__toolbar .box_layer.order_layer .cart {
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico_toolbar_v2.png) 0 -72px no-repeat;
+	padding:0 17px 6px 20px;
+	display:inline-block;
+}
+.header__toolbar .box_layer.order_layer .num {
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico_toolbar_v2.png) -120px -70px no-repeat;
+	width:20px;
+	*width:22px;
+	height:18px;
+	display:inline-block;
+	text-align:center;
+	padding-top:3px;
+	*padding-top:2px;
+	position:absolute;
+	top:5px;
+	right:0;
+	color:#fff;
+	font-weight:bold;
+}
+.header__toolbar .box_layer.order_layer .ico_layer:hover {
+	text-decoration:none;
+}
+.header__toolbar .box_layer.order_layer .ico_layer:hover .cart {
+	text-decoration:underline
+}
+.header__toolbar .box_layer.order_layer .list_layer {
+	position:absolute;
+	top:30px;
+	right:5px;
+	width:175px;
+}
+.header__toolbar .box_layer.order_layer .list_layer .img_li {
+	width:100%;
+	overflow:hidden;
+	color:#666;
+	margin-bottom:5px;
+}
+.header__toolbar .box_layer.order_layer .list_layer .img_li:hover {
+	background-color:#f3f3f3;
+	color:#ce1710;
+}
+.header__toolbar .box_layer.order_layer .list_layer .img_li a {
+	position:relative;
+	height:45px;
+	padding:0 10px;
+}
+.header__toolbar .box_layer.order_layer .list_layer .thumb {
+	float:left;
+	margin-right:5px;
+	position:relative;
+}
+.header__toolbar .box_layer.order_layer .list_layer .thumb span {
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico_toolbar_v2.png) no-repeat;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:45px;
+	height:14px;
+	text-indent:-9999px;
+}
+.header__toolbar .box_layer.order_layer .list_layer .thumb .sticker_soldout1 {
+	background-position:0 -144px;
+}/*마감임박*/
+.header__toolbar .box_layer.order_layer .list_layer .thumb .sticker_soldout2 {
+	background-position:0 -168px;
+}/*매진임박*/
+.header__toolbar .box_layer.order_layer .list_layer .thumb .sticker_soldout3 {
+	background-position:0 -192px;
+}/*오늘마감*/
+.header__toolbar .box_layer.order_layer .list_layer .thumb img {
+	width:45px;
+	height:45px;
+}
+.header__toolbar .box_layer.order_layer .list_layer .link {
+	display:block;
+	height:14px;
+	line-height:14px;
+	padding-top:8px;
+}
+.header__toolbar .box_layer.order_layer .list_layer .cart_more {
+	margin-bottom:5px;
+}
+.header__toolbar .box_layer.order_layer .list_layer .cart_more a {
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico_toolbar_v2.png) 115px -98px no-repeat;
+	text-align:center;
+	padding-right:8px;
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	line-height:20px;
+	height:20px;
+	margin:0 10px;
+	background-color:#6a747d;
+}
+
+
+/* 포인트 알림메세지, 장바구니 알림메세지 */
+.header__toolbar .select_layer1 {
+	position:absolute;
+	margin:0;
+	overflow:hidden;
+	top:25px;
+	right:312px;
+}
+.header__toolbar .select_layer1 .close {
+	display:block;
+	position:absolute;
+	top:11px;
+	right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico_toolbar_v2.png) 0 -40px no-repeat;
+	width:10px;
+	height:10px;
+}
+.header__toolbar .select_layer1 .txt {
+	background-color:#fffff2;
+	border:1px solid #dddccd;
+	color:#999;
+	text-align:center;
+	font-size:11px;
+	line-height:16px;
+	margin-top:5px;
+	padding:2px 20px 0 8px;
+	letter-spacing:-1px;
+}
+.header__toolbar .select_layer1 .txt em.icon {
+	position:absolute;
+	top:0;
+	right:65px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico_toolbar_v2.png) no-repeat;
+	width:10px;
+	height:10px;
+}
+.header__toolbar .select_layer1 .txt span {
+	color:#666;
+}
+.header__toolbar .select_layer1 .txt span em {
+	color:#ce1710;
+}
+.header__toolbar .select_layer2 {
+	position:absolute;
+	margin:0;
+	overflow:hidden;
+	top:25px;
+	right:0;
+}
+.header__toolbar .select_layer2 .close {
+	display:block;
+	position:absolute;
+	top:11px;
+	right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico_toolbar_v2.png) 0 -40px no-repeat;
+	width:10px;
+	height:10px;
+}
+.header__toolbar .select_layer2 .txt {
+	background-color:#fffff2;
+	border:1px solid #dddccd;
+	color:#666;
+	text-align:center;
+	font-size:11px;
+	line-height:16px;
+	margin-top:5px;
+	padding:2px 20px 0 8px;
+	letter-spacing:-1px;
+}
+.header__toolbar .select_layer2 .txt em.icon {
+	position:absolute;
+	top:0;
+	left:95px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico_toolbar_v2.png) no-repeat;
+	width:10px;
+	height:10px;
+}
+.header__toolbar .select_layer2 .txt span {
+	color:#666;
+}
+.header__toolbar .select_layer2 .txt span em {
+	color:#ce1710;
+}
+.header__toolbar .select_layer2 .txt span em.lin {
+	color:#dddccd;
+}
+
+.header__toolbar .list_layer .adult_layer {
+	position:absolute;
+	top:0;
+	left:10px;
+	width:45px;
+	height:45px;
+	background:url(//image.wemakeprice.com/images/2014/list/bg_adult_45.png) no-repeat;
+	z-index:15;
+}
+.header__toolbar .list_layer .adult .bg_layer {
+	position:absolute;
+	top:0;
+	left:10px;
+	width:45px;
+	height:45px;
+	background:url(//image.wemakeprice.com/images/2014/list/bg_adult_45.png) no-repeat;
+	z-index:15;
+}

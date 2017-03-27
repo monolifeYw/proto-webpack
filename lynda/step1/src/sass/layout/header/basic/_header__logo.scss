@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/** Header - logo **/
+.header__logo {
+	float:left;
+	position:relative;
+}
+.header__logo .logo {
+	display:block;
+	overflow:hidden;
+	float:left;
+	width:260px;
+	height:79px;
+}
+.logo_decoration {
+	float:left;
+}
+.logo_bg {
+	display:inline-block;
+	width:135px;
+	height:79px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -263px;
+}

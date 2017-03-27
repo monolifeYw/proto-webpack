@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+.list_row_type3 {
+	width:948px;
+}
+.list_row_type3 li {
+	width:305px;
+	height:430px;
+	margin:0 10px 19px 0;
+	padding:5px 0 0;
+}
+.list_row_type3 .img_percent {
+	top:217px;
+	left:212px;
+}
+.list_row_type3 .link {
+	padding:9px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#ddd;
+	background-color:#f9f9f9;
+}
+.list_row_type3 a.link:hover,
+.list_row_type3 .select .link {
+	border-color:#e73535;
+}
+.list_row_type3 .box_sticker {
+	top:1px;
+	right:9px;
+}
+.list_row_type3 .box_thumb img {
+	width:303px;
+	height:303px;
+	position:absolute;
+	top:6px;
+	left:1px;
+}
+.list_row_type3 .box_desc {
+	display:block;
+	width:275px;
+	height:82px;
+	position:absolute;
+	top:319px;
+	left:15px;
+}
+.list_row_type3 .box_desc .tit_desc {
+	height:24px;
+	font-weight:bold;
+	font-size:14px;
+	color:#333;
+	line-height:24px;
+}
+.list_row_type3 .box_desc .tit_desc .txt-tit {
+	overflow:hidden;
+	text-overflow:ellipsis;
+	float:left;
+	max-width:210px;
+	margin-right:5px;
+	white-space:nowrap;
+}
+.list_row_type3 .box_desc .tit_desc .txt-package {
+	float:left;
+	width:60px;
+}
+.list_row_type3 .box_desc .discount {
+	margin:-3px 0 0 0;
+}
+.list_row_type3 .box_desc .price {
+	padding-top:4px;
+}
+.list_row_type3 .txt_num {
+	top:61px;
+	right:0;
+	line-height:1.1em;
+}
+.list_row_type3 .box_delivery {
+	top:282px;
+	left:10px;
+}
+.list_row_type3 .txt_more {
+	position:absolute;
+	left:0;
+	bottom:224px;
+	width:305px;
+	font-size:22px;
+	color:#fff;
+	line-height:30px;
+	text-align:center;
+	letter-spacing:-1px;
+}
+.list_row_type3 .box_card {
+	position:absolute;
+	top:279px;
+	background-color:#393939;
+	opacity:0.8;
+	overflow:hidden;
+	width:285px;
+}
+
+/* 딜리스트 - 구매후기추가(3,4단 일부) */
+.list_row_type3.review li{
+	height:451px;
+}
+.list_row_type3.review .box_desc{
+	height:101px;
+}
+.list_row_type3.review .link{
+	height:429px;
+}
+.section_list .star{
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom:7px;
+	height:10px;
+}
+.section_list .list_row_type4 .star{
+	top:4px;
+	bottom:auto;
+}
+.section_list .star span{
+	float:left;
+}
+.section_list .star .bg,.section_list .star i{
+	float:left;
+	display:inline-block;
+	width:59px;
+	height:10px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico-star.png) no-repeat;
+	background-position:0 -11px;
+	vertical-align:top;
+}
+.section_list .star .bg i{
+	background-position:0 0;
+	text-indent:-9999px;
+	*text-indent:0;
+	*font-size:0;
+	*line-height:0;
+}
+.section_list .star .star_num{
+	padding-left:5px;
+	color:#888;
+	font-size:11px;
+	line-height:14px;
+}
+.list_row_type4 .review .star .star_num{
+	display:none;
+}
+
+/* 3단 딜리스트 오버 */
+.section_list {
+	overflow:hidden;
+}
+.section_list .list_row_type3 {
+	padding:0 0 0 1px;
+}
+.section_list .list_row_type3 span.type03 .card_option {
+	bottom:2px;
+	left:3px;
+	width:303px;
+	margin:0 -2px;
+}
+.section_list .list_row_type3 li:hover span.type03,
+.section_list .list_row_type3 li.select span.type03,
+.section_list .list_row_type3 li.select:hover span.type03 {
+	width:287px;
+	margin:-1px 0 0 -1px;
+	padding:9px 7px 8px 9px;
+	border:2px solid #ef2011;
+}
+.section_list .list_row_type3 span.type03 .box_desc .tit_desc:hover {
+	text-decoration:underline;
+}
+.section_list .list_row_type3 span.type03 .card_option .option_r:hover .tit_cut .tit {
+	color:#666;
+	text-decoration:underline;
+}
+.section_list .list_row_type3 li.select span.type03, .section_list .list_row_type3 li.select:hover span.type03 {
+	background-color:#e73535 !important;
+}
+.section_list .list_row_type3 li.select span, .section_list .list_row_type3 li.select strong {
+	color:#fff !important;
+}
+.section_list .list_row_type3 li.select .card_option {
+	width:305px;
+	left:2px;
+	bottom:0px;
+	border-top:1px #e96161 solid;
+}
+.section_list .list_row_type3 li.select .card_option .option_r {
+	border-left:1px #e96161 solid;
+}

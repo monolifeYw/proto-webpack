@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* popup_구매후기 작성 */
+.pop_reply {position:absolute;top:0;right:0;left:0;min-width:490px;}
+.pop_reply .wrap_tbl_layer {margin-top:-1px;}
+.pop_reply .tbl_layer .p_thumb {float:left;margin-right:10px;}
+.pop_reply .tbl_layer .p_cont {overflow:hidden;padding-top:3px;}
+.pop_reply .tbl_layer .p_cont .tit {color:#333;}
+.pop_reply .tbl_layer .p_cont .option {padding-top:5px;}
+.pop_reply .tbl_layer .p_cont .select_option {width:100%;}
+.pop_reply .tbl_layer .p_cont .txt_option {padding-top:4px;color:#999;}
+.pop_reply .reply_star_point {float:left;}
+.pop_reply .txt_bar {float:left;padding:0 15px;color:#ebeff6;}
+.pop_reply .star_point {margin-right:6px;}
+.pop_reply .list_dot {padding-top:13px;}
+.pop_reply .list_dot li {margin-left:5px;font-size:11px;color:#999;}
+.pop_reply .tf_append {float:left;width:245px;height:14px;margin-right:5px;padding:3px 5px 2px;border:1px solid #dcdcdc;line-height:14px;}
+.pop_reply .btn_append {position:relative;width:73px;height:21px;background-position:0 -40px;}
+.pop_reply .btn_append .inner {position:absolute;top:0;right:0;height:21px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+.pop_reply .btn_del {width:35px;height:21px;margin-right:0;background-position:-80px -40px;}
+.pop_reply .tf_reply {width:363px;height:136px;margin:0;padding:5px;border:1px solid #dcdcdc;font-size:12px;color:#666;resize:none;}

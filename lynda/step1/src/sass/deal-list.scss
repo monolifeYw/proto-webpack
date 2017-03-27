@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+//core
+@import 'core/mixin';
+@import 'core/variables';
+
+@import 'deal_list/deal_list';
+@import 'deal_list/list_inner';				// 딜리스트 안 컨텐츠
+@import 'deal_list/list_column_2';			// 2단 딜
+@import 'deal_list/list_column_3'; 			// 3단 딜
+@import 'deal_list/list_column_4';			// 4단 딜
+@import 'deal_list/list_column_5';			// 5단 딜
+@import 'deal_list/soldout_soon';			// 매진임박
+@import 'deal_list/recommend_travel_kids';	// 추천여행,추천컬쳐키즈
+@import 'deal_list/recommend_product';		// 최근관심 추천상품
+@import 'deal_list/recommend_category';		// 카테고리별 추천상품
+@import 'deal_list/view_column_5';			// 딜상세 연관된상품(5단)
+@import 'deal_list/myclick_deal';			// 내가 클릭한 딜
+@import 'deal_list/list_bg_layer';			// 딜리스트 위 레이어(선택영역,19금딜,마감임박,판매종료,오픈준비중)

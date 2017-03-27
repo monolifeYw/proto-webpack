@@ -8,12 +8,23 @@ const path = require('path');
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 // const dist = path.resolve(process.cwd(), 'dist');
 
-const ExtractTextPlugin = require('extract-text-webpack-plugin');          
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+// manifest
+const  ManifestPlugin = require('webpack-manifest-plugin');
+
+// package.json
+const pkg = require('./package.json');
+
+
 
 module.exports = {
 
   // 해당 모듈의 기본 폴더 지정
   context: __dirname, //path.resolve(__dirname, './src'),
+
+  // Prod 환경에서 build 시 warning, error 시의 Build에 대한 hard Checking 강화
+  bail: false,
 
   /* 내부 사용 가능 모듚
     object { amd?, bail?, cache?, context?, dependencies?, devServer?, 
@@ -28,6 +39,7 @@ module.exports = {
   //              모든 기능이 포함된 완전한 소스맵을 별도의 파일로 생성, 빌드 프로세스가 느려짐
   // Bundle 코드를 곧바로 원래 소스 파일로 매핑하지 않는 옵션 : 'eval', 'cheap-source-map', 'cheap-eval-source-map'
   // - 빌드시간이 아주 중요한 대규모 프로젝트에 적합
+  // http://webpack.github.io/docs/configuration.html#devtool
   devtool: 'inline-source-map',
 
   // Webpack이 작동하는 의존성 트리의 루트 노드가 되는 진입점(웹팩이 파일을 읽어들이기 시작하는 부분)
@@ -38,7 +50,9 @@ module.exports = {
     'app': [
       path.join(__dirname, '/src/bootstrap_test.js'),
       path.join(__dirname, '/src/app_index.js')
-    ]
+    ],
+    'app2': path.join(__dirname, '/src/app_index_other.js')
+
     // 'app2': path.join(__dirname, '/src/App')
 
     // test: ['a.js', 'b.js'] // a.js + b.js = test.js
@@ -60,9 +74,9 @@ module.exports = {
     //  - 파일이 달라질 때에만 랜덤값이 변경
     //  - 변경되지 않은 파일들은 계속 캐싱하고 변경된 파일만 불러올 수 있음
     //  - 해당 청크(번들)의 해시값
-    filename: '[name].bundle.js',
+    filename: '[name].[chunkhash:4].js',
     sourceMapFilename: '[name].bundle.map',
-    chunkFilename: '[id]-chunk.js',
+    chunkFilename: '[name].[id].[chunkhash:4].js',
 
     // Build 된 Path 기준
     // 경로의 기준 : 웹 사이트에서의 기준
@@ -99,6 +113,9 @@ module.exports = {
       {
         test: /\.js$/,
         // preloader : loaders 전에 실행되어야 하는 로더들을 선언하는 부분
+        // enforce (집행)
+        //  - pre : preloader
+        //  - post : postloader
         enforce: 'pre',
 
         // loader : 
@@ -199,11 +216,28 @@ module.exports = {
   // 번들링이 끝난 뒤 최종적으로 나온 번들을 조작하고 싶은 경우
   // 보통 결과물(bundle)에 작동하는 추가적인 node_modules
   plugins:[
+
+    // manifest
+    new ManifestPlugin({
+      fileName: `manifest-${pkg.version}.json`
+    }),
+
+
     // 번들 자체가 어떻게 생성되는지 수정
     // 공유되는 common script파일을 생성해 주며 각종 옵션을 통해 커스터마이징 설정이 가능
+    // 각 Chunk 의 공통의 모듈을 뽑아냄
     new CommonsChunkPlugin({
-      names: ['app', 'vendor'],
-      filename: '[name].common.js'
+      // vender > app2 > app 순으로 진행 
+      // names: ['app', 'app2', 'vendor'],
+      // 번들링 되는 app, app2의 공통부분도 포함되어 진다.
+      // entry 의 vendor 과 겹치므로 같은 선상에서 진행된다. 
+      // 
+      // vender 내에 위의 entry내의 파일들의 공통이 함께 포함된다.
+      name: 'vendor', 
+      filename: '[name].common.js',
+      minChunks: function (module, count) {
+        console.log('count', count);
+      }
     }),
 
 
@@ -217,6 +251,9 @@ module.exports = {
     // 내부적으로 css-loader, style-loader를 사용하여 한곳에 CSS파일을 수집하고 
     // 외부 style.css 파일로 결과를 추출 하여 index.html 안에 style.css 를 삽입 하면 된다.
     // https://github.com/webpack-contrib/extract-text-webpack-plugin
+    // https://www.npmjs.com/package/extract-text-webpack-plugin
+    // 
+    // filename : [name], [id] and [contenthash]를 포함할 수 있다.
     new ExtractTextPlugin({
       filename: 'app.css',
       disable: false,

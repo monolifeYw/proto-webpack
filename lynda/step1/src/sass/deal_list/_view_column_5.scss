@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+.tit_shopping {
+	text-indent:-9999px;
+	font-size:0;
+	line-height:0;
+	background:url(//image.wemakeprice.com/images/2013/common/tit_shopping_v1.png) no-repeat;
+}
+.btn_shopping {
+	text-indent:-9999px;
+	font-size:0;
+	line-height:0;
+	background:url(//image.wemakeprice.com/images/2013/common/btn_shopping_v1.png) no-repeat;
+}
+.product_foodhealth {
+	margin:0 0 27px 0;
+	border-bottom:3px solid #f7f7f7;
+}
+.product_foodhealth h4 {
+	height:22px;
+	overflow:hidden;
+	padding:0 0 10px 0;
+}
+.product_foodhealth h4 em {
+	float:left;
+	margin-right:5px;
+	color:#333;
+	line-height:22px;
+	font-size:20px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.product_foodhealth h4 .tit_shopping {
+	float:left;
+	display:block;
+	margin:2px 0 0 0;
+	width:145px;
+	height:19px;
+	background-position:0 -55px;
+}
+.product_recommend {
+	position:relative;
+	height:272px;
+	width:935px;
+	border-color:#ddd #ddd #CACACA;
+	border-style:solid;
+	border-width:1px;
+}
+.product_recommend ul {
+	position:absolute;
+	width:840px;
+	top:30px;
+	left:56px;
+}
+.product_recommend ul li {
+	float:left;
+	position:relative;
+	margin:0 18px 0 0;
+	width:150px;
+}
+.product_recommend ul li a:hover .box_line,
+.product_recommend ul li.select a .box_line,
+.product_recommend ul li.select a:hover .box_line {
+	position:absolute;
+	top:0;
+	left:0;
+	border:2px solid #E73535;
+	width:148px;
+	height:148px;
+	z-index:30;
+}
+.product_recommend .box_sticker {
+	position:absolute;
+	right:0;
+	top:-4px;
+	z-index:35;
+}
+.product_recommend .box_sticker .ico_comm {
+	display:block;
+	overflow:hidden;
+	height:48px;
+	width:50px;
+	font-size:0;
+	line-height:0;
+	text-indent:-9999px;
+}
+.product_recommend .box_thumb {
+	display:block;
+}
+.product_recommend .box_thumb,
+.product_recommend .box_thumb img {
+	width:150px;
+	height:150px;
+}
+.product_recommend .box_desc {
+	display:block;
+	padding:10px 0 0 0;
+}
+.product_recommend .box_desc .tit_desc {
+	display:block;
+	color:#333;
+	font-size:12px;
+	font-weight:normal;
+	height:21px;
+	margin-bottom:6px;
+	line-height:21px;
+	letter-spacing:-1px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+.product_recommend .box_desc .tit_desc:hover {
+	text-decoration:underline;
+}
+.product_recommend .box_desc .txt_info {
+	display:block;
+	overflow:hidden;
+}
+.product_recommend .box_desc .txt_info .price {
+	float:left;
+}
+.product_recommend .box_desc .txt_info .price .sale {
+	display:block;
+	height:14px;
+	color:#ce1710;
+	line-height:14px;
+	font-family:Tahoma;
+	font-weight:bold;
+	font-size:13px;
+}
+.product_recommend .box_desc .txt_info .price .won {
+	font-family:Arial,'돋움',dotum,sans-serif;
+	font-size:12px;
+}
+.product_recommend .box_desc .txt_info .price .etc {
+	margin-left:2px;
+	font-family:Arial;
+	font-size:12px;
+}
+.product_recommend .count {
+	position:absolute;
+	top:8px;
+	right:54px;
+}
+.product_recommend .page_count a {
+	display:block;
+	position:absolute;
+	width:20px;
+	height:39px;
+	text-indent:-9999px;
+	font-size:0;
+	line-height:0;
+	background:url(//image.wemakeprice.com/images/2013/common/btn_shopping_v1.png) no-repeat;
+}
+.product_recommend .page_count a.btn_more {
+	position:absolute;
+	width:79px;
+	height:12px;
+	top:-23px;
+	right:0px;
+	background-position:0px -202px;
+}
+.product_recommend .page_count .btn_prev_female {
+	top:117px;
+	left:15px;
+	background-position:0 -1px;
+}
+.product_recommend .page_count .btn_next_female {
+	top:117px;
+	right:15px;
+	background-position:-30px -1px;
+}
+.product_recommend .page_count .on_prev,
+.product_recommend .page_count .btn_prev_female:hover {
+	background-position:-60px -1px;
+}
+.product_recommend .page_count .on_next,
+.product_recommend .page_count .btn_next_female:hover {
+	background-position:-90px -1px;
+}
+.product_recommend .uv1307_7 {
+	display:block;
+	position:absolute;
+	top:90px;
+	right:0;
+	height:60px;
+	width:60px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/2013/event/130624_universe/dealbn7pro_120.png) no-repeat;
+}
+.product_recommend .uv1307_5 {
+	display:block;
+	position:absolute;
+	top:90px;
+	right:0;
+	height:60px;
+	width:60px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/2013/event/130624_universe/dealbn5pro_120.png) no-repeat;
+}
+.product_recommend .uv1307_3 {
+	display:block;
+	position:absolute;
+	top:90px;
+	right:0;
+	height:60px;
+	width:60px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/2013/event/130624_universe/dealbn3pro_120.png) no-repeat;
+}
+
+.product_recommend .box_desc .txt_info .ico_percent {
+	float:left;
+	padding:1px 4px 2px 13px;
+	margin-right:5px;
+	color:#FFF;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	overflow:hidden;
+	line-height:1em;
+	background:#e51b13 url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 4px 4px;
+}/*퍼센트*/
+.product_recommend .box_desc .txt_info .ico_limited {
+	float:left;
+	width:70px;
+	height:14px;
+	margin-right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 0 -165px;
+}/*limited edition*/
+.product_recommend .box_desc .txt_info .ico_contract {
+	float:left;
+	width:49px;
+	height:14px;
+	margin-right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 0 -25px;
+}/*약정 할인가*/
+.product_recommend .box_desc .txt_info .ico_chancedeal {
+	float:left;
+	width:55px;
+	height:14px;
+	margin-right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 0 -60px;
+}/*위메프 찬스딜*/
+.product_recommend .box_desc .txt_info .ico_only {
+	float:left;
+	width:56px;
+	height:14px;
+	margin-right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 0 -95px;
+}/*위메프 단독가*/
+.product_recommend .box_desc .txt_info .ico_wprice {
+	float:left;
+	width:39px;
+	height:14px;
+	margin-right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 0 -130px;
+}/*위메프가*/
+.product_recommend .box_desc .txt_info .ico_foreignspecial {
+	float:left;
+	width:66px;
+	height:14px;
+	margin-right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 0 -200px;
+}/*해외상품 특별가*/
+.product_recommend .box_desc .txt_info .ico_travelspecial {
+	float:left;
+	width:56px;
+	height:14px;
+	margin-right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 0 -235px;
+}/*여행사 특별가*/
+.product_recommend .box_desc .txt_info .ico_funding {
+	float:left;
+	width:41px;
+	height:14px;
+	margin-right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 0 -270px;
+}/*펀딩금액*/
+.product_recommend .box_desc .txt_info .ico_special {
+	float:left;
+	width:55px;
+	height:14px;
+	margin-right:5px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png) no-repeat 0 -305px;
+}/*위메프특별가*/
+
+.product_miscellaneous {
+	border-bottom:3px solid #f7f7f7;
+}
+.product_miscellaneous h4 {
+	height:22px;
+	overflow:hidden;
+	padding:0 0 10px 0;
+}
+.product_miscellaneous h4 em {
+	float:left;
+	margin-right:5px;
+	color:#333;
+	line-height:22px;
+	font-size:20px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.product_miscellaneous h4 .tit_shopping {
+	float:left;
+	display:block;
+	margin:2px 0 0 0;
+	width:145px;
+	height:19px;
+	background-position:0 -55px;
+}
+.custom_product {
+	width:937px;
+	overflow:hidden;
+	padding:0 0 60px 0;
+}
+.custom_product .tit_list {
+	position:relative;
+	overflow:hidden;
+}
+.custom_product ul.tab_sort {
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	right:0;
+	width:300px;
+	height:26px;
+	margin:0;
+	background:url(//image.wemakeprice.com/images/front/common/bg_goods_list_sort.gif) 0 0 no-repeat;
+}
+.custom_product ul.tab_sort li {
+	float:left;
+}
+.custom_product ul.tab_sort li:hover {
+	background:none;
+}
+.custom_product ul.tab_sort .tab {
+	overflow:hidden;
+	float:left;
+	width:73px;
+	height:20px;
+	padding:6px 0 0 2px;
+	font-size:11px;
+	color:#333;
+	line-height:16px;
+	text-align:center;
+}
+.custom_product ul.tab_sort .tab:hover .ico {
+	font-weight:bold;
+	color:#333 !important;
+}
+.custom_product ul.tab_sort .selected .ico {
+	padding-right:13px;
+	background:url(//image.wemakeprice.com/images/front/common/bg_goods_list_sort.gif) no-repeat 100% -48px;
+	font-weight:bold;
+	color:#333 !important;
+}
+

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+//core
+@import 'core/mixin';
+@import 'core/variables';
+
+// common
+@import 'common/global';
+@import 'common/common_new';
+@import 'common/common_old';
+@import 'common/reset';
+@import 'common/scaffolding';
+@import 'common/popup';
+
+

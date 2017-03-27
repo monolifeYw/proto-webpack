@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* 정렬 */
+.clearfix {
+	@include clearfix;
+}
+.pull-right {
+	float:right !important;
+}
+.pull-left {
+	float:left !important;
+}
+.center-block {
+	@include center-block;
+}
+
+/* Display content */
+.hide {
+	display:none !important;
+}
+.show {
+	display:block !important;
+}
+.affix {
+	position:fixed !important;
+}
+.sr-only {
+	@include sr-only;
+}
+.accessibility_hide {
+	display:block;
+	overflow:hidden;
+	position:absolute;
+	left:-9999px;
+	width:1px;
+	height:1px;
+	font-size:0;
+	line-height:0;
+	text-indent:-9999px;
+}
+
+/* Margin section */
+.mg-section-minus {
+	margin-top:-1px !important;
+}
+.mg-section-none {
+	margin-top:0 !important;
+}
+.mg-section-xs {
+	margin-top:10px !important;
+}
+.mg-section-sm {
+	margin-top:20px !important;
+}
+.mg-section-md {
+	margin-top:30px !important;
+}
+.mg-section-lg {
+	margin-top:40px !important;
+}
+.mg-section-xl {
+	margin-top:50px !important;
+}
+
+/* Font family */
+.text-tahoma {
+	font-family:tahoma;
+}
+
+/* Text 굵기 */
+.text-normal {
+	font-weight:normal;
+}
+.text-bold {
+	font-weight:bold;
+}
+
+/* Text 사이즈 */
+.text-size-sm {
+	font-size:11px;
+}
+.text-size-md {
+	font-size:12px;
+}
+.text-size-lg {
+	font-size:14px;
+}
+.text-size-xl {
+	font-size:16px;
+}
+
+/* Text 정렬 */
+.text-right {
+	text-align:right !important;
+}
+.text-center {
+	text-align:center !important;
+}
+.text-left {
+	text-align:left !important;
+}
+.text-nowrap {
+	white-space:nowrap !important;
+}
+
+/* Text 색상 */
+.text-primary {
+	color:#ce1710;
+}
+a.text-primary:hover {
+	color:#ce1710;
+}
+.text-bluish {
+	color:#198292;
+}
+a.text-bluish:hover {
+	color:#198292;
+}
+.text-gray-dark {
+	color:#333;
+}
+a.text-gray-dark:hover {
+	color:#333;
+}
+.text-gray {
+	color:#666;
+}
+a.text-gray:hover {
+	color:#666;
+}
+.text-gray-light {
+	color:#999;
+}
+a.text-gray-light:hover {
+	color:#999;
+}
+
+/* Text etc */
+.text-underline {
+	text-decoration:underline;
+}
+.text-underline-none {
+	text-decoration:none !important;
+}
+.spacing-sm {
+	letter-spacing:-1px;
+}
+.spacing-md {
+	letter-spacing:0;
+}
+
+/* Text 말줄임 */
+.abbreviate {
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+/* 백그라운드 색상 */
+.bg-primary {
+	background-color:#e51b13;
+}
+.bg-gray-darker {
+	background-color:#333;
+}
+.bg-gray-dark {
+	background-color:#6a747d;
+}
+.bg-gray {
+	background-color:#666;
+}
+.bg-gray-light {
+	background-color:#b4b9be;
+}
+.bg-gray-lighter {
+	background-color:#f3f3f3;
+}
+.bg-gray-lightest {
+	background-color:#f9f9f9;
+}
+.bg-white {
+	background-color:#fff;
+}
+
+/* 스크롤 */
+.box-scroll {
+	overflow:auto;
+	position:relative;
+}
+.box-scroll-y,
+.box-scroll-x {
+	position:relative;
+	border:1px solid #ccc;
+}
+.box-scroll-y {
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.box-scroll-x {
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+.box-scroll-y .scroll-inner,
+.box-scroll-x .scroll-inner {
+	padding:18px 20px;
+}
+
+/* Text color */
+.text_red {color:#ce1710;}
+.text_blue {color:#0f6eb0;}

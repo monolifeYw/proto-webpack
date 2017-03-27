@@ -1,0 +1,533 @@
+@charset "utf-8";
+
+/* GNB */
+.header__gnb .ico-gnb-comm {
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/ico-gnb-comm-v1.png) no-repeat;
+}
+.header__gnb .text-gnb-comm {
+	display:block;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/text-gnb-comm-v11.png) no-repeat;
+	text-indent:-9999px;
+}
+.header__gnb {
+	position:relative;
+	z-index:190;
+	border-bottom:1px solid #ddd;
+}
+.header__gnb .gnb-inner {
+	border-width:1px 0;
+	border-style:solid;
+	border-color:#ddd transparent #ccc;
+}
+.header__gnb .gnb-content {
+	position:relative;
+	width:936px;
+	margin:0 auto;
+	*zoom:1;
+	border-right:1px solid #ddd;
+}
+.header__gnb .gnb-content:before,
+.header__gnb .gnb-content:after {
+	display:table;
+	content:'';
+}
+.header__gnb .gnb-content:after {
+	clear:both;
+}
+
+/** GNB - 전체메뉴 **/
+.header__gnb .wrap-category-all {
+	float:left;
+	position:relative;
+	z-index:2;
+}
+.header__gnb .wrap-category-all .btn-category-all {
+	display:block;
+	overflow:visible;
+	position:relative;
+	width:50px;
+	height:40px;
+	margin-top:-1px;
+	border-width:1px 1px 0;
+	border-style:solid;
+	border-color:#ddd #ddd #ccc;
+	background-color:#fff;
+	outline:0;
+}
+.header__gnb .wrap-category-all .btn-category-all .ico-menu {
+	overflow:hidden;
+	position:absolute;
+	top:11px;
+	left:13px;
+	width:22px;
+	height:17px;
+	background-position:0 0;
+	text-indent:-9999px;
+}
+
+/** GNB - 카테고리메뉴 **/
+.header__gnb .list-category {
+	float:left;
+	position:relative;
+	z-index:2;
+}
+.header__gnb .list-category > li {
+	float:left;
+	position:relative;
+}
+.header__gnb .list-category > li:first-child {
+	padding-left:19px;
+}
+.header__gnb .list-category > li > a {
+	display:block;
+	position:relative;
+	z-index:2;
+	padding:12px 12px 12px 12px;
+	*padding-bottom:12px;
+}
+.header__gnb .list-category .gnb-balloon {
+	position:absolute;
+	top:-13px;
+	right:0;
+	left:0;
+	text-align:center;
+}
+.header__gnb .list-category .gnb-balloon img {
+	vertical-align:top;
+}
+.header__gnb .list-category .ico-new {
+	position:absolute;
+	right:-14px;
+	bottom:6px;
+	width:26px;
+	height:27px;
+	background-position:0 -100px;
+}
+.header__gnb .list-category .ico-tomorrow {
+	position:absolute;
+	right:-16px;
+	bottom:16px;
+	width:49px;
+	height:21px;
+	background-position:0 -135px;
+}
+.header__gnb .list-category .text-gnb-comm {
+	position:relative;
+	height:13px;
+}
+.header__gnb .list-category .menu-gnb-best .text-gnb-comm {
+	width:37px;
+	height:15px;
+	background-position:0 0;
+} /* 베스트 */
+.header__gnb .list-category .menu-gnb-best.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-best.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-best > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-best > a:focus .text-gnb-comm {
+	background-position:-130px 0;
+}
+.header__gnb .list-category .menu-gnb-wonder .text-gnb-comm {
+	width:70px;
+	height:16px;
+	background-position:0 -20px;
+} /* 원더배송	 */
+.header__gnb .list-category .menu-gnb-wonder > a {
+	padding-bottom:11px;
+}
+.header__gnb .list-category .menu-gnb-wonder.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-wonder.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-wonder > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-wonder > a:focus .text-gnb-comm {
+	background-position:-130px -20px;
+}
+.header__gnb .list-category .menu-gnb-fasion .text-gnb-comm {
+	width:55px;
+	height:15px;
+	background-position:0 -40px;
+} /* 패션뷰티 */
+.header__gnb .list-category .menu-gnb-fasion.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-fasion.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-fasion > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-fasion > a:focus .text-gnb-comm {
+	background-position:-130px -40px;
+}
+.header__gnb .list-category .menu-gnb-food .text-gnb-comm {
+	width:106px;
+	height:15px;
+	background-position:0 -60px;
+} /* 식품/생활/유아동 */
+.header__gnb .list-category .menu-gnb-food.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-food.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-food > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-food > a:focus .text-gnb-comm {
+	background-position:-130px -60px;
+}
+.header__gnb .list-category .menu-gnb-electric .text-gnb-comm {
+	width:77px;
+	height:15px;
+	background-position:0 -80px;
+} /* 가전/디지털 */
+.header__gnb .list-category .menu-gnb-electric.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-electric.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-electric > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-electric > a:focus .text-gnb-comm {
+	background-position:-130px -80px;
+}
+.header__gnb .list-category .menu-gnb-travel .text-gnb-comm {
+	width:55px;
+	height:15px;
+	background-position:0 -100px;
+} /* 여행/레저 */
+.header__gnb .list-category .menu-gnb-travel.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-travel.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-travel > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-travel > a:focus .text-gnb-comm {
+	background-position:-130px -100px;
+}
+.header__gnb .list-category .menu-gnb-region .text-gnb-comm {
+	width:69px;
+	height:15px;
+	background-position:0 -120px;
+} /* 지역/서비스 */
+.header__gnb .list-category .menu-gnb-region.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-region.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-region > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-region > a:focus .text-gnb-comm {
+	background-position:-130px -120px;
+}
+.header__gnb .list-category .menu-gnb-culture .text-gnb-comm {
+	width:24px;
+	height:15px;
+	background-position:0 -140px;
+} /* 컬처 */
+.header__gnb .list-category .menu-gnb-culture.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-culture.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-culture > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-culture > a:focus .text-gnb-comm {
+	background-position:-130px -140px;
+}
+.header__gnb .list-category .menu-gnb-brand .text-gnb-comm {
+	width:44px;
+	height:15px;
+	background-position:0 -160px;
+} /* 브랜드관 */
+.header__gnb .list-category .menu-gnb-brand.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-brand.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-brand > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-brand > a:focus .text-gnb-comm {
+	background-position:-130px -160px;
+}
+.header__gnb .list-category .menu-gnb-todayopen .text-gnb-comm {
+	width:75px;
+	height:16px;
+	background-position:0 -180px;
+} /* 신규상품 */
+.header__gnb .list-category .menu-gnb-todayopen > a {
+	padding-bottom:11px;
+}
+.header__gnb .list-category .menu-gnb-todayopen.selected .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-todayopen.active .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-todayopen > a:hover .text-gnb-comm,
+.header__gnb .list-category .menu-gnb-todayopen > a:focus .text-gnb-comm {
+	background-position:-130px -180px;
+}
+.header__gnb .list-category .ico-layer-arr,
+.header__gnb .layer-category,
+.header__gnb .bg-layer-allmenu {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+}
+.header__gnb .layer-category,
+.header__gnb .bg-layer-allmenu {
+	overflow:hidden;
+	position:absolute;
+	top:100%;
+	left:0;
+	height:0;
+	border:1px solid #e51b13;
+	background-color:#fff;
+	-webkit-box-shadow:5px 5px 5px rgba(0, 0, 0, .1);
+	box-shadow:5px 5px 5px rgba(0, 0, 0, .1);
+}
+.header__gnb .list-category .menu-gnb-wonder .layer-category {
+	left:-27px;
+}
+.header__gnb .list-category .menu-gnb-fasion .layer-category {
+	left:-62px;
+}
+.header__gnb .list-category .menu-gnb-food .layer-category {
+	left:-82px;
+}
+.header__gnb .list-category .menu-gnb-electric .layer-category {
+	left:-153px;
+}
+.header__gnb .list-category .menu-gnb-travel .layer-category {
+	left:-195px;
+}
+.header__gnb .list-category .menu-gnb-region .layer-category {
+	left:-215px;
+}
+.header__gnb .list-category .menu-gnb-culture .layer-category {
+	left:-249px;
+}
+.header__gnb .list-category .ico-layer-arr {
+	position:absolute;
+	top:100%;
+	left:50%;
+	width:15px;
+	height:7px;
+	margin:-6px 0 0 -4px;
+	background-position:0 -50px;
+}
+.header__gnb .layer-category {
+	width:188px;
+	padding-right:290px;
+}
+.header__gnb .layer-category .tit {
+	display:none;
+	color:#333;
+}
+.header__gnb .layer-category .list-sub-category {
+	width:159px;
+	padding:24px 0 21px 30px;
+	line-height:24px;
+}
+.header__gnb .layer-category .list-sub-category li {
+	vertical-align:top;
+}
+.header__gnb .layer-category .list-sub-category a {
+	display:block;
+	color:#333;
+	*zoom:1;
+}
+.header__gnb .layer-category .list-sub-category a:before,
+.header__gnb .layer-category .list-sub-category a:after {
+	display:table;
+	content:'';
+}
+.header__gnb .layer-category .list-sub-category a:after {
+	clear:both;
+}
+.header__gnb .layer-category .list-sub-category a:hover,
+.header__gnb .layer-category .list-sub-category a:focus,
+.header__gnb .layer-category .list-sub-category .active a {
+	font-weight:bold;
+	color:#ce1710;
+}
+.header__gnb .layer-category .list-sub-category .txt-category {
+	float:left;
+	margin-right:7px;
+}
+.header__gnb .layer-category .list-sub-category .ico-category {
+	float:left;
+	margin-top:5px;
+}
+.header__gnb .list-category .menu-gnb-region .list-sub-category {
+	padding:0 0 35px 30px;
+	*padding:0 0 8px 30px;
+}
+.header__gnb .layer-category .sub-title {
+	display:block;
+	position:relative;
+	width:110px;
+	height:18px;
+}
+.header__gnb .layer-category .sub-title.service{
+	margin:20px 0 5px 2px;
+}
+.header__gnb .layer-category .sub-title.region {
+	margin:16px 0 5px 2px;
+}
+.header__gnb .layer-category .sub-title em {
+	position:absolute;
+	top:0;
+	left:-10px;
+	width:110px;
+	height:21px;
+	padding:0 0 0 10px;
+	background-color:#f3f3f3;
+	color:#333;
+	font-weight:bold;
+}
+.header__gnb .layer-category .banner {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:188px;
+	opacity:0;
+}
+.header__gnb .active .layer-category .banner {
+	opacity:1;
+}
+.header__gnb .layer-category .banner .thumb {
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+.header__gnb .bg-layer-allmenu {
+	right:0;
+	height:0;
+}
+.header__gnb .bg-layer-allmenu-inner {
+	position:absolute;
+	top:20px;
+	right:0;
+	bottom:60px;
+	left:0;
+	z-index:1;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/bg-gnb-allmenu-v3.png) repeat-y;
+}
+.header__gnb .bg-layer-allmenu .btn-close {
+	overflow:hidden;
+	position:absolute;
+	right:12px;
+	bottom:11px;
+	z-index:2;
+	width:17px;
+	height:17px;
+	background-position:0 -75px;
+	text-indent:-9999px;
+}
+.header__gnb .list-category > .active .ico-layer-arr,
+.header__gnb .list-category > .active .layer-category,
+.header__gnb .all-open-menu .layer-category,
+.header__gnb .all-open-menu .bg-layer-allmenu {
+	z-index:1;
+	opacity:1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter:alpha(opacity=100);
+}
+/** GNB - 전체메뉴 / 하단 기획전 노출 **/
+.header__gnb .bg-layer-allmenu .exhibitions-openbox {
+	overflow:hidden;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	background:#f4f4f4;
+}
+.header__gnb .bg-layer-allmenu .exhibitions-openbox li:first-child {
+	width:137px;
+	padding:0;
+	background:#ff6f60;
+}
+.header__gnb .bg-layer-allmenu .exhibitions-openbox li:first-child a {
+	padding:0 20px;
+	text-align:left;
+	color:#fff;
+	cursor:default;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/gnb-exhibitions-listbg.png) no-repeat;
+	background-position:100% 0;
+}
+.header__gnb .bg-layer-allmenu .exhibitions-openbox li {
+	float:left;
+	height:40px;
+	line-height:40px;
+}
+.header__gnb .bg-layer-allmenu .exhibitions-openbox li a {
+	display:block;
+	padding:0 8px 0 19px;
+	color:#333;
+	text-align:center;
+}
+.header__gnb .bg-layer-allmenu .exhibitions-openbox li a > span {
+	position:relative;
+	top:2px;
+	display:inline-block;
+	height:40px;
+	vertical-align:middle;
+}
+.header__gnb .bg-layer-allmenu .exhibitions-openbox li a > span .ico {
+	position:relative;
+	top:-2px;
+	display:inline-block;
+	width:19px;
+	height:14px;
+	margin-right:10px;
+	vertical-align:middle;
+	line-height:40px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/gnb-exhibitions-ico-v1.png) no-repeat;
+	background-position: 0 0;
+}
+
+.header__gnb .all-open-menu .wrap-category-all {
+	margin-bottom:-1px;
+}
+.header__gnb .all-open-menu .wrap-category-all .btn-category-all {
+	height:41px;
+	border-color:#e51b13 #e51b13 transparent;
+}
+.header__gnb .all-open-menu .wrap-category-all .btn-category-all .ico-menu {
+	background-position:0 -25px;
+}
+.header__gnb .all-open-menu .layer-category {
+	width:auto;
+	border:0;
+}
+.header__gnb .all-open-menu .list-category .layer-category {
+	overflow:visible;
+	margin-top:19px;
+	padding-right:0;
+	background-color:transparent;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.header__gnb .all-open-menu .list-category .menu-gnb-wonder .layer-category {
+	left:-104px;
+}
+.header__gnb .all-open-menu .list-category .menu-gnb-fasion .layer-category {
+	left:-89px;
+}
+.header__gnb .all-open-menu .list-category .menu-gnb-food .layer-category {
+	left:-23px;
+}
+.header__gnb .all-open-menu .list-category .menu-gnb-electric .layer-category {
+	left:-6px;
+}
+.header__gnb .all-open-menu .list-category .menu-gnb-travel .layer-category {
+	left:29px;
+}
+.header__gnb .all-open-menu .list-category .menu-gnb-region .layer-category {
+	left:73px;
+}
+.header__gnb .all-open-menu .list-category .menu-gnb-culture .layer-category {
+	left:118px;
+}
+.header__gnb .all-open-menu .layer-category .list-sub-category {
+	padding:9px 0 0 0;
+	padding-bottom:0;
+	letter-spacing:-1px;
+	line-height:24px;
+}
+.header__gnb .all-open-menu .menu-gnb-wonder .layer-category .list-sub-category {
+	width:90px;
+}
+.header__gnb .all-open-menu .menu-gnb-fasion .layer-category .list-sub-category {
+	width:125px;
+}
+.header__gnb .all-open-menu .menu-gnb-food .layer-category .list-sub-category {
+	width:125px;
+}
+.header__gnb .all-open-menu .menu-gnb-electric .layer-category .list-sub-category {
+	width:115px;
+}
+.header__gnb .all-open-menu .menu-gnb-travel .layer-category .list-sub-category {
+	width:100px;
+}
+.header__gnb .all-open-menu .menu-gnb-region .layer-category .list-sub-category {
+	width:118px;
+}
+.header__gnb .all-open-menu .menu-gnb-culture .layer-category .list-sub-category {
+	width:110px;
+}
+.header__gnb .all-open-menu .layer-category .tit {
+	display:block;
+}
+.header__gnb .all-open-menu .layer-category .banner {
+	display:none;
+}
+.header__gnb .all-open-menu .menu-gnb-region .layer-category .list-sub-category .sub-title{
+	display:none;
+}

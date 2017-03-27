@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/** Header - 검색창(상단) **/
+.header__search {
+	position:relative;
+	float:left;
+	z-index:500;
+	margin:20px 0 0 8px;
+}
+.header__search .screen_out{
+	overflow:hidden;
+	position:absolute;
+	width:0;
+	height:0;
+	line-height:0;
+	text-indent:-9999px;
+}
+.header__search .ico_new_search {
+	position:absolute;
+	z-index:2;
+	left:152px;
+	top:20px;
+}
+.header__search .top_search .label_inp {
+	position:absolute;
+	top:38px;
+	left:11px;
+	color:#333;
+	cursor:text;
+}
+.header__search .top_search.on .label_inp {
+	display:none;
+}
+.header__search .top_search .inp_txt {
+	outline:none;
+	float:left;
+	width:300px;
+	height:18px;
+	padding:5px 9px 4px 9px;
+	border:2px solid #ef1f12;
+	border-right:0 none;
+	font-size:12px;
+	color:#666;
+}
+.header__search .top_search .search_inner .btn_search {
+	position:absolute;
+	right:1px;
+	top:1px;
+	width:44px;
+	height:38px;
+	background-position:-617px 8px;
+	text-indent:0;
+}
+.header__search .top_search .search_inner .btn_search button {
+	display:block;
+	width:100%;
+	height:100%;
+	border:0 none;
+	background:none;
+	text-indent:-9999px
+}
+
+/** Header - 검색창(상단) 검색 자동완성 레이어 **/
+.header__search .srch_keyword {
+	position:absolute;
+	top:100%;
+	left:0;
+	right:0;
+	width:398px;
+	height:276px;
+	padding:0;
+	border:1px solid #acacac;
+	border-top:0;
+	background:#fff;
+	line-height:25px;
+	z-index:300;
+}
+.header__search .srch_keyword .result_wrap {
+	float:left;
+	width:225px;
+}
+.header__search .srch_keyword .result_wrap .result_lst {
+	height:168px;
+}
+.header__search .srch_keyword .result_wrap .cat_lst {
+	border-top:1px solid #eee;
+}
+.header__search .srch_keyword .result_wrap ul {
+	padding:11px 0;
+}
+.header__search .srch_keyword .result_wrap li {
+	line-height:21px;
+}
+.header__search .srch_keyword .result_wrap li a {
+	display:block;
+	overflow:hidden;
+	padding:0 15px 0 16px;
+	color:#333;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.header__search .srch_keyword .result_wrap li.tab_focus,.header_inner .srch_keyword .result_wrap li a:hover {
+	background-color:#f7f7f7;
+}
+.header__search .srch_keyword .result_wrap li em {
+	color:#f7120a;
+	font-weight:bold;
+}
+.header__search .srch_keyword .recommend_wrap {
+	float:left;
+	width:172px;
+	border-left:1px solid #eee;
+	text-align:center;
+}
+.header__search .srch_keyword .recommend_wrap a {
+	display:block;
+	height:238px;
+	padding:19px 0;
+}
+.header__search .srch_keyword .recommend_wrap.tab_focus,.header_inner .srch_keyword .recommend_wrap a:hover {
+	background-color:#f7f7f7;
+}
+.header__search .srch_keyword .recommend_wrap .area_title {
+	display:block;
+	overflow:hidden;
+	width:85px;
+	height:16px;
+	margin:0 auto;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/sample/top_srch_area.png) no-repeat 0 0;
+	text-indent:-9999px;
+}
+.header__search .srch_keyword .recommend_wrap img {
+	display:block;
+	width:132px;
+	height:132px;
+	margin:16px auto 22px;
+	vertical-align:baseline;
+}
+.header__search .srch_keyword .recommend_wrap .deal_title {
+	display:block;
+	height:32px;
+	text-align:center;
+	line-height:16px;
+}
+.header__search .srch_keyword .recommend_wrap .price {
+	display:block;
+	padding-top:3px;
+	text-align:center;
+	line-height:1;
+	color:#333;
+	font-family:Arial;
+}
+.header__search .srch_keyword .recommend_wrap .price em {
+	display:inline-block;
+	margin-bottom:3px;
+	font:bold 14px tahoma;
+	vertical-align:middle;
+}
+.header__search .srch_keyword .recommend_wrap .price .etc {
+	display:inline-block;
+	margin-left:2px;
+	margin-bottom:0;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	vertical-align:0;
+	line-height:1;
+	margin-top:0;
+	*margin-top:-1px;
+}
+/* chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.header__search .srch_keyword .recommend_wrap .price .etc {vertical-align:middle;margin-bottom:0.5px;}
+}
+.header__search .search_inner {
+	position:relative;
+}
+.header__search .ui-input-search {
+	position:relative;
+	width:396px;
+	border:2px solid #e51b13;
+	*zoom:1;
+}
+.header__search .ui-input-search:before,
+.header__search .ui-input-search:after {
+	display:table;
+	content:'';
+}
+.header__search .ui-input-search:after {
+	clear:both;
+}
+.header__search .ui-input-search input.ui-input-text {
+	outline:none;
+	float:left;
+	display:inline-block;
+	width:320px;
+	height:16px;
+	line-height:16px;
+	padding:11px 0 9px 13px;
+	border:0 none;
+	font-size:12px;
+	color:#333;
+	text-overflow:ellipsis;
+}
+.header__search .ui-input-search .ui-input-clear {
+	display:none;
+	position:absolute;
+	right:46px;
+	top:14px;
+	z-index:100;
+}
+.header__search .ui-btn-icon-notext .ui-btn-inner {
+	padding:0;
+}
+.header__search .ui-btn-inner {
+	display:block;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	position:relative;
+}
+.header__search .ui-btn-icon-notext .ui-icon {
+	display:block;
+}
+.header__search .ui-icon {
+	overflow:hidden;
+	width:9px;
+	height:9px;
+	background:url(//image.wemakeprice.com/images/2014/common/ico_sch_close_v3.png) no-repeat 0 -130px;
+	text-indent:-9999px;
+}
+.header__search input[type=text]::-ms-clear {
+	display:none;
+}
+.header__search input[type=password]::-ms-reveal {
+	display:none;
+}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.header__wrap {
+	position:relative;
+	z-index:200;
+	width:100%;
+}
+
+.toolbar_inner {
+	position:relative;
+	width:937px;
+	margin:0 auto;
+	z-index:210;
+	*zoom:1;
+}
+.toolbar_inner:before,
+.toolbar_inner:after {
+	display:table;
+	content:'';
+}
+.toolbar_inner:after {
+	clear:both;
+}
+
+.header_inner {
+	display:block;
+	position:relative;
+	width:937px;
+	margin:0 auto;
+	padding:5px 0 6px;
+	*zoom:1;
+	z-index:200;
+}
+.header_inner:before,
+.header_inner:after {
+	display:table;
+	content:'';
+}
+.header_inner:after {
+	clear:both;
+}
+
+

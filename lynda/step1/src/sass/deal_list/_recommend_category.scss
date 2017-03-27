@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* 카테고리별 추천상품 */
+.lst_recomm {
+	padding-bottom:24px;
+}
+.lst_recomm li {
+	width:285px;
+	padding:9px;
+	float:left;
+	margin:0 0 10px 11px;
+	background-color:#888888;
+	border-color:#888 #606060 #606060 #888;
+	border-style:solid;
+	border-width:1px;
+	position:relative;
+	color:#fff;
+	box-shadow:0 3px 0 0 #f4f4f4;
+	height:340px;
+}
+.lst_recomm li:hover {
+	border:1px solid #e51b13;
+}
+.lst_recomm li a {
+	color:#fff;
+}
+.lst_recomm li .thmb {
+	width:285px;
+	height:285px;
+	overflow:hidden;
+	width:285px;
+	height:285px;
+	overflow:hidden;
+	margin-bottom:6px;
+}
+.lst_recomm .thmb li:hover {
+	border:none;
+}
+.lst_recomm .thmb img {
+	height:285px;
+}
+.lst_recomm li dl {
+	padding:8px 5px;
+	position:absolute;
+	overflow:hidden;
+	bottom:3px;
+	background-color:#888888;
+	width:275px;
+	*left:8px;
+	z-index:3;
+}
+.lst_recomm li dt {
+	margin:0;
+	width:275px;
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:2px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	margin-bottom:/*＼**/5px;
+}
+.lst_recomm li dd.price {
+	color:#fff;
+}
+.lst_recomm li dd.price .percent em {
+	background-position:0 -20px;
+	color:#fff;
+}
+.lst_recomm li dd.price .cost {
+	margin-left:3px;
+	visibility:hidden;
+	position:relative;
+	top:-2px;
+}
+.lst_recomm li dd.qtt {
+	bottom:8px;
+	font-size:11px;
+	visibility:hidden;
+	color:#fff;
+}
+.lst_recomm li dd.dsc {
+	display:none;
+	margin:3px 0 6px;
+}
+.lst_recomm li dd.dsc.event1 {
+	display:block !important;
+}
+.lst_recomm li dd.dsc.event2 {
+	display:block !important;
+	width:180px;
+}
+.lst_recomm li dd.qtt.event2 {
+	position:absolute;
+	bottom:14px;
+	visibility:visible !important;
+	color:#fff;
+}
+.lst_recomm li:hover dl {
+	background-color:#e51b13;
+}
+.lst_recomm li:hover dd.dsc {
+	display:block;
+}
+.lst_recomm li:hover dd.price .cost {
+	visibility:visible;
+}
+.lst_recomm li:hover dd.qtt {
+	visibility:visible;
+}
+.lst_recomm li .click_point p {
+	margin-top:263px;
+}
+@-moz-document url-prefix() {
+	.lst_recomm li .click_point p {
+		margin-top:240px;
+	}
+}

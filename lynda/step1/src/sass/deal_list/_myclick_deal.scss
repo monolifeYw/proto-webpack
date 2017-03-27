@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/* 외부 사이트에서 광고 클릭하고 들어왔을때 노출 */
+/* 내가 클릭한 딜_20130807 장하련 */
+.list_combine .img_adeal {
+	display:block;
+	overflow:hidden;
+	background:url(//image.wemakeprice.com/images/2013/common/img_adeal.png) no-repeat;
+	text-indent:-9999px;
+}
+.list_combine .my_click_deal01 .box_desc .tit_desc,
+.list_combine .my_click_deal01 .box_desc .discount,
+.list_combine .my_click_deal01 .box_desc .prime,
+.list_combine .my_click_deal01 .box_desc .sale,
+.list_combine .my_click_deal01 .txt_num,
+.list_combine .my_click_deal01 .txt_num .point,
+.list_combine .my_click_deal01 span.link .card_option .option_r .tit_cut,
+.section_list .list_combine .my_click_deal01 span.link .card_option .option_r:hover .tit,
+.my_click_deal01 span.link .card_option .option_r .tit_cut .tit:hover {
+	color:#fff;
+}
+.my_click_deal01 .card_option {
+	border-top-color:#ea6262;
+}
+.my_click_deal01 .card_option span.option_r {
+	border-left-color:#ea6262;
+}
+.my_click_deal01 .img_my_click {
+	position:absolute;
+	top:-1px;
+	left:50%;
+	width:155px;
+	height:43px;
+	margin-left:-77px;
+	background-position:0 -250px;
+	z-index:5000;
+}
+
+.section_list .list_combine .my_click_deal01 .link,
+.section_list .list_combine .my_click_deal01:hover .link {
+	width:auto;
+	padding:0px;
+	margin:0;
+	border:1px solid #da1a1a;
+	background-color:#e73535;
+}
+
+/* 내가 클릭한 딜 공통 */
+.my_click_deal01 .ico_limited {
+	background-position:0 13px !important;
+}/*limited edition*/
+.my_click_deal01 .ico_contract {
+	background-position:-80px -60px !important;
+}/*약정 할인가*/
+.my_click_deal01 .ico_chancedeal {
+	background-position:-80px -130px !important;
+}/*위메프 찬스딜*/
+.my_click_deal01 .ico_only {
+	background-position:-80px -200px !important;
+}/*위메프 단독가*/
+.my_click_deal01 .ico_wprice {
+	background-position:-80px -270px !important;
+}/*위메프가*/
+.my_click_deal01 .ico_foreignspecial {
+	background-position:-80px -340px !important;
+}/*해외상품 특별가*/
+.my_click_deal01 .ico_travelspecial {
+	background-position:-80px -410px !important;
+}/*여행사 특별가*/
+.my_click_deal01 .ico_funding {
+	background-position:-80px -480px !important;
+}/*펀딩금액*/
+.my_click_deal01 .ico_special {
+	background-position:-80px -550px !important;
+}/*위메프특별가*/
+
+/* type02(추천상품) */
+.list_row_type5 .my_click_deal01 .link, .list_row_type5 .my_click_deal01:hover .link {
+	width:449px;
+	margin:-2px 0 0 -2px;
+	border:2px solid #da1a1a;
+	background-color:#e73535;
+}
+.list_row_type5 .my_click_deal01 .img_my_click {
+	top:-10px;
+}
+.section_list .list_row_type2 li.my_click_deal01:hover .link {
+	height:385px;
+}
+.section_list .list_row_type3 li.my_click_deal01 span.link,
+.section_list .list_row_type3 li.my_click_deal01:hover span.link,
+.section_list .list_row_type4 li.my_click_deal01 span.link,
+.section_list .list_row_type4 li.my_click_deal01:hover span.link {
+	padding:9px;
+}
+
+/* 기획전 4단 */
+.list_row_type4 .my_click_deal01 .img_my_click {
+	width:119px;
+	height:39px;
+	margin-left:-60px;
+	background-position:-170px -250px;
+}
+
+/* 내가 클릭한 딜 리사이징 관련 수정_20130917 */
+.list_row_type3 .my_click_deal01 .box_thumb {
+	overflow:hidden;
+	position:absolute;
+	top:15px;
+	left:10px;
+	width:285px;
+	height:294px;
+}
+.list_row_type3 .my_click_deal01 .box_thumb img {
+	top:-5px;
+	left:-9px;
+}
+.section_list .list_row_type3 li.my_click_deal01:hover span.type03 {
+	width:auto;
+	margin:0;
+	border-width:1px;
+}
+.list_row_type3 .my_click_deal01 .box_discsticker {
+	right:11px;
+}
+.list_row_type3 .my_click_deal01.deal_end .bg_layer {
+	top:15px;
+	left:10px;
+	width:285px;
+	height:294px;
+}
+.list_row_type3 .my_click_deal01 .box_desc {
+	width:277px;
+}
+.list_row_type3 .my_click_deal01 .card_option span.option_l {
+	margin-left:13px;
+}
+.list_row_type3 .my_click_deal01 .card_option span.option_r .tit_cut img {
+	right:13px;
+}
+.list_row_type2 .my_click_deal01 .link {
+	height:385px;
+}
+.list_row_type2 .my_click_deal01 .box_thumb,
+.list_row_type2 .my_click_deal01 .box_thumb img {
+	display:block;
+	width:443px;
+	height:245px;
+	margin:9px 0 0 9px;
+}
+.list_row_type2 .my_click_deal01 .box_discsticker {
+	top:159px;
+	right:10px;
+}
+.list_row_type2 .my_click_deal01.deal_end .bg_layer {
+	top:15px;
+	left:10px;
+	width:443px;
+	height:245px;
+}
+.list_row_type2 .my_click_deal01 .box_desc {
+	position:absolute;
+	left:20px;
+	display:block;
+	width:424px;
+	height:88px;
+}
+.list_row_type2 .my_click_deal01 .card_option span.option_l {
+	margin-left:20px;
+}
+.list_row_type2 .my_click_deal01 .card_option span.option_r .tit_cut img {
+	right:18px;
+}
+.list_row_type4 .my_click_deal01 .box_thumb {
+	overflow:hidden;
+	position:absolute;
+	top:15px;
+	left:10px;
+	width:206px;
+	height:215px;
+}
+.list_row_type4 .my_click_deal01 .box_thumb img {
+	top:-5px;
+	left:-10px;
+}
+.list_row_type4 .my_click_deal01 .box_discsticker {
+	top:147px;
+	right:12px;
+}
+.section_list .list_row_type4 .my_click_deal01.deal_end .bg_layer {
+	top:15px;
+	left:10px;
+	width:207px;
+	height:215px;
+}
+.list_row_type4 .my_click_deal01 .box_desc {
+	left:11px;
+	width:207px;
+}
+.list_row_type4 .my_click_deal01 .card_option span.option_r .tit_cut img {
+	right:8px;
+}
+.section_list .list_row_type4 .my_click_deal01 span.type04 .card_option .option_r .tit_cut .tit {
+	width:50px;
+	font-family:'돋움',dotum,sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#fff;
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 최상단_띠배너 */
+.header__topbanner {
+	overflow:hidden;
+	position:relative;width:100%;
+}
+.header__topbanner .btn_cls_ban {
+	position:absolute;
+	top:0;
+	right:0;
+	width:110px;
+	height:72px;
+	text-indent:-9999em;
+	background:url(//image.wemakeprice.com/images/2013/event/global_ban/bt_globalban_cls01.png) no-repeat;
+}
+.header__topbanner .btn_cls_ban2 {
+	position:absolute;
+	top:0;
+	right:0;
+	width:110px;
+	height:72px;
+	text-indent:-9999em;
+	background:url(//image.wemakeprice.com/images/2013/event/global_ban/bt_globalban_cls02.png) no-repeat;
+}
+.header__topbanner .event {
+	overflow:hidden;
+	width:937px !important;
+	margin:0 auto;
+	font-size:0;
+	line-height:0;
+	text-align:center;
+}

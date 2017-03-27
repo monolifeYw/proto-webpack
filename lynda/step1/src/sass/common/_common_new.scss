@@ -1,0 +1,971 @@
+@charset "utf-8";
+/**
+ * Global image
+ * 바둑판 형식으로 Sprite
+ * ( 컨텐츠 bg로 사용금지 )
+ * Class name은 .ico-global-**** 으로 무조건 지정해서 사용
+ */
+.com[class*="ico-global-"] {
+	display:block;
+	overflow:hidden;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/global/ico-global.png?20160212_1) no-repeat;
+}
+.com.ico-global-exclaim {
+	width:14px;
+	height:14px;
+	background-position:0 0;
+	} /* 느낌표 */
+
+/* Image Common Class */
+.title-content-comm,
+.text-content-comm {
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+.title-content-comm {
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/title-content-comm-v2.png) no-repeat 0 0;
+}
+.text-content-comm {
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/text-content-comm.png) no-repeat 0 0;
+}
+
+/**
+ * ui-kit
+ ** Bullet
+ */
+.ui.blt-aaa,
+.ui.list-blt-aaa > li {
+	padding-left:8px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/global/blt-aaa.png) no-repeat 0 7px;
+	font-size:12px;
+	line-height:18px;
+	color:#aaa;
+	text-align:left;
+}
+.ui.blt-aaa.sm,
+.ui.list-blt-aaa.sm > li {
+	padding-left:6px;
+	font-size:11px;
+	line-height:17px;
+}
+
+
+/* wmpSkip Navigation */
+.wmpSkip {
+	position:relative;z-index:601;
+}
+.wmpSkip a {
+	position:absolute;
+	top:-33px;
+	left:0;
+	padding:2px 20px 0 19px;
+	border:1px solid #e51b13;
+	background-color:#000;
+}
+.wmpSkip a:focus {
+	top:0;
+	outline:0;
+}
+.wmpSkip a > span {
+	display:block;
+	height:29px;
+	padding-right:11px;
+	background:url(//image.wemakeprice.com/images/global/ico_skip_arr.png) no-repeat 100% 50%;
+	color:#fff;
+	line-height:29px;
+}
+
+
+/** Layout - Common(공통 레이아웃) **/
+.wrap {
+	overflow:hidden;
+}
+
+/** Layout - 마이페이지 **/
+.mypage .container .content-main{
+	padding-top:20px;
+}
+
+/** Layout - 오늘오픈 **/
+.todayopen .container .content-main{
+	padding-top:20px;
+	min-height:600px;
+}
+
+/** Layout - 고객센터 **/
+.customer .container .content-main{
+	padding-top:20px;
+}
+
+/** Layout - 패션 **/
+.fashion .aside .aside__bigad,
+.fashion .aside .aside__shopping {
+	display:block;
+}
+.fashion.product-detail .aside .aside__shopping {
+	display:none;
+}
+
+/** Layout - 딜상세 **/
+.product-detail .aside {
+	padding-top:85px;
+}
+.product-detail .deal_area {
+	margin-top:20px;
+}
+
+/** Layout - 할인항공권 **/
+.tour-air-detail .aside {
+	padding-top:85px;
+}
+.tour-air-detail .deal_area {
+	margin-top:20px;
+}
+
+/** Layout - 이메일거부 **/
+.no-aside .aside {
+	display:none;
+}
+
+/** Layout - 프로모션 **/
+.promotion-full .container-inner {
+	width:100% !important;
+}
+.promotion-full .container-inner .contents-wrap{
+	width:100% !important;
+	float:none !important;
+}
+.promotion-full .aside {
+	display:none;
+}
+
+
+/** GNB - 서브 2차 메뉴 **/
+.gnb-2depth {
+	float:left;
+	width:184px;
+	height:298px;
+	padding:20px;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.gnb-2depth .title-2depth {
+	padding-bottom:4px;
+	border-bottom:2px solid #333;
+	font-size:16px;
+	font-weight:bold;
+	color:#333;
+}
+.gnb-2depth .gnb-area {
+	overflow-y:auto;
+	height:265px;
+	margin-top:10px;
+}
+.gnb-2depth .gnb-area li {
+	display:block;
+	line-height:22px;
+	*line-height:20px;
+	*zoom:1;
+}
+.gnb-2depth .gnb-area li:before,
+.gnb-2depth .gnb-area li:after {
+	display:table;
+	content:'';
+}
+.gnb-2depth .gnb-area li:after {
+	clear:both;
+}
+.gnb-2depth .gnb-area li span {
+	float:left;
+	margin-right:7px;
+}
+.gnb-2depth .gnb-area li .ico-category {
+	float:left;
+	margin-top:4px;
+}
+.gnb-2depth .gnb-area a {
+	display:block;
+	color:#666;
+}
+.gnb-2depth .gnb-area a:hover,
+.gnb-2depth .gnb-area a:focus,
+.gnb-2depth .gnb-area .active a {
+	font-weight:bold;
+	color:#ce1710;
+}
+
+/** GNB - 서브 3차 메뉴 **/
+.gnb_3depth {
+	overflow:hidden;
+	width:935px;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.gnb_3depth h4 {
+	height:0;
+	text-indent:-9999px;
+	font-size:0;
+	line-height:0;
+}
+.gnb_3depth .tab{
+	overflow:hidden;
+	margin:25px 0;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/bg-3depth-menu.png) repeat-y 0 0;
+	font-size:12px;
+}
+.gnb_3depth .tab li {
+	float:left;
+	position:relative;
+	width:155px;
+}
+.gnb_3depth .tab li a {
+	display:block;
+	overflow:hidden;
+	padding:5px 0 5px 20px;
+}
+.gnb_3depth .tab a, .gnb_3depth .tab a:active, .gnb_3depth .tab a:visited{
+	color:#666;
+}
+.gnb_3depth .tab .txt {
+	float:left;
+	line-height:19px;
+}
+.gnb_3depth .tab .num {
+	display:none;
+	font:normal 10px tahoma;
+	color:#999;
+	padding-right:2px;
+	letter-spacing:0;
+}
+.gnb_3depth .tab .on a, .gnb_3depth .tab .on a:active, .gnb_3depth .tab .on a:visited{
+	font-weight:bold;
+	color:#ce1710;
+}
+.gnb_3depth .tab .on .num {
+	color:#666;
+}
+.gnb_3depth .tab a:hover .txt {
+	text-decoration:underline;
+}
+.gnb_3depth .tab a:hover .txt, .gnb_3depth .tab a:hover .num {
+	color:#ce1710;
+}
+.gnb_3depth .tab .on a:hover .txt {
+	text-decoration:none;
+}
+.gnb_3depth .tab .on a:hover .txt, .gnb_3depth .tab .on  a:hover .num {
+	color:#ce1710;
+}
+.gnb_3depth .tab .ico-category{
+	padding-left:5px;
+}
+.gnb_3depth .tab-type-2 {
+	background-image:url(//image.wemakeprice.com/images/resources/wmp/common/bg-3depth-menu-type2.png);
+}
+.gnb_3depth .tab-type-2 li {
+	width:187px;
+}
+
+/** GNB - 서브 3차 메뉴 하단 배너 */
+.gnb-3depth-banner{
+	overflow:hidden;
+	width:936px;
+	margin-bottom:-1px;
+	border-top:1px solid #eee;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/bg-3depth-banner-line.png) repeat;
+}
+.gnb-3depth-banner ul li{
+	float:left;
+	width:155px;
+	height:68px;
+	padding:0 1px 1px 0;
+	text-align:center;
+}
+.gnb-3depth-banner ul li img {
+	vertical-align:middle
+}
+
+/** 지역 LNB **/
+.lnb_local .inner {
+	position:relative;
+	min-height:352px;
+	border-width:0 1px 1px;
+	border-style:solid;
+	border-color:#ddd;
+	background-color:#fff;
+	*zoom:1;
+}
+.lnb_local .inner:before,
+.lnb_local .inner:after {
+	display:table;
+	content:'';
+}
+.lnb_local .inner:after {
+	clear:both;
+}
+.lnb_local h3 {
+	position:absolute;
+	width:313px;
+	border-width:1px 0;
+	border-style:solid;
+	border-color:#ddd;
+}
+.lnb_local h3 a {
+	display:block;
+	height:21px;
+	padding:13px 0 15px 0;
+	border-width:0 1px;
+	border-style:solid;
+	border-color:#ddd;
+	background-color:#f9f9f9;
+	font-weight:bold;
+	color:#333;
+	font-size:14px;
+	text-align:center;
+}
+.lnb_local .seoul h3 {
+	top:0;
+	left:-1px;
+}
+.lnb_local .icn h3 {
+	top:0px;
+	left:311px;
+}
+.lnb_local .other h3 {
+	top:0px;
+	left:623px;
+}
+.lnb_local .on h3 {
+	z-index:1;
+	border-top-width:2px;
+	border-top-color:#e51b13;
+	border-bottom:0px;
+}
+.lnb_local .on h3 a {
+	padding-top:12px;
+	border-bottom-color:#fff;
+	background-color:#fff;
+	color:#ce1710;
+}
+.lnb_local .detail {
+	display:none;
+	padding:70px 0 20px;
+}
+.lnb_local .detail > ul {
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/bg-3depth-menu.png) repeat-y 0 0;
+	*zoom:1;
+}
+.lnb_local .detail > ul:before,
+.lnb_local .detail > ul:after {
+	display:table;
+	content:'';
+}
+.lnb_local .detail > ul:after {
+	clear:both;
+}
+.lnb_local .on .detail {
+	display:block;
+}
+.lnb_local .detail > ul > li {
+	float:left;
+	width:141px;
+	padding-left:15px;
+}
+.lnb_local .detail > ul > li:first-child {
+	width:140px;
+}
+.lnb_local h4 {
+	font-weight:bold;
+	color:#333;
+	line-height:25px;
+}
+.lnb_local .hotspot {
+	padding-top:3px;
+}
+.lnb_local .hotspot li {
+	line-height:26px;
+	white-space:nowrap;
+}
+.lnb_local li a{
+	display:inline-block;
+	color:#666;
+}
+.lnb_local li em {
+	display:none;
+	font-family:tahoma;
+	font-size:10px;
+	color:#999;
+	letter-spacing:0;
+}
+.lnb_local li a:hover{
+	text-decoration:underline;
+}
+.lnb_local li a:hover, .lnb_local li a:hover em {
+	color:#ce1710;
+}
+.lnb_local li.on a, .lnb_local li.on a em {
+	color:#ce1710;
+}
+.lnb_local .special {
+	font-size:11px;
+	color:#666;
+}
+.lnb_local .special li a {
+	padding:0;
+	line-height:14px;
+}
+.lnb_local .special .s1,
+.lnb_local .special .s2,
+.lnb_local .special .s3 {
+	width:70px;
+	height:19px;
+	margin-bottom:-18px;
+	text-indent:-9999px;
+	background-image:url(//image.wemakeprice.com/images/2013/common/gubsub2_special_03.png);
+	background-repeat:no-repeat;
+}
+.lnb_local .special .s1 {
+	background-position:1px -110px;
+}
+.lnb_local .special .s2 {
+	background-position:1px -130px;
+}
+.lnb_local .special .s3 {
+	background-position:1px -147px;
+}
+.lnb_local .special .more a {
+	display:block;
+	position:absolute;
+	top:6px;
+	right:0;
+	width:34px;
+	height:10px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/2013/common/gubsub2_special_03.png) no-repeat 0 -90px;
+}
+.lnb_local .special .pic img {
+	display:block;
+	width:35px;
+	height:35px;
+}
+.lnb_local .special .dt {
+	margin:-30px 0 0 0;
+	padding:0 0 0 44px;
+}
+.lnb_local .special .dt a {
+	display:block;
+	width:90px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.lnb_local .special .dd {
+	padding:1px 0 0 44px;
+	color:#999;
+	width:90px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.lnb_local .special .li {
+	margin-top:29px;
+}
+
+/* container */
+.container {
+	position:relative;
+	z-index:180;
+}
+.container .container-inner {
+	width:937px;
+	margin:0 auto;
+	*zoom:1;
+}
+.container .container-inner:before,
+.container .container-inner:after {
+	display:table;
+	content:'';
+}
+.container .container-inner:after {
+	clear:both;
+}
+
+/** container - contents **/
+.contents-wrap {
+	float:left;
+	width:937px;
+}
+
+/*** contents - 상단 배너 & 컨텐츠 영역 ***/
+.contents-wrap .content-sub {
+	margin:0 -500%;
+	padding:20px 500% 40px;
+	background-color:#f1f1f1;
+	*background-color:transparent;
+}
+.contents-wrap .content-sub .bg-gray {
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	z-index:-1;
+	background-color:#f1f1f1;
+} /* 상단 백그라운드 깔리는 부분 */
+
+/*** contents - 하단 컨텐츠 영역 ***/
+.contents-wrap .content-main {}
+.content-main .contents-wrap {
+	float:left;
+	position:relative;
+	width:760px;
+}
+
+/** container - aside **/
+.title-aside-comm {
+	display:block;
+	overflow:hidden;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/title-aside-comm-v3.png) no-repeat 0 0;
+	text-indent:-9999px;
+}
+
+/* Title 공통영역 (공통) */
+.wrap-title-area {
+	position:relative;
+	width:937px;
+	min-height:27px;
+	margin:40px 0 20px;
+	*zoom:1;
+}
+.wrap-title-area:before,
+.wrap-title-area:after {
+	display:table;
+	content:'';
+}
+.wrap-title-area:after {
+	clear:both;
+}
+.wrap-title-area .title-text,
+.wrap-title-area .title-content-comm,
+.wrap-title-area .title-img-wrap {
+	float:left;
+	margin-right:10px;
+}
+.wrap-title-area .title-text {
+	font-weight:bold;
+	font-size:20px;
+	line-height:27px;
+	color:#333;
+	letter-spacing:-1px;
+}
+.wrap-title-area .title-content-comm {
+	height:27px;
+}
+.wrap-title-area .title-promotion {
+	width:145px;
+	background-position:0 0;
+} /* 위메프 기획전 */
+.wrap-title-area .title-today-pick {
+	width:168px;
+	background-position:0 -30px;
+} /* 위메프 투데이픽 */
+.wrap-title-area .title-realtime-best {
+	width:223px;
+	background-position:0 -60px;
+} /* 위메프 실시간 베스트 */
+.wrap-title-area .title-recent-region {
+	width:334px;
+	background-position:0 -90px;
+} /* 위메프 최근 본 지역 베스트 상품 */
+.wrap-title-area .title-recom-tour {
+	width:233px;
+	background-position:0 -120px;
+} /* 위메프 추천 여행/레저 */
+.wrap-title-area .title-recom-culture {
+	width:235px;
+	background-position:0 -150px;
+} /* 위메프 추천 컬처/키즈 */
+.wrap-title-area .title-recom-product {
+	width:175px;
+	background-position:0 -180px;
+} /* 위메프 추천상품 */
+.wrap-title-area .title-recom-product-plus {
+	width:184px;
+	background-position:0 -420px;
+} /* 플러스 추천상품 */
+.wrap-title-area .title-realtime-best-product {
+	width:275px;
+	background-position:0 -210px;
+} /* 위메프 실시간 베스트 상품 */
+.wrap-title-area .title-realtime-best-product-plus {
+	width:283px;
+	background-position:0 -450px;
+} /* 플러스 실시간 베스트 상품 */
+.wrap-title-area .title-connect-product {
+	width:302px;
+	background-position:0 -240px;
+} /* OOO 이 보시는 상품과 연관된 상품 */
+.wrap-title-area .title-like-product {
+	width:269px;
+	background-position:0 -270px;
+} /* 고객님이 좋아할 추천상품 */
+.wrap-title-area .title-soldout-soon {
+	width:406px;
+	background-position:0 -300px;
+} /* 매진임박! 마지막 기회를 놓치지마세요! */
+.wrap-title-area .title-best-product {
+	width:296px;
+	background-position:0 -330px;
+} /* 위메프 베스트 상품 */
+.wrap-title-area .title-foryou-region {
+	width:233px;
+	background-position:0 -360px;
+} /* OOO 을 위한 지역 추천 상품 */
+.wrap-title-area .title-recom-region {
+	width:151px;
+	background-position:0 -390px;
+} /* 지역 추천 상품 */
+.wrap-title-area .title-adult-confirm {
+	width:146px;
+	background-position:0 -420px;
+} /* 성인본인인증 */
+.wrap-title-area .title-adult-login {
+	width:69px;
+	background-position:0 -450px;
+} /* 로그인 */
+.wrap-title-area .help_area {
+	float:left;
+	position:relative;
+}
+.wrap-title-area .help_area .btn_help {
+	width:15px;
+	height:15px;
+	margin-top:4px;
+	cursor:pointer;
+}
+.wrap-title-area .help_area .layer_help {
+	display:none;
+	position:absolute;
+	bottom:-9px;
+	left:100%;
+	z-index:1;
+	margin-left:7px;
+	padding:9px 9px 7px;
+	border:1px solid #bebebe;
+	background-color:#fff;
+	font-size:11px;
+	color:#666;
+	line-height:14px;
+	white-space:nowrap;
+}
+.wrap-title-area .help_area:hover .layer_help,
+.wrap-title-area .active .layer_help {
+	display:block;
+}
+.wrap-title-area .help_area .layer_help .ico_arr {
+	position:absolute;
+	bottom:12px;
+	left:-5px;
+	width:5px;
+	height:7px;
+	background-position:0 0;
+}
+.wrap-title-area .btn-more {
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	right:0;
+	width:80px;
+	height:30px;
+	background:url(//image.wemakeprice.com/images/2013/common/btn_comm_v9.png) no-repeat -67px -136px;
+	text-indent:-9999px;
+}
+.wrap-title-area .name {
+	float:left;
+	padding-right:5px;
+	color:#333;
+	font-size:28px;
+	text-decoration:underline;
+	line-height:27px;
+	letter-spacing:-1px;
+}
+.wrap-title-area .change {
+	margin-left:5px;
+	float:left;
+	font-size:0;
+	line-height:0;
+	text-indent:-9999px;
+	width:104px;
+	height:30px;
+	background:url(//image.wemakeprice.com/images/2013/common/btn_comm_v9.png) no-repeat scroll -150px -135px transparent;
+}
+
+/* 현재페이지 경로 (공통) */
+.breadcrumb-comm {
+	margin:37px 0 12px;
+	*zoom:1;
+}
+.breadcrumb-comm:before,
+.breadcrumb-comm:after {
+	display:table;
+	content:'';
+}
+.breadcrumb-comm:after {
+	clear:both;
+}
+.breadcrumb-comm .list-crumb {
+	float:left;
+	margin-right:10px;
+}
+.breadcrumb-comm .list-crumb li {
+	float:left;
+	margin-left:9px;
+	padding-left:18px;background:url(//image.wemakeprice.com/images/resources/wmp/module/ico-module-location.png) no-repeat 0 3px;
+	line-height:24px;
+}
+.breadcrumb-comm .list-crumb li:first-child {
+	margin-left:0;
+	padding-left:0;
+	background:none;
+}
+.breadcrumb-comm .list-crumb a,
+.breadcrumb-comm .list-crumb a:hover {
+	color:#333;
+}
+.breadcrumb-comm .list-crumb a {
+	font-weight:bold;
+	font-size:20px;
+	letter-spacing:-1px;
+}
+
+/* 디자인 셀렉트박스 (공통) */
+.select-list-group {
+	position:relative;
+	background-color:#fff;
+	text-align:left;
+}
+.select-list-group.active {
+	z-index:1;
+}
+.select-list-group .action-select {
+	display:block;
+	height:20px;
+	padding:3px 25px 0 7px;
+	border:1px solid #ddd;
+	font-size:11px;
+	color:#666;
+	line-height:20px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.select-list-group.active .action-select,
+.select-list-group .action-select:hover,
+.select-list-group .action-select:focus {
+	border-color:#aaa;
+}
+.select-list-group .action-select .ico-arr {
+	position:absolute;
+	top:10px;
+	right:8px;
+	width:7px;
+	height:4px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/module/ico-module-select.png) no-repeat 0 0px;
+}
+.select-list-group.active .action-select .ico-arr {
+	background-position:0 -5px;
+}
+.select-list-group .wrap-list-select {
+	overflow:hidden;
+	position:absolute;
+	top:24px;
+	right:0;
+	left:0;
+	height:0;
+	border-width:0 1px 1px;
+	border-style:solid;
+	border-color:#aaa;
+	background-color:#fff;
+	opacity:0;filter:alpha(opacity=0);
+}
+.select-list-group.active .wrap-list-select {
+	height:auto;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+.select-list-group .wrap-list-inner {
+	overflow-y:auto;
+	border-top:1px solid #ddd;
+}
+.select-list-group .list-select {
+	padding:6px 0;
+}
+.select-list-group .list-select .link-menu {
+	display:block;
+	padding-top:3px;
+	font-size:11px;
+	color:#666;
+	line-height:17px;
+	white-space:nowrap;
+}
+.select-list-group .list-select .link-menu:hover,
+.select-list-group .list-select .link-menu:focus {
+	background-color:#f7f7f7;
+}
+.select-list-group .list-select .selected .link-menu {
+	background-color:transparent;
+	font-weight:bold;
+	color:#ce1710;
+}
+.select-list-group .list-select .link-menu .txt {
+	padding:0 7px;
+}
+.select-list-group .list-select .link-menu .label {
+	display:inline-block;
+	margin-left:-5px;
+	padding:3px 3px 1px;
+	background-color:#f7120a;
+	font-size:11px;
+	line-height:11px;
+	color:#fff;
+}
+
+/* 딜리스트 카테고리 탭(수만은 type중 하나 - 최초 빨리가요에서 노출) */
+.list-cate-tab {
+	overflow:hidden;
+	background-color:#f9f9f9;
+	*zoom:1;
+}
+.list-cate-tab:before,
+.list-cate-tab:after {
+	display:table;
+	content:'';
+}
+.list-cate-tab:after {
+	clear:both;
+}
+.list-cate-tab li {
+	float:left;
+	margin-right:-1px;
+	border-width:1px 0;
+	border-style:solid;
+	border-color:#ddd;
+}
+.list-cate-tab a {
+	display:block;
+	padding:14px 0 12px;
+	border-width:0 1px;
+	border-style:solid;
+	border-color:#eee;
+	font-weight:bold;
+	font-size:14px;
+	color:#333;
+	text-align:center;
+}
+.list-cate-tab a:hover {
+	background-color:#fcfcfc;
+}
+.list-cate-tab li:first-child a {
+	border-left-color:#ddd;
+}
+.list-cate-tab .last a {
+	border-right-color:#ddd;
+}
+.list-cate-tab .selected {
+	position:relative;
+	margin-bottom:-1px;
+	border-top-width:2px;
+	border-top-color:#e51b13;
+	border-bottom:0;
+}
+.list-cate-tab .selected a {
+	padding-top:13px;
+	padding-bottom:13px;
+	border-color:#ddd;
+	background-color:#fff;
+	color:#ce1710;
+}
+
+.list-cate-type-5 li {
+	width:188px;
+}
+.list-cate-type-5 .last {
+	width:189px;
+}
+
+/**
+ * aside 를 가지고 있을때 실행
+ * Window 가로 사이즈 1232px 이하일때
+ */
+html.has-sidebar {
+	min-width:1217px;
+}
+@media all and (
+	max-width:1235px) {
+	html.has-sidebar {
+		margin-left:-140px;
+	}
+}
+@media all and (max-width:1235px) and (min-width:1095px) {
+	.has-sidebar .aside .fixed-aside {
+		left:50% !important;
+		margin-left:428px !important;
+	}
+}
+@media all and (max-width:1094px) {
+	.has-sidebar .aside .fixed-aside {
+		left:969px;
+	}
+}
+
+
+/* old에서 가져온것 */
+.btn_comm {
+	display:block;
+	overflow:hidden;
+	background-image:url(//image.wemakeprice.com/images/2013/common/btn_comm_v10.png);
+	background-repeat:no-repeat;
+	font-size:0;
+	line-height:0;
+	text-indent:-9999px;
+}
+
+/* prev_next_btn */
+.page_count {
+	overflow:hidden;
+	float:left
+}
+.page_count:after {
+	content:"";
+	clear:both;
+	display:block
+}
+.page_count .count {
+	float:left;
+	padding-right:3px;
+	font:bold 11px/15px Tahoma;
+	color:#666;
+}
+.page_count .count .num {
+	color:#ce1710
+}
+.page_count .count em {
+	font-weight:bold;
+}
+.page_count .btn_page {
+	overflow:hidden;
+	float:left;
+	width:30px;
+	height:15px;
+	background:url(//image.wemakeprice.com/images/2013/common/btn_comm_v9.png) no-repeat 1px 0
+}
+.page_count .btn_page a {
+	overflow:hidden;
+	float:left;
+	width:15px;
+	height:15px;
+	font-size:0;
+	line-height:0;
+	text-indent:-9999px
+}

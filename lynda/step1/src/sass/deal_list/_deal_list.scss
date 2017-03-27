@@ -1,0 +1,522 @@
+@charset "utf-8";
+
+/* 딜리스트 타입별 사이즈 */
+.list_combine span.type01 {height:390px;}
+.list_combine span.type02 {height:385px;}
+.list_combine span.type03 {height:410px;}
+.list_combine span.type04 {height:335px;}
+
+/* 최근 본상품과 함께 가장 많이 구매한 상품 */
+.product_box {overflow:hidden;width:935px;margin:10px 0 0 0;border-color:#ddd #ddd #CACACA;border-style:solid;border-width:1px;}
+.product_box .last_product {float:left;width:179px;border-right:1px solid #ddd;height:310px;}
+.product_box .last_product h4 {height:21px;width:100%;float:left;margin-top:25px;margin-bottom:14px;}
+.product_box .last_product h4.tit_comm {background-position:13px -714px;height:21px;width:123px;}
+.product_box .last_product ul {float:left;width:179px;padding-bottom:10px;}
+.product_box .last_product li {float:left;width:179px;position:relative;}
+.product_box ul li:hover .box_line {border:2px solid #e51b13;width:68px;height:68px;left:12px;position:absolute;top:0;}
+.product_box .last_product li a {float:left;padding:0 12px 10px;}
+.product_box .last_product .box_thumb {float:left;width:70px;height:70px;margin-right:8px;}
+.product_box .last_product .box_thumb img {width:70px;height:70px;}
+.product_box .last_product .box_desc {float:left;margin-top:15px;width:77px;}
+.product_box .last_product .box_desc .tit_desc {color:#333;font-size:11px;letter-spacing:-1px;line-height:14px;display:block;height:27px;overflow:hidden;}
+.product_box .last_product .box_desc .txt_info {font-family:Tahoma;font-weight:bold;color:#333;float:left;width:100%;}
+
+.product_box .best_buy {float:left;width:754px;position:relative;}
+.product_box .best_buy h4 {height:21px;width:100%;float:left;margin-top:25px;margin-bottom:19px;}
+.product_box .best_buy h4.tit_comm {background-position:40px -752px;height:21px;width:500px;}
+.product_box .best_buy .mbox {float:left;width:100%;}
+.product_box .best_buy .mbox ul {float:left;padding:0 7px 0;position:absolute;top:60px;left:12px;}
+.product_box .best_buy .mbox ul li {float:left;width:140px;margin:0 20px 0 19px;position:relative;}
+.product_box .best_buy .mbox ul li:hover .box_line {border:2px solid #e51b13;width:138px;height:138px;left:0;position:absolute;top:0;}
+.product_box .best_buy .mbox ul .box_thumb,.member_best ul.box_thumb img {height:140px;width:140px;}
+.product_box .best_buy .mbox ul .box_desc {display:block;height:55px;padding:10px 0 0;}
+.product_box .best_buy .mbox ul .box_desc .tit_desc {display:block;color:#333;font-size:12px;font-weight:bold;height:40px;line-height:150%;letter-spacing:-1px;}
+.product_box .best_buy .mbox ul .box_desc .txt_info {display:block;overflow:hidden;}
+.product_box .best_buy .mbox ul .box_desc .discount {margin:0;color:#ce1710;float:left;font-family:Tahoma;font-size:32px;height:35px;line-height:35px;overflow:hidden;padding-top:1px;width:52px;}
+.product_box .best_buy .mbox ul .box_desc .discount_100 {font-size:20px;}
+.product_box .best_buy .mbox ul .box_desc .discount .percent {font-size:14px;padding-left:2px;}
+.product_box .best_buy .mbox ul .box_desc .ico_special {background-position:0 -479px;}
+.product_box .best_buy .mbox ul .box_desc .prime {color:#999;display:block;font-family:Tahoma;font-size:12px;height:14px;line-height:14px;overflow:hidden;text-decoration:line-through;}
+.product_box .best_buy .mbox ul .box_desc .sale {color:#333;display:block;font-family:Tahoma;font-size:14px;font-weight:bold;height:21px;line-height:21px;overflow:hidden;}
+.product_box .best_buy .mbox ul .box_desc .sale .won {font-family:'돋움',dotum,sans-serif;font-size:12px;}
+.product_box .best_buy .mbox ul span.option_l {border:0 none;display:block;height:17px;overflow:hidden;padding:0 0 10px;width:100%;}
+.product_box .best_buy .mbox ul span.option_l span {color:#FFFFFF;float:left;font-size:11px;height:14px;letter-spacing:-1px;line-height:14px;overflow:hidden;padding:2px 4px 0;width:auto;}
+.product_box .best_buy .mbox ul .box_sticker {position:absolute;right:9px;top:-4px;z-index:1;}
+.product_box .best_buy .mbox ul .box_sticker .ico_comm {display:block;float:left;font-size:0;height:48px;line-height:0;margin-right:-4px;overflow:hidden;text-indent:-9999px;width:50px;}
+.product_box .best_buy .page_count .count {position:absolute;top:35px;right:40px;}
+.product_box .best_buy .page_count a {float:left;font-size:0;height:79px;line-height:0;overflow:hidden;text-indent:-9999px;width:28px;position:absolute;}
+.product_box .best_buy .page_count a.btn_prev_female {left:0;top:100px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -793px 0;}
+.product_box .best_buy .page_count a.btn_next_female {right:-1px;top:100px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -823px 0;}
+
+/* 5단목록에서 위치 조절 */
+.product_box .best_buy .ico_limited .ico_comm {background-position:0 -109px;}
+.product_box .best_buy .ico_comm .ico_special {background-position:0 -479px;}
+.product_box .best_buy .ico_comm .ico_contract {background-position:0 -549px;}
+.product_box .best_buy .ico_comm .ico_chancedeal {background-position:0 -729px;}
+
+
+/* 추천쇼핑몰 */
+#rcmd_shop_lst {overflow:hidden;width:758px;padding:10px 0;margin-top:30px;background:none;border:1px solid #ddd;}
+#rcmd_shop_lst h3 {overflow:hidden;width:67px;height:15px;margin:15px 0 10px 50px;background:url('//image.wemakeprice.com/images/front/common/img_nearby_120806.gif') 0 -100px no-repeat;}
+#rcmd_shop_lst .list_shoppingmall {overflow:hidden;position:relative;padding:10px 0 0 51px;}
+#rcmd_shop_lst .sli_pho {overflow:hidden;height:195px;}
+#rcmd_shop_lst li {position:relative;float:left;width:143px;margin:0 26px 20px 0;background-color:#fff;overflow:hidden;}
+#rcmd_shop_lst li p {overflow:hidden;padding-top:6px;line-height:18px;}
+#rcmd_shop_lst li span {font-size:11px;color:#999;overflow:hidden;height:12px;display:block;margin-top:2px;display:none;}
+#rcmd_shop_lst li img {float:left;border:1px solid #ddd;margin-right:10px;}
+#rcmd_shop_lst .rcmd_nav {overflow:hidden;position:absolute;width:18px;height:29px;background:url('//image.wemakeprice.com/images/front/common/img_nearby_120806.gif') no-repeat;border:0 none;text-indent:-1000em;overflow:hidden;outline:none;}
+#rcmd_shop_lst #sp_prev {top:84px;left:20px;background-position:0 -50px;}
+#rcmd_shop_lst #sp_prev.on {background-position:-38px -50px;}
+#rcmd_shop_lst #sp_next {top:84px;right:20px;background-position:-19px -50px;}
+#rcmd_shop_lst #sp_next.on {background-position:-57px -50px;}
+
+/* 딜리스트_공통 */
+.contents.sec_deallist {overflow:hidden;position:relative;width:937px;}
+.group_list {zoom:1;}
+.group_list:after {clear:both;display:block;content:'';}
+.group_list ul {width:948px;margin-left:-11px;float:left;clear:both;}
+.group_list li a:hover {text-decoration:none;}
+.group_list ul.tab_redline {width:937px;margin:20px 0 15px;}
+.group_list ul.sorter li {text-indent:-9999px;float:left;height:22px;width:88px;background:url('//image.wemakeprice.com/images/front/main/sp_deallist_v2.png') -200px 0 no-repeat;cursor:pointer;font:0/0;text-indent:-9999px;}
+.group_list ul.sorter li.popular {background-position:-200px 0;}
+.group_list ul.sorter li.latest {background-position:-288px 0;}
+.group_list ul.sorter li.over {background-position:-377px 0;}
+.group_list ul.sorter li.popular.on {background-position:-200px -30px;}
+.group_list ul.sorter li.over.on {background-position:-377px -30px;}
+.group_list ul.sorter li.open {background-position:-288px 0;}
+.group_list ul.sorter li.open.on {background-position:-288px -30px;}
+.group_list ul.sorter li.help {width:17px;background-position:-467px 0;overflow:visible;position:relative;}
+.group_list ul.sorter li .lyr_help {display:none;position:absolute;top:25px;right:-12px;width:360px;height:28px;background:url('//image.wemakeprice.com/images/front/main/sp_deallist.png') 0 -60px no-repeat;}
+.group_list dd.txt_more {white-space:nowrap;text-overflow:ellipsis;overflow:hidden;padding:2px 0 4px;clear:both;font-size:12px;line-height:17px;color:#757575;}
+.group_list dd.price {font-size:18px;line-height:22px;color:#ce1710;font-weight:bold;}
+.group_list dd.price strong {font-family:Tahoma, Geneva, sans-serif;line-height:22px;}
+.group_list dd.price .cost {color:#999;font-size:12px;font-weight:normal;text-decoration:line-through;font-family:Tahoma, Geneva, sans-serif;margin-left:6px;}
+.group_list dd.price .percent {font-size:16px;}
+.group_list dd.price .percent strong {font-family:Tahoma, Geneva, sans-serif;font-size:18px;}
+.group_list dd.price em {width:29px;height:12px;display:inline-block;background:url('//image.wemakeprice.com/images/main/sp_percent.png') no-repeat 0 0;text-indent:100%;white-space:nowrap;overflow:hidden;vertical-align:middle;}
+.group_list dd.qtt {position:absolute;right:4px;bottom:4px;color:#444;letter-spacing:-1px;line-height:14px;}
+.group_list dd.qtt strong {font-size:14px;float:left;}
+.group_list .thmb {*display:inline;}
+.group_list .thmb img {z-index:-1;}
+.group_list .thmb_sticker {width:100%;margin:0;padding:0;}
+.group_list .thmb_sticker li {width:61px;float:right;background:url('//image.wemakeprice.com/images/front/main/st_deallist_v3.png') no-repeat;border:none;padding:0;margin:-5px 0 0 0;box-shadow:none;z-index:4;}
+.group_list .thmb_sticker li.premium {background-position:-300px 0;width:79px;height:69px !important;position:absolute;left:10px;top:0;z-index:5;}
+.group_list .thmb_sticker li.deadline {z-index:3;height:61px !important;background-position:-100px 0;margin-right:2px;}
+.group_list .thmb_sticker li.today_use {height:61px !important;background-position:-100px -100px;margin:-5px 2px 0 -7px;}
+.group_list .thmb_sticker li.today_over {height:61px !important;background-position:-200px 0;margin:-5px 2px 0 -7px;}
+.group_list .thmb_sticker li.today_open {height:61px !important;background-position:-200px -100px;margin:-5px 2px 0 -7px;}
+	/* 썸네일2종짜리는아래스타일 */
+	.group_list .lst_area .thmb_sticker li.deadline,
+	.group_list .lst_trip .thmb_sticker li.deadline {margin-right:-1px;margin-left:-4px;}
+	.group_list .lst_area .thmb_sticker li.today_use,
+	.group_list .lst_trip .thmb_sticker li.today_use {margin-right:-1px;margin-left:-4px;}
+	.group_list .lst_area .thmb_sticker li.today_over,
+	.group_list .lst_trip .thmb_sticker li.today_over {margin-right:-1px;margin-left:-4px;}
+	.group_list .lst_area .thmb_sticker li.today_open,
+	.group_list .lst_trip .thmb_sticker li.today_open {margin-right:-1px;margin-left:-4px;}
+.group_list .thmb_sticker li.first {width:70px;height:35px !important;background-position:0 0;float:left;margin:10px 0 0 10px;}
+.group_list .thmb_sticker li.second {width:70px;height:35px !important;background-position:0 -50px;float:left;margin:10px 0 0 10px;}
+.group_list .thmb_sticker li.third {width:70px;height:35px !important;background-position:0 -100px;float:left;margin:10px 0 0 10px;}
+.group_list .thmb_sticker li.soldout {width:285px;height:285px !important;background:url('//image.wemakeprice.com/images/front/main/img_soldout.png') no-repeat;position:absolute;top:15px;left:11px;z-index:1;}
+.group_list .dsc {white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+
+
+/* 딜리스트위에스프라이트 */
+.group_list .stripe_divider {background:url('//image.wemakeprice.com/images/front/main/pt_stripe.gif') top repeat-x;border-top:1px solid #e9e9e9;}
+/* 딜리스트위에스프라이트이미지없을때 */
+.group_list .no_stripe {height:17px;padding-top:0;}
+.group_list .no_stripe ul.tab_sort {top:-40px;}
+
+.partner_event_list li {position:relative;}
+.partner_event_list .click_point {position:absolute;border:2px solid #e74747;width:300px;height:250px;margin:2px;}
+.partner_event_list .click_point p {margin:0;bottom:0;position:absolute;width:100%;}
+.lst_wmptv .click_point {border:2px solid #e74747;margin:-1px;z-index:auto;}
+.lst_wmptv .click_point p {top:0;position:absolute;width:100%;margin:0;z-index:1;}
+
+
+/* 딜하단 기준가격정보 */
+.tbl_price_info {background-color:#fff;padding:40px 20px 0;}
+.tbl_price_info table {border-top:2px solid #e94b4a;border-bottom:1px solid #b9b9b9;width:100%;}
+.tbl_price_info th {width:98px;text-align:center;background-color:#f7f7f7;color:#666;font-weight:bold;}
+.tbl_price_info td {padding:12px 15px;}
+
+/* 추천상품리스트 */
+.section_recom {overflow:hidden;width:937px;padding-bottom:40px;}
+.section_recom .list_recom {overflow:hidden;width:939px;background:url('//image.wemakeprice.com/images/front/common/bg_recommand_goods_list.gif') repeat 0 -2px;}
+.section_recom li {float:left;position:relative;width:449px;height:374px;padding:15px 0 0 13px;}
+.section_recom li a {display:block;width:100%;}
+.section_recom .goods_thumb img {width:449px;height:248px;}
+.section_recom .goods_dec {display:block;overflow:hidden;width:418px;height:89px;padding:20px 14px 0 17px;border-bottom:1px solid #4b423d;background-color:#fff;}
+.section_recom .goods_tit {display:block;overflow:hidden;width:100%;font-size:16px;font-weight:bold;color:#333;line-height:20px;letter-spacing:-1px;white-space:nowrap;text-overflow:ellipsis;}
+.section_recom .goods_txt {display:block;overflow:hidden;padding:4px 0 0 2px;font-size:12px;color:#757575;line-height:16px;white-space:nowrap;text-overflow:ellipsis;}
+.section_recom .goods_num {display:block;overflow:hidden;width:100%;padding:8px 0 18px;}
+.section_recom .goods_price {float:left;padding-left:3px;font:bold 18px/22px tahoma;color:#ce1710;}
+.section_recom .goods_price .won {font:bold 16px/22px dotum;}
+.section_recom .goods_price .cost {font:bold 12px/16px tahoma;color:#999;text-decoration:line-through;}
+.section_recom .goods_price .cost .won {font:normal 12px/16px dotum,'돋움';}
+.section_recom .goods_price .percent {display:none;}
+.section_recom .img_soldout {position:absolute;top:15px;left:13px;width:449px;height:374px;background:url('//image.wemakeprice.com/images/2013/common/img_soldout_449_374.png') 0 0 no-repeat;}
+	/* 서울,경기,지역은 퍼센트가 붙음 */
+	.location .section_recom .goods_price .cost {display:none;}
+	.location .section_recom .goods_price .percent {display:inline-block;font-weight:normal;font-size:16px;}
+	.location .section_recom .goods_price .percent .emph {font:bold 18px Tahoma;}
+	.location .section_recom .goods_price .percent .ico {display:inline-block;overflow:hidden;width:29px;height:12px;background:url('//image.wemakeprice.com/images/main/sp_percent.png') no-repeat 0 0;}
+.section_recom .goods_count {float:right;padding:2px 4px 0 0;font:normal 11px/16px dotum,'돋움';color:#757575;}
+.section_recom .goods_count .emph {font:bold 14px/18px tahoma;color:#333;}
+.section_recom li a:hover {background:#e51b13;}
+.section_recom li a:hover .goods_dec {background:#e51b13;border-bottom:1px solid #e51b13;}
+.section_recom li a:hover .goods_tit,
+.section_recom li a:hover .goods_name,
+.section_recom li a:hover .goods_loc,
+.section_recom li a:hover .goods_txt,
+.section_recom li a:hover .goods_price,
+.section_recom li a:hover .goods_price .cost,
+.section_recom li a:hover .goods_count,
+.section_recom li a:hover .goods_count .emph {color:#fff;}
+.section_recom li a:hover .goods_price .percent .ico {background-position:0 -20px;}
+.section_recom li a:hover .select_line {position:absolute;top:13px;left:13px;width:445px;height:246px;border:2px solid #e51b13;}
+	/* 상단배너영역및추천상품리스트GNB부분과의간격 */
+	.location {margin-bottom:60px;padding:0 0 10px;background:url('//image.wemakeprice.com/images/front/main/bg_side_line.gif') repeat-x 0 100%;}
+	.dep2_top {padding:29px 0 10px;background:url('//image.wemakeprice.com/images/front/main/bg_side_line.gif') repeat-x 0 100%;}
+	.dep3_top {padding:20px 0 10px;background:url('//image.wemakeprice.com/images/front/main/bg_side_line.gif') repeat-x 0 100%;}
+	/* 매진임박_오늘마감스티커 */
+	.list_recom .ico_sticker {overflow:hidden;position:absolute;right:-3px;top:10px;z-index:1;float:right;padding-right:11px;}
+	.list_recom .ico_sticker .ico_comm {float:left;width:62px;height:61px;margin-right:-6px;background-image:url('//image.wemakeprice.com/images/front/main/st_deallist_v3.png');background-repeat:no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
+	.list_recom .ico_soldout {background-position:-100px 0;} /* 매진임박 */
+	.list_recom .ico_close {background-position:-200px 0;} /* 오늘마감 */
+	.list_recom .ico_today {background-position:-100px -100px;} /* 오늘사용가능 */
+	.list_recom .ico_open {background-position:-200px -100px;} /* 오늘오픈 */
+	.list_recom .ico_premium {display:block;overflow:hidden;position:absolute;left:12px;top:10px;z-index:1;width:80px;height:70px;background:url('//image.wemakeprice.com/images/front/main/st_deallist_v3.png') no-repeat -299px 0;font-size:0;line-height:0;text-indent:-9999px;} /* 프리미엄 */
+
+
+.ico_delivery_condition, .ico_delivery_condition2 {overflow:hidden;float:left;width:auto;height:18px;padding:0 4px;background-color:#aaa;font-size:11px;line-height:18px;letter-spacing:-1px;color:#fff;}
+.ico_delivery_free {overflow:hidden;float:left;width:auto;height:16px;padding:2px 4px 0;background-color:#aaa;font-size:11px;line-height:16px;letter-spacing:-1px;color:#fff;}
+
+
+
+/* 딜리스트_판매중인기상품 */
+.section_sale {position:relative;width:937px;margin-bottom:60px;border-bottom:3px solid #f7f7f7;clear:both;}
+.section_sale .wrap_tit {overflow:hidden;width:100%;}
+.section_sale .wrap_tit .tit_fst {float:left;width:152px;height:28px;background-position:4px -500px;}
+.section_sale .wrap_tit .tit {float:left;margin:3px 5px 0 0;font-weight:bold;font-size:20px;color:#ce1710;letter-spacing:-1px;}
+.section_sale .wrap_tit .tit_goods {float:left;width:41px;height:20px;margin-top:8px;background-position:0 -550px;}
+.section_sale .wrap_tit .tit_region {float:left;width:55px;height:20px;margin-top:8px;background-position:0 -600px;}
+.section_sale .wrap_tit .num {display:none;float:left;margin-top:12px;font:bold 12px tahoma;color:#999;}
+.section_sale .btn_more {overflow:hidden;position:absolute;right:0;top:6px;width:70px;height:25px;background-position:-100px -100px;}
+.section_sale .sale_more {padding-top:25px;clear:both;}
+.section_sale .sale_more .btn_comm {width:894px;height:47px;background-image:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png');background-repeat:no-repeat;}
+.section_sale .sale_more .btn_open {background-position:0 -300px;}
+.section_sale .sale_more .btn_close {background-position:0 -350px;}
+.section_sale .sale_inner {clear:both;overflow:hidden;width:915px;padding:15px 0 20px 20px;margin-top:19px;border:1px solid #d4d4d4;border-bottom:1px solid #acacac;background-color:#f9f9f9;}
+.section_sale .sale_inner .list_combine {margin:0;}
+.section_sale .ico_best1 {background-position:0 0;} /* 베스트1 */
+.section_sale .ico_best2 {background-position:0 -50px;} /* 베스트2 */
+.section_sale .ico_best3 {background-position:0 -100px;} /* 베스트3 */
+.section_sale .ico_best4 {background-position:0 -150px;} /* 베스트4 */
+.section_sale .ico_best5 {background-position:0 -200px;} /* 베스트5 */
+.section_sale .ico_best6 {background-position:0 -250px;} /* 베스트6 */
+.section_sale .ico_best7 {background-position:0 -300px;} /* 베스트7 */
+.section_sale .ico_best8 {background-position:0 -350px;} /* 베스트8 */
+.section_sale .ico_best9 {background-position:0 -400px;} /* 베스트9 */
+.section_sale .ico_soldout_alert {background-position:-100px -100px;} /* 매진임박 */
+.section_sale .ico_today_close {background-position:-100px -200px;} /* 오늘마감 */
+.section_sale .ico_today_deal {background-position:-100px -300px;} /* 오늘사용가능 */
+.section_sale .ico_today_open {background-position:-100px -400px;} /* 오늘오픈 */
+.section_sale .ico_special {background-position:0 -470px;text-indent:-9999px;}
+.section_sale .ico_contract {background-position:0 -540px;text-indent:-9999px;}
+.section_sale .ico_chancedeal {background-position:0 -720px;text-indent:-9999px;}
+.section_sale .ico_delivery_condition {overflow:hidden;float:left;width:auto;height:18px;padding:0 4px;background-color:#2783c2;font-size:11px;line-height:18px;letter-spacing:-1px;color:#fff;}
+.section_sale .ico_delivery_free {overflow:hidden;float:left;width:auto;height:16px;padding:2px 4px 0;background-color:#ec4e07;font-size:11px;line-height:16px;letter-spacing:-1px;color:#fff;}
+.section_sale .ico_limited .ico_comm {background:url('//image.wemakeprice.com/images/2013/view/ico_limited_01.png') no-repeat 0 10px;text-indent:-9999px;}
+.section_sale .ico_limited .price .prime {visibility:hidden;}
+
+.section_sale .content .list_combine {overflow:hidden;margin:0 0 24px 0;}
+.section_sale .list_combine li {float:left;position:relative;z-index:0;}
+.section_sale .list_combine .link {display:block;}
+.section_sale .list_combine .box_best {position:absolute;z-index:1;}
+.section_sale .list_combine .box_sticker {position:absolute;z-index:35;}
+.section_sale .list_combine .box_sticker .ico_comm {display:block;float:left;overflow:hidden;width:50px;height:48px;margin-right:-4px;font-size:0;line-height:0;text-indent:-9999px;}
+.section_sale .list_combine .box_desc {display:block;}
+.section_sale .list_combine .box_desc .tit_desc {display:block;overflow:hidden;width:100%;white-space:nowrap;text-overflow:ellipsis;}
+.section_sale .list_combine .box_desc .txt_desc {display:block;overflow:hidden;width:100%;height:20px;font-size:12px;line-height:20px;color:#999;white-space:nowrap;text-overflow:ellipsis;}
+.section_sale .list_combine .txt_num {position:absolute;font-size:12px;line-height:20px;color:#333;}
+.section_sale .list_combine .txt_num .point {font-size:14px;font-family:Tahoma;color:#ce1710;}
+.section_sale .list_combine .box_desc .txt_info {display:block;overflow:hidden;}
+.section_sale .list_combine .box_desc .discount {overflow:hidden;float:left;width:68px;height:52px;padding-top:1px;font-size:40px;line-height:52px;color:#ce1710;font-family:Tahoma;}
+.section_sale .list_combine .box_desc .discount_100 {font-size:28px;}
+.section_sale .list_combine .box_desc .discount .percent {font-size:18px;padding-left:2px;}
+.section_sale .list_combine .box_desc .price {float:left;}
+.section_sale .list_combine .box_desc .prime {display:block;overflow:hidden;height:16px;font-size:14px;line-height:16px;font-family:Tahoma;color:#999;text-decoration:line-through;}
+.section_sale .list_combine .box_desc .prime .won {font-size:12px;font-family:'돋움',dotum,sans-serif;}
+.section_sale .list_combine .box_desc .sale {display:block;overflow:hidden;height:21px;font-weight:bold;font-size:18px;line-height:21px;font-family:Tahoma;color:#333;}
+.section_sale .list_combine .box_desc .sale .won {display:inline-block;margin-top:0;min-height:15px;font-size:14px;font-family:Arial;vertical-align:middle;*zoom:1;*margin-top:4px;}
+.section_sale .list_combine .box_desc .sale .etc {margin-left:2px;min-height:15px;font-weight:bold;}
+/* chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.section_sale .list_combine .box_desc .sale .won {margin-top:-2px;}
+	.section_sale .list_combine .box_desc .sale .etc {display:inline-block;line-height:1;vertical-align:middle;}
+}
+.section_sale .list_combine .box_delivery {position:absolute;}
+
+.section_sale .list_row_type4 {width:948px;}
+.section_sale .list_row_type4 li {width:216px;height:374px;margin:0 10px 2px 0;padding:5px 0 0;border-bottom:3px solid #f4f4f4;}
+.section_sale .list_row_type4 .img_percent {top:130px;left:125px;}
+.section_sale .list_row_type4 .link {padding:7px;border-width:1px;border-style:solid;border-color:#d5d4d0 #d5d4d0 #c0bfbc #d5d4d0;background-color:#fff;}
+.section_sale .list_row_type4 a.link:hover, .section_sale .list_row_type4 .select .link {border-color:#e51b13;}
+.section_sale .list_row_type4 .box_sticker {top:1px;right:7px;}
+.section_sale .list_row_type4 .box_thumb img {display:block;width:214px;height:214px;position:absolute;top:6px;left:1px;}
+.section_sale .list_row_type4 .box_desc {display:block;width:190px;height:85px;padding:31px 0 0 0;position:absolute;top:225px;left:16px;}
+.section_sale .list_row_type4 .box_desc .tit_desc {height:24px;padding-top:0px;font-weight:bold;font-size:14px;color:#333;line-height:24px;}
+.section_sale .list_row_type4 .box_desc .discount {margin:0;}
+.section_sale .list_row_type4 .box_desc .price {float:left;padding:6px 0 0 0;}
+.section_sale .list_row_type4 .box_desc .sale .won {font-size:13px;margin-top:1px;*margin-top:5px;}
+.section_sale .list_row_type4 .box_desc .sale .etc {display:inline-block;line-height:1;vertical-align:middle;*zoom:1;}
+.section_sale .list_row_type4 .txt_num {top:0;right:0;}
+.section_sale .list_row_type4 .box_delivery {top:195px;left:8px;}
+.section_sale .list_row_type4 .box_card {position:absolute;top:192px;background-color:#393939;opacity:0.8;overflow:hidden;width:200px;}
+.section_sale .list_row_type4 span.type04 {height:358px;}
+.section_sale .list_row_type4 .card_option span.option_l span {margin-top:8px;}
+
+
+/* 타입별 고객님이 좋아할 추천상품 */
+.cnt_deal .type01 .mbox {height:240px;padding-top:8px;}
+.cnt_deal .type01 .mbox ul li {float:left;width:135px;position:relative;}
+.cnt_deal .type01 .mbox ul li:hover .box_line {border:2px solid #E73535;width:118px;height:118px;left:0;position:absolute;top:0;}
+.cnt_deal .type01 .mbox ul .box_thumb, .cnt_deal .type01 .mbox ul .box_thumb img {width:120px;height:120px;}
+.cnt_deal .type01 .mbox ul .box_desc {display:block;height:65px;padding:10px 0 0;}
+.cnt_deal .type01 .mbox .page_count a.btn_prev_female {left:1px;top:132px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -793px 0;border-left:1px solid #9396a1;}
+.cnt_deal .type01 .mbox .page_count a.btn_next_female {right:1px;top:132px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -823px 0;border-right:1px solid #9396a1;}
+
+.cnt_deal .type02 .mbox {height:184px;padding-top:8px;}
+.cnt_deal .type02 .mbox ul li {float:left;width:135px;position:relative;}
+.cnt_deal .type02 .mbox ul li:hover .box_line {border:2px solid #E73535;width:118px;height:64px;left:0;position:absolute;top:0;}
+.cnt_deal .type02 .mbox ul .box_thumb {width:120px;height:66px;overflow:hidden;display:block;}
+.cnt_deal .type02 .mbox ul .box_thumb img {width:120px;height:120px;}
+.cnt_deal .type02 .mbox ul .box_desc {display:block;height:65px;padding:10px 0 0;}
+.cnt_deal .type02 .mbox .page_count a.btn_prev_female {left:1px;top:100px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -793px 0;border-left:1px solid #9396a1;}
+.cnt_deal .type02 .mbox .page_count a.btn_next_female {right:1px;top:100px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -823px 0;border-right:1px solid #9396a1;}
+
+.cnt_deal .type03 .mbox {height:272px;padding-top:8px;}
+.cnt_deal .type03 .mbox ul li {float:left;width:170px;position:relative;}
+.cnt_deal .type03 .mbox ul li:hover .box_line {border:2px solid #E73535;width:148px;height:148px;left:0;position:absolute;top:0;}
+.cnt_deal .type03 .mbox ul .box_thumb, .cnt_deal .type03 .mbox ul .box_thumb img {width:150px;height:150px;}
+.cnt_deal .type03 .mbox ul .box_desc {display:block;height:65px;padding:10px 0 0;}
+.cnt_deal .type03 .mbox ul .box_sticker {position:absolute;right:27px;top:-4px;z-index:1;}
+.cnt_deal .type03 .mbox .page_count a.btn_prev_female {left:1px;top:142px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -793px 0;border-left:1px solid #9396a1;}
+.cnt_deal .type03 .mbox .page_count a.btn_next_female {right:1px;top:142px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -823px 0;border-right:1px solid #9396a1;}
+
+.cnt_deal .type04 .mbox {height:200px;padding-top:8px;}
+.cnt_deal .type04 .mbox ul li {float:left;width:170px;position:relative;}
+.cnt_deal .type04 .mbox ul li:hover .box_line {border:2px solid #E73535;width:148px;height:83px;left:0;position:absolute;top:0;}
+.cnt_deal .type04 .mbox ul .box_thumb {width:150px;height:85px;overflow:hidden;display:block;}
+.cnt_deal .type04 .mbox ul .box_thumb img {width:150px;height:150px;}
+.cnt_deal .type04 .mbox ul .box_desc {display:block;height:65px;padding:10px 0 0;}
+.cnt_deal .type04 .mbox ul .box_sticker {position:absolute;right:27px;top:-4px;z-index:1;}
+.cnt_deal .type04 .mbox .page_count a.btn_prev_female {left:1px;top:122px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -793px 0;border-left:1px solid #9396a1;}
+.cnt_deal .type04 .mbox .page_count a.btn_next_female {right:1px;top:122px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -823px 0;border-right:1px solid #9396a1;}
+
+.cnt_deal .type05 .mbox {height:220px;padding-top:8px;}
+.cnt_deal .type05 .mbox ul li {float:left;width:226px;position:relative;}
+.cnt_deal .type05 .mbox ul li:hover .box_line {border:2px solid #E73535;width:208px;height:114px;left:0;position:absolute;top:0;}
+.cnt_deal .type05 .mbox ul .box_thumb {width:210px;height:116px;overflow:hidden;display:block;}
+.cnt_deal .type05 .mbox ul .box_thumb img {width:210px;height:210px;}
+.cnt_deal .type05 .mbox ul .box_desc {display:block;height:65px;padding:10px 0 0;}
+.cnt_deal .type05 .mbox ul .box_sticker {position:absolute;right:27px;top:-4px;z-index:1;}
+.cnt_deal .type05 .mbox .page_count a.btn_prev_female {left:1px;top:133px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -793px 0;border-left:1px solid #9396a1;}
+.cnt_deal .type05 .mbox .page_count a.btn_next_female {right:1px;top:133px;background:url('//image.wemakeprice.com/images/2013/common/btn_comm_v9.png') no-repeat -823px 0;border-right:1px solid #9396a1;}
+.cnt_deal .type05 .mbox ul .box_desc .tit_desc {display:block;margin:0 0 6px 0;width:210px;height:16px;color:#333;font-size:11px;font-weight:normal;line-height:150%;overflow:hidden;}
+
+.cnt_deal .type01 .mbox ul .box_desc .discount ,
+.cnt_deal .type02 .mbox ul .box_desc .discount,
+.cnt_deal .type03 .mbox ul .box_desc .discount,
+.cnt_deal .type04 .mbox ul .box_desc .discount,
+.cnt_deal .type05 .mbox ul .box_desc .discount {margin:0;color:#E73535;float:left;font-family:Tahoma;font-size:12px;overflow:hidden;padding-top:1px;width:53px;font-weight:bold;padding-left:2px;line-height:14px;height:14px;padding-top:0;}
+
+.cnt_deal .type01 .mbox .page_count .count,
+.cnt_deal .type02 .mbox .page_count .count,
+.cnt_deal .type03 .mbox .page_count .count,
+.cnt_deal .type04 .mbox .page_count .count,
+.cnt_deal .type05 .mbox .page_count .count {position:absolute;right:60px;top:65px;}
+
+.cnt_deal .type01 .mbox ul .box_desc .tit_desc,
+.cnt_deal .type02 .mbox ul .box_desc .tit_desc,
+.cnt_deal .type03 .mbox ul .box_desc .tit_desc,
+.cnt_deal .type04 .mbox ul .box_desc .tit_desc {display:block;margin:0 0 6px 0;width:120px;height:32px;color:#333;font-size:11px;font-weight:normal;line-height:150%;overflow:hidden;}
+
+.cnt_deal .type01 .mbox ul .box_desc .discount em,
+.cnt_deal .type02 .mbox ul .box_desc .discount em,
+.cnt_deal .type03 .mbox ul .box_desc .discount em,
+.cnt_deal .type04 .mbox ul .box_desc .discount em,
+.cnt_deal .type05 .mbox ul .box_desc .discount em {display:inline-block;vertical-align:middle;text-indent:-9999px;background:url('//image.wemakeprice.com/images/2013/common/icon_dcont.png') no-repeat;width:9px;height:10px;font-size:0;}
+
+.cnt_deal .type01 .mbox ul .box_desc .price,
+.cnt_deal .type02 .mbox ul .box_desc .price,
+.cnt_deal .type03 .mbox ul .box_desc .price,
+.cnt_deal .type04 .mbox ul .box_desc .price,
+.cnt_deal .type05 .mbox ul .box_desc .price {float:left;}
+
+.cnt_deal .type01 .mbox ul .box_desc .prime,
+.cnt_deal .type02 .mbox ul .box_desc .prime,
+.cnt_deal .type03 .mbox ul .box_desc .prime,
+.cnt_deal .type04 .mbox ul .box_desc .prime,
+.cnt_deal .type05 .mbox ul .box_desc .prime {color:#999;display:block;font-family:Tahoma;font-size:11px;height:14px;line-height:14px;overflow:hidden;text-decoration:line-through;}
+
+.cnt_deal .type01 .mbox ul .box_desc .sale,
+.cnt_deal .type02 .mbox ul .box_desc .sale,
+.cnt_deal .type03 .mbox ul .box_desc .sale,
+.cnt_deal .type04 .mbox ul .box_desc .sale,
+.cnt_deal .type05 .mbox ul .box_desc .sale {float:left;color:#333;display:block;font-family:Tahoma;font-size:12px;font-weight:bold;height:14px;line-height:14px;overflow:hidden;}
+
+.cnt_deal .type01 .more ,
+.cnt_deal .type02 .more ,
+.cnt_deal .type03 .more ,
+.cnt_deal .type04 .more ,
+.cnt_deal .type05 .more {position:absolute;right:8px;top:26px;width:45px;height:15px;background:url('//image.wemakeprice.com/images/2013/common/btn_more_v7.png') no-repeat;text-indent:-9999px;}
+
+.cnt_deal .type01 h4,
+.cnt_deal .type02 h4,
+.cnt_deal .type03 h4,
+.cnt_deal .type04 h4,
+.cnt_deal .type05 h4 {font-size:20px;color:#333;width:100%;float:left;height:18px;margin-bottom:12px;}
+
+.cnt_deal .type01 h4 span.tit_comm,
+.cnt_deal .type02 h4 span.tit_comm,
+.cnt_deal .type03 h4 span.tit_comm,
+.cnt_deal .type04 h4 span.tit_comm,
+.cnt_deal .type05 h4 span.tit_comm {background-position:0 -865px;height:25px;width:220px;text-indent:-9999px;}
+
+
+.section_travel .list_row_type6 .card_option span.option_r {border-left:1px solid #eee;color:#666666;float:right;font-size:11px;letter-spacing:-1px;line-height:31px;width:203px;}
+.section_travel .list_row_type6 .card_option span.option_r a {margin-left:4px;}
+.section_travel .list_row_type6 .card_option span.option_r a img {margin-left:13px;margin-right:13px;position:absolute;right:7px;top:8px;}
+.section_travel .list_row_type6 .card_option span.option_l {display:inline-block;float:left;margin-left:20px;}
+.section_travel .list_row_type6 .ico_delivery_card {background:url('//image.wemakeprice.com/images/2013/common/icon_card.png') no-repeat scroll 17px 5px transparent;color:#FFFFFF;float:left;font-size:12px;height:19px;line-height:19px;overflow:hidden;padding:2px 4px 0 37px;width:auto;}
+
+.section_travel .list_row_type6 .card_option {bottom:20px;}
+.section_travel .list_row_type6 span.link:hover .card_option .option_r,
+.section_travel .list_row_type6 span.link:hover .card_option .option_r a,
+.section_travel .list_row_type6 span.link:hover .card_option {color:#666;}
+.section_travel .list_row_type6 span.link:hover .card_option {border-top:1px solid #eee;float:left;left:0;overflow:hidden;position:absolute;width:100%;}
+.section_travel .list_row_type6 span.link:hover .card_option .option_r {border-left:1px solid #eee;}
+
+/* 기획전 바로가기 컷팅속성 추가 */
+.list_combine span.link .card_option .cut {width:105px;}
+.list_combine span.link .card_option .option_r .tit_cut {display:block;width:100%;margin-right:1px;position:relative;height:30px;float:right;color:#666;}
+.list_combine span.link .card_option .option_r .tit_cut .tit {width:80px;position:absolute;left:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;}
+.list_combine span.link .card_option .price-compare .tit_cut .tit {position:static;width:auto;padding-top:8px;border-bottom:1px solid #aaa;}
+.card_option span.option_r .tit_cut img {margin-left:0;margin-right:0;position:absolute;top:8px;right:12px;}
+
+.list_row_type2 span.link .card_option .cut {width:200px;}
+.list_row_type2 span.link .card_option .option_r .tit_cut .tit {width:155px;position:absolute;left:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;}
+
+.list_row_type5 span.link .card_option .cut {width:200px;}
+.list_row_type5 span.link .card_option .option_r .tit_cut .tit {width:155px;position:absolute;left:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;}
+
+.list_row_type6 span.link .card_option .cut {width:200px;}
+.list_row_type6 span.link .card_option .option_r .tit_cut .tit {width:155px;position:absolute;left:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;}
+
+.list_sellout span.goods .card_option .cut {width:110px;}
+.list_sellout span.goods .card_option .option_r .tit_cut .tit {width:75px;position:absolute;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;}
+
+
+/* 상품상세 4단 딜리스트 오버 */
+.section_sale span.type04 .card_option {bottom:2px;width:212px;left:4px;margin:0 -2px;padding:0 -1px;}
+.section_sale li:hover span.type04, .section_sale .list_row_type4 li.select .type04, .section_sale .list_row_type4 li.select:hover .type04 {margin:-1px 0 0 -1px;border:2px solid #ef2011;padding:7px 8px 6px 7px;background-color:#fff;width:199px;}
+
+.section_sale span.type04 .box_desc .tit_desc:hover {text-decoration:underline;}
+.section_sale span.type04:hover .card_option .option_r .tit_cut .tit {color:#666666;}
+.section_sale span.type04 .goods_tit:hover {text-decoration:underline;}
+.section_sale span.type04 .tit:hover {color:#666;text-decoration:underline;}
+.section_sale li.select span.type04, .section_sale .list_row_type4 li.select:hover span.type04 {background-color:#e73535 !important;}
+.section_sale li.select span, .section_sale li.select strong {color:#fff !important;}
+.section_sale li.select .card_option {width:216px;left:2px;bottom:0px;border-top:1px #e96161 solid;}
+.section_sale li.select .card_option .option_r {border-left:1px #e96161 solid;}
+
+
+/* 좋아할 추천상품 딜리스트 오버 */
+.deals4u .mbox .box_desc .tit_desc:hover {text-decoration:underline;}
+
+/* 딱지 스티커 자동화 */
+.box_discsticker {position:absolute;right:1px;text-align:right;overflow:hidden;z-index:10;}
+.list_row_type6 .box_discsticker {top:180px;} /* 449248 */
+.list_row_type5 .box_discsticker {top:180px;} /* 449248 */
+.list_row_type2 .box_discsticker {top:191px;} /* 449248 event */
+.list_row_type3 .box_discsticker {top:240px;} /* 285285 */
+.list_row_type4 .box_discsticker {top:179px;} /* 206206 */
+.section_sale .list_row_type4 .box_discsticker {top:169px;}
+.list_sellout .box_discsticker {top:164px;} /* 200200 */
+.product_recommend .box_discsticker, .mbox .box_discsticker {top:112px;right:0;} /* 150150 */
+.deals4u .box_discsticker, .deals4u .mbox .box_discsticker {width:103px;height:53px;top:67px;right:15px;} /* 120120 */
+.nearby_deal_grp_1 .box_discsticker {width:133px;height:74px;bottom:0px;right:0px;} /* 투어 210116 */
+.box_discsticker img {float:right;width:64px;margin-right:5px;}
+.list_row_type4 .box_discsticker img {width:46px;}
+.list_sellout .box_discsticker img {width:46px;}
+.product_recommend .box_discsticker img, .mbox .box_discsticker img {width:36px;margin-right:2px;}
+
+/* 쇼핑메인개인화 */
+.shopping_main1 .product_miscellaneous {margin:0 0 60px 0;}
+.shopping_main1 .content .list_combine {margin:0 0 15px 0;}
+.shopping_main1 .project_bnr {padding:0 0 60px 0;}
+.shopping_main1 .section_shopping {padding:0 0 30px 0;}
+
+
+.wmp_bestproduct {width:937px;overflow:hidden;}
+.wmp_bestproduct h4 {padding:0 0 10px 0;}
+.wmp_bestproduct h4 span.tit_shopping {display:block;background-position:0 -105px;height:18px;width:141px;text-indent:-9999px;}
+/* //쇼핑메인개인화 */
+
+/*판매가격 기존정보 텍스트 */
+.standardinfo {display:block;overflow:hidden;height:13px;width:100%;font-size:11px;line-height:13px;color:#999;white-space:nowrap;letter-spacing:-1px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+
+.md_cost_wrap .ico_percent {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 4px 4px;color:#fff;float:left;font-family:Tahoma;font-weight:bold;background-color:#e51b13;font-size:11px;line-height:1em;overflow:hidden;padding:1px 4px 2px 13px;margin:4px 5px 0 0;}
+.md_cost_wrap .ico_cont {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 0 -25px;float:left;width:49px;height:14px;margin:4px 5px 0 0;text-indent:-9999px;}
+.md_cost_wrap .ico_chance {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 0 -60px;float:left;width:55px;height:14px;margin:4px 5px 0 0;text-indent:-9999px;}
+.md_cost_wrap .ico_only {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 0 -95px;float:left;width:56px;height:14px;margin:4px 5px 0 0;text-indent:-9999px;}
+.md_cost_wrap .ico_wprice {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 0 -130px;float:left;width:39px;height:14px;margin:4px 5px 0 0;text-indent:-9999px;}
+.md_cost_wrap .ico_limited {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 0 -165px;float:left;width:70px;height:14px;margin:4px 5px 0 0;text-indent:-9999px;}
+.md_cost_wrap .ico_foreignspecial {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 0 -200px;float:left;width:66px;height:14px;margin:4px 5px 0 0;text-indent:-9999px;}
+.md_cost_wrap .ico_travelspecial {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 0 -235px;float:left;width:56px;height:14px;margin:4px 5px 0 0;text-indent:-9999px;}
+.md_cost_wrap .ico_funding {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 0 -270px;float:left;width:41px;height:14px;margin:4px 5px 0 0;text-indent:-9999px;}
+.md_cost_wrap .ico_spec {background:url('//image.wemakeprice.com/images/resources/wmp/pages/deal_list/ico_deallist_sinfo.png') no-repeat 0 -305px;float:left;width:55px;height:14px;margin:4px 5px 0 0;text-indent:-9999px;}
+
+
+.txt_info_v2 {display:block;overflow:hidden;padding-top:13px;}
+.txt_info_v2 .ico_comm {text-indent:-9999px;margin-top:3px;background-image:url('//image.wemakeprice.com/images/2013/common/ico_deallist_binfo_v2.png');background-repeat:no-repeat;}
+.txt_info_v2 .ico_limited {background-position:0 0;}/*limited edition*/
+.txt_info_v2 .ico_contract {background-position:0 -40px;}/*약정 할인가*/
+.txt_info_v2 .ico_chancedeal {background-position:0 -80px;}/*위메프 찬스딜*/
+.txt_info_v2 .ico_only {background-position:0 -120px;}/*위메프 단독가*/
+.txt_info_v2 .ico_wprice {background-position:0 -160px;}/*위메프가*/
+.txt_info_v2 .ico_foreignspecial {background-position:0 -200px;}/*해외상품 특별가*/
+.txt_info_v2 .ico_travelspecial {background-position:0 -240px;}/*여행사 특별가*/
+.txt_info_v2 .ico_funding {background-position:0 -280px;}/*펀딩금액*/
+.txt_info_v2 .ico_special {background-position:0 -320px;}/*위메프특별가*/
+
+.hide,.blind {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px;}
+.tbl {border-collapse:collapse;border-spacing:0;}
+.ico_comm {background-image:url('//image.wemakeprice.com/images/2013/common/ico_comm_v13.png');background-repeat:no-repeat;}
+.btn_comm {display:block;overflow:hidden;background-image:url('//image.wemakeprice.com/images/2013/common/btn_comm_v10.png');background-repeat:no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
+.tit_comm {display:block;overflow:hidden;background-image:url('//image.wemakeprice.com/images/2013/common/tit_comm_v12.png?20141022_1');background-repeat:no-repeat;font-size:0;line-height:0;text-indent:-9999px;}
+.mbgx {background:url('//image.wemakeprice.com/images/front/common/comm_bg_x.png') repeat-x;}
+.ir_main {background:url('//image.wemakeprice.com/images/front/main/ir_main_deal_v5.png') no-repeat;text-indent:-1000em;overflow:hidden;}
+.ir_buy {background:url('//image.wemakeprice.com/images/front/main/ir_buy_bg_v1.png') no-repeat;text-indent:-1000em;overflow:hidden;}
+.ir_number {background:url('//image.wemakeprice.com/images/front/main/ir_buy_num_v1.png') no-repeat;overflow:hidden;}
+.btn_wmp_comm {display:block;overflow:hidden;background:url('//image.wemakeprice.com/images/2014/common/btn_wmp_comm.png') no-repeat;text-indent:-9999px;}
+.list_dot_comm li, .ico_dot_comm {padding-left:6px;color:#999;background:url('//image.wemakeprice.com/images/2013/common/ico_dot_comm.gif') no-repeat 0 5px;}
+.btn_main {display:block;overflow:hidden;background:url('//image.wemakeprice.com/images/2014/main/btn_main.png') no-repeat;}
+.ico_main {background:url('//image.wemakeprice.com/images/2014/main/ico_main.png') no-repeat;}
+.deal_cnt_box {border-top:1px solid #c8c7c7;border-bottom:1px solid #c7c7c7;padding:15px 0;}
+.main_cd_tab {position:relative;height:34px;background-position:0 -340px;margin:10px 0 20px;}
+.main_cd_tab a, .main_cd_tab strong {position:absolute;top:0;display:block;width:119px;height:34px;}
+.main_cd_tab a.on .main_cd_tab strong.on {z-index:2;}
+.main_cd_tab .r {position:absolute;top:-2px;right:0;}
+#cd_tab_loc_board {left:118px;background-position:-255px top;}
+#cd_tab_loc_board.on {background-position:-255px -40px;}
+.main_cd_tab a#tab_qna {left:0;background-position:-130px -80px;}
+.main_cd_tab a#tab_qna.on {background-position:-130px -120px;z-index:2;}
+.main_cd_tab a#tab_evt {left:118px;background-position:-380px top;}
+.main_cd_tab a#tab_evt.on {background-position:-380px -40px;z-index:2;}
+.main_cd_tab a#tab_trade {left:236px;background-position:-380px -80px;}
+.main_cd_tab a#tab_trade.on {background-position:-380px -120px;z-index:2;}
+.no_evt_tab a#tab_trade {left:118px;}
+.no_evt_tab a#tab_evt {display:none;}

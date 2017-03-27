@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* 마이페이지 > 일대일문의 관련 팝업 : 111103 송희 */
+#pop_wrap.mypage {border:3px solid #ccc;position:relative;text-align:center;font-size:13px;color:#333;font-family:"돋움";font-weight:bold;width:400px;}
+.mypage .tit_bar {background:none;border:none;}
+#pop_wrap.mypage p {line-height:20px;}
+#pop_wrap.mypage .btn_close {float: right;height: 20px;width: 20px;background: url('//image.wemakeprice.com/images/popup/tit_popup.png') right top no-repeat;display:block;height: 20px;text-indent: -1000em;position:absolute;top:10px;right:10px;}
+.f20 {font-size:20px;margin-bottom:0;}
+#pop_wrap.mypage .btn_ok {width:83px;height:26px;background:url('//image.wemakeprice.com/images/mypage/btn_qna.gif') -240px 0 no-repeat;text-indent:-1000em}
+
+/*20140204 마이페이지 계좌번호 말풍선*/
+.ballon_msgbank {letter-spacing:-1px;margin-left:5px;position: relative;border:1px solid #f8b6a6;background:#fff9f2;font-size:11px;padding:4px 5px 4px 5px}
+.ballon_msgbank .arrow {display:block;width:5px;height:7px;position:absolute;left:-5px;top:50%;margin-top:-4px;background:url('//image.wemakeprice.com/images/2013/order/arrow_bank.gif') no-repeat;}
+.ballon_msgbank strong {color:#ee3737;font-weight:normal}

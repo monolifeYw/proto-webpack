@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+// header 링크 영역
+.header__member_toolbar {
+	float:right;
+	height:18px;
+	padding-top:7px
+}
+.header__member_toolbar li {
+	float:left;
+	height:18px;
+	background:url(//www.wemakeprice.com/images/join/ico_1_12_Cdedede.gif) no-repeat 0 3px
+}
+.header__member_toolbar .link_main {
+	width:66px;
+	background:none
+}
+.header__member_toolbar .link_cc {
+	width:63px;
+	text-align:center
+}
+.header__member_toolbar .link_notice {
+	width:56px;
+	text-align:right
+}
+.header__member_toolbar li a {
+	font-size:11px;
+	line-height:18px;
+	color:#757575
+}

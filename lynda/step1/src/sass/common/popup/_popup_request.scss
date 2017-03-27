@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* 교환 반품신청 팝업 */
+.pop_request {width:867px !important;padding:30px !important;}
+.pop_request input[type=checkbox], .pop_request input[type=radio] {width:13px;height:13px;border:0;}
+.pop_request input[type=text], .pop_request textarea {border-width:1px;border-style:solid;border-color:#bebebe #d7d7d7 #d7d7d7 #bebebe;background-color:#fff;}
+.pop_request input[type=text] {height:14px;padding:3px 9px 2px;color:#666;line-height:14px;}
+.pop_request select {height:21px;}
+.pop_request .img_pop_request, .pop_request .btn_pop_request, .pop_request .txt_pop_request {display:block;overflow:hidden;text-indent:-9999px;}
+.pop_request .img_pop_request {background:url('//image.wemakeprice.com/images/2013/popup/img_pop_request.png') no-repeat;}
+.pop_request .btn_pop_request {background:url('//image.wemakeprice.com/images/2013/popup/btn_pop_request.png') no-repeat;}
+.pop_request .ico_pop_request {background:url('//image.wemakeprice.com/images/2013/popup/ico_pop_request.png') no-repeat;}
+.pop_request .txt_pop_request {background:url('//image.wemakeprice.com/images/2013/popup/txt_pop_request.png') no-repeat;}
+.pop_request .wrap_tit {position:relative;margin:59px 0 15px;}
+.pop_request .wrap_tit.no_mg {margin-top:0;}
+.pop_request .wrap_tit .tit_txt {display:inline;font-weight:bold;font-size:16px;color:#333;letter-spacing:-1px;}
+.pop_request .wrap_tit .tit_20 {font-size:20px;line-height:22px;}
+.pop_request .wrap_tit .btn_close {top:0;margin:0;}
+.pop_request .wrap_tit_sub {margin:25px 0 5px;position:relative;}
+.pop_request .request_sequence {padding-top:30px;border-top:1px solid #666;}
+.pop_request .request_sequence .img_pop_request{width:790px;height:120px;margin:0 auto;}
+.pop_request .request_sequence .img_exchange {background-position:0 0;}
+.pop_request .request_sequence .img_return {background-position:0 -130px;}
+.pop_request .wrap_request_tbl {border-top:2px solid #ef2011;*border-bottom:1px solid #aaa;}
+.pop_request .wrap_tbl_horizontal {border-bottom:1px solid #aaa;}
+.pop_request .tbl_pop_request {width:100%;line-height:18px;}
+.pop_request .tbl_pop_request th {height:35px;border-left:1px solid #eaeaea;background:url('//image.wemakeprice.com/images/2013/popup/bg_request_th.gif') repeat-x;color:#333;text-align:center;}
+.pop_request .tbl_pop_request thead .col_date {border-left:0 none;}
+.pop_request .tbl_pop_request thead .col_product {border-left:0 none;text-indent:-24px;}
+.pop_request .tbl_pop_request tbody {border-bottom:1px solid #aaa;}
+.pop_request .tbl_pop_request tbody td {padding:20px 0;border-top:1px solid #eaeaea;color:#666;text-align:center;}
+.pop_request .tbl_pop_request tbody .col_date {width:85px;border-left:0 none;}
+.pop_request .tbl_pop_request tbody .col_check {border-left:1px solid #eaeaea;}
+.pop_request .tbl_pop_request tbody .col_product {width:303px;text-align:left;}
+.pop_request .tbl_pop_request tbody .col_possible {width:85px;}
+.pop_request .tbl_pop_request tbody .col_delivery {width:105px;}
+.pop_request .tbl_pop_request tbody .col_quantity {width:55px;}
+.pop_request .tbl_pop_request tbody .col_quantity select {width:49px;}
+.pop_request .tbl_pop_request tbody .col_amount {width:101px;padding-right:14px;text-align:right;}
+.pop_request .tbl_pop_request tbody .col_request {width:75px;border-left:1px solid #eaeaea;}
+.pop_request .tbl_pop_request .fst td {border-top:1px solid #aaa;}
+.pop_request .tbl_pop_request .fst .col_check, .pop_request .tbl_pop_request .fst .col_product, .pop_request .tbl_pop_request .fst .col_possible, .pop_request .tbl_pop_request .fst .col_delivery, .pop_request .tbl_pop_request .fst .col_quantity, .pop_request .tbl_pop_request .fst .col_amount {background-color:#f9f9f9;}
+.pop_request .tbl_pop_request .wrap_thumb {float:left;margin-right:10px;}
+.pop_request .tbl_pop_request .product_cont {overflow:hidden;}
+.pop_request .tbl_pop_request .product_cont .txt_bar {color:#eaeaea;}
+.pop_request .tbl_pop_request .fst .product_cont .txt_tit {padding:3px 0 2px;font-weight:bold;}
+.pop_request .tbl_pop_request tfoot{border-bottom:1px solid #aaa}
+.pop_request .tbl_pop_request .total_price {padding:24px 19px 25px;border-top:1px solid #aaa;background-color:#f9f9f9;color:#333;text-align:right;}
+.pop_request .tbl_pop_request .total_point{padding:0 19px 25px;background-color:#f9f9f9;color:#333;text-align:right;}
+.pop_request .tbl_pop_request .total_price .fw_b {font-weight:bold;}
+.pop_request .tbl_pop_request .total_price .txt_total {float:right;font-weight:bold;font-size:14px;}
+.pop_request .tbl_pop_request .total_price .txt_total strong {color:#ef2011;}
+.pop_request .tbl_pop_request .total_price .txt_num {position:relative;top:2px;font-family:tahoma;font-size:22px;line-height:22px;}
+.pop_request .tbl_pop_request .total_price .add_notice {float:right;position:relative;margin:4px 9px 0 0;padding:2px 4px 0;border:1px solid #ffc4c0;font-size:11px;background-color:#fff4f2;color:#ef2011;line-height:16px;}
+.pop_request .tbl_pop_request .total_price .add_notice .ico_pop_arr {position:absolute;top:6px;right:-5px;width:5px;height:7px;background-position:-60px 0;}
+.pop_request .select_all {margin-top:45px;padding-bottom:7px;zoom:1;}
+.pop_request .select_all:after {display:block;clear:both;content:"";}
+.pop_request .select_all label {float:left;margin-right:9px;padding-top:2px;color:#333;line-height:19px;}
+.pop_request .select_all .btn_flexible {float:left;}
+.pop_request .select_all .txt_notice {float:right;padding:2px 0 0 6px;font-size:11px;background:url('//image.wemakeprice.com/images/2013/popup/ico_dot2.gif') no-repeat 0 10px;color:#999;line-height:19px;}
+.pop_request .tbl_horizontal {width:100%;}
+.pop_request .tbl_horizontal th, .pop_request .tbl_horizontal td {padding-top:10px;padding-bottom:10px;border-top:1px solid #eaeaea;}
+.pop_request .tbl_horizontal th {width:109px;padding-left:19px;padding-right:19px;border-right:1px solid #eaeaea;background-color:#fafafa;color:#333;}
+.pop_request .tbl_horizontal td {padding-left:15px;padding-right:15px;color:#666;}
+.pop_request .tbl_horizontal .fst th, .pop_request .tbl_horizontal .fst td {border-top:0 none;}
+.pop_request .tbl_horizontal .fw_b {font-weight:bold;}
+.pop_request .tbl_horizontal .lb_radio {display:inline-block;margin-right:24px;line-height:15px;}
+.pop_request .tbl_horizontal .lb_radio input {float:left;margin-right:4px;}
+.pop_request .tbl_horizontal .select_reason {width:230px;margin-right:6px;}
+.pop_request .tbl_horizontal .dl_reason {padding-top:8px;zoom:1;}
+.pop_request .tbl_horizontal .dl_reason:after {display:block;clear:both;content:"";}
+.pop_request .tbl_horizontal .dl_reason.fst_dl {padding-top:0;}
+.pop_request .tbl_horizontal .dl_reason dt {float:left;width:101px;font-weight:bold;line-height:21px;}
+.pop_request .tbl_horizontal .dl_reason dd {*overflow:hidden;}
+.pop_request .tbl_horizontal .dl_reason label {display:inline-block;margin-right:19px;line-height:21px;}
+.pop_request .tbl_horizontal .dl_reason input[type=radio] {float:left;margin:3px 4px 0 0;}
+.pop_request .tbl_horizontal .tf_reason {width:568px;}
+.pop_request .tbl_horizontal .txt_delivery {float:left;margin-right:7px;padding-top:2px;font-weight:bold;color:#ef2011;line-height:18px;}
+.pop_request .tbl_horizontal .add_notice {float:left;margin-top:3px;font-size:11px;color:#ef2011;line-height:15px;}
+.pop_request .tbl_horizontal .add_notice .ico_pop_arr {float:left;width:14px;height:15px;margin-right:4px;background-position:0 -200px;}
+.pop_request .tbl_horizontal .tf_product_info {width:682px;height:42px;padding:3px 0 3px 5px;color:#666;}
+.pop_request .tbl_horizontal .txt_file {float:left;margin-right:4px;padding-top:2px;color:#666;line-height:19px;}
+.pop_request .tbl_horizontal .btn_file_del {float:left;width:15px;height:15px;margin:3px 10px 0 0;background-position:0 0;}
+.pop_request .tbl_horizontal .btn_file {float:left;}
+.pop_request .tbl_horizontal .tf_name {width:130px;}
+.pop_request .tbl_horizontal .select_num {width:70px;margin-right:6px;vertical-align:middle;}
+.pop_request .tbl_horizontal .tf_num {width:50px;}
+.pop_request .tbl_horizontal .btn_post {vertical-align:top;}
+.pop_request .tbl_horizontal .detail_address {padding-top:5px;}
+.pop_request .tbl_horizontal .tf_address1 {width:200px;margin-right:1px;}
+.pop_request .tbl_horizontal .tf_address2 {width:444px;}
+.pop_request .tbl_horizontal .tf_full {width:669px;}
+.pop_request .tbl_horizontal .select_bank {width:145px;margin-right:1px;}
+.pop_request .tbl_horizontal .tf_depositor {width:125px;margin-right:1px;}
+.pop_request .tbl_horizontal .tf_account {width:180px;margin-right:1px;}
+.pop_request .tbl_horizontal .btn_attest {vertical-align:top;}
+.pop_request .wrap_box_shadow {margin-top:30px;}
+.pop_request .wrap_box_shadow .box_inner {padding:27px 30px 24px;}
+.pop_request .wrap_box_shadow .tit_request {font-weight:bold;color:#333;}
+.pop_request .wrap_box_shadow .list_dot {margin-top:7px;}
+.pop_request .wrap_box_shadow .list_dot li {padding-left:6px;background:url('//image.wemakeprice.com/images/2013/popup/ico_dot.gif') no-repeat 0 9px;color:#666;line-height:21px;}
+.pop_request .wrap_pop_btn {margin-top:27px;text-align:center;}
+.pop_request .wrap_pop_btn .inner {display:inline-block;vertical-align:top;}
+.pop_request .wrap_pop_btn .btn_pop_request {float:left;width:90px;height:36px;}
+.pop_request .wrap_pop_btn .btn_cancel {margin-right:5px;background-position:0 -20px;}
+.pop_request .wrap_pop_btn .btn_request {background-position:0 -60px;}
+.pop_request .wrap_pop_btn .btn_confirm {background-position:0 -100px;}
+.pop_request .box_total_price {border-bottom-color:#f4f4f4;background-color:#c0bfbc;}
+.pop_request .box_total_price .box_inner {padding:0;border-color:#d5d4d0;background-color:#f9f9f9;}
+.pop_request .box_total_price .price_info {float:left;width:221px;height:56px;padding:33px 33px 0 34px;border-right:1px solid #dfdfdf;}
+.pop_request .box_total_price .dl_tit {float:left;position:relative;margin-top:5px;}
+.pop_request .box_total_price .dl_tit .txt_pop_request {width:61px;height:14px;}
+.pop_request .box_total_price .dl_tit .txt_settle {background-position:0 0;}
+.pop_request .box_total_price .dl_tit .txt_delivery {background-position:0 -20px;}
+.pop_request .box_total_price .dl_tit .txt_refund {background-position:0 -40px;}
+.pop_request .box_total_price .txt_price {overflow:hidden;font-weight:bold;color:#333;text-align:right;}
+.pop_request .box_total_price .txt_num {font-family:tahoma;font-size:22px;line-height:22px;}
+.pop_request .box_total_price .txt_won {position:relative;top:-2px;font-size:14px;}
+.pop_request .box_total_price .refund {width:220px;border-right:0 none;}
+.pop_request .box_total_price .refund .txt_price {color:#ef2011;}
+.pop_request .box_total_price .refund .add_notice {position:absolute;top:23px;left:0;padding:2px 4px 0;border:1px solid #ffc4c0;font-size:11px;background-color:#fff4f2;color:#ef2011;line-height:16px;white-space:nowrap;}
+.pop_request .box_total_price .refund .add_notice .ico_pop_arr {position:absolute;top:-5px;left:27px;width:7px;height:5px;background-position:-30px 0;}
+.pop_request .box_total_price .box_inner > .ico_pop_request {position:absolute;top:30px;width:29px;height:29px;}
+.pop_request .box_total_price .box_inner .ico_plus {left:274px;background-position:0 -100px;}
+.pop_request .box_total_price .box_inner .ico_equal {left:563px;background-position:0 -150px;}
+.pop_request_delivery {width:480px;}
+.pop_request_delivery .t_border {padding-top:20px;border-top:1px solid #666;}
+.pop_request_delivery .wrap_box_shadow {margin-top:0;}
+.pop_request_delivery .wrap_box_shadow .box_inner {padding:20px 30px;}
+.pop_request_delivery .ico_delivery {float:left;width:77px;height:57px;margin-right:19px;background-position:0 -25px;}
+.pop_request_delivery .txt_delivery {overflow:hidden;padding-top:11px;color:#333;line-height:20px;}
+.pop_request_delivery .txt_delivery .txt_price {color:#ef2011;}
+.pop_request_delivery .list_notice {margin-top:5px;}
+.pop_request_delivery .list_notice li {margin-left:2px;padding-left:6px;font-size:11px;background:url('//image.wemakeprice.com/images/2013/popup/ico_dot2.gif') no-repeat 0 7px;color:#999;line-height:18px;}
+.wrap_box_shadow {padding-bottom:1px;border-bottom:3px solid #f7f7f7;background-color:#cacaca;}
+.wrap_box_shadow .box_inner {position:relative;border:1px solid #dedede;border-bottom:0 none;background-color:#fff;zoom:1;}
+.wrap_box_shadow .box_inner:after {display:block;clear:both;content:"";}

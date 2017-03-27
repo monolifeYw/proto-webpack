@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+/* 선택 영역 */
+.list_combine .bg_layer,
+.list_sellout .bg_layer,
+.section_shopping .bg_layer,
+.product_recommend .bg_layer,
+.deals4u .bg_layer {
+	position:absolute;
+}
+
+.list_row_type2 .select .bg_layer {
+	top:12px;
+	left:7px;
+	width:449px;
+	height:248px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_clickdeal_449_248.png') no-repeat;
+}
+.list_row_type3 .select .bg_layer {
+	top:15px;
+	left:10px;
+	width:285px;
+	height:285px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_clickdeal_285_285.png') no-repeat;
+}
+.list_row_type4 .select .bg_layer {
+	top:15px;
+	left:10px;
+	width:206px;
+	height:206px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_clickdeal_206_206.png') no-repeat;
+}
+.list_row_type5 .select .bg_layer {
+	top:1px;
+	left:1px;
+	width:445px;
+	height:246px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_clickdeal_429_238.png') no-repeat;
+}
+.list_sellout .select .bg_layer {
+	top:7px;
+	left:7px;
+	width:200px;
+	height:200px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_clickdeal_200_200.png') no-repeat;
+}
+.product_recommend .select .bg_layer {
+	top:0px;
+	left:0px;
+	width:150px;
+	height:150px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_clickdeal_150_150.png') no-repeat;
+}
+.deals4u .select .bg_layer {
+	top:0px;
+	left:0px;
+	width:150px;
+	height:150px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_clickdeal_120_120.png') no-repeat;
+}
+
+/*19금 차단 딜*/
+.adult_layer{
+	position:absolute;
+	z-index:10;
+}
+.list_row_type2 .adult_layer {
+	top:6px;
+	left:1px;
+	width:461px;
+	height:254px;
+	background:url('//image.wemakeprice.com/images/2014/list/bg_adult_461.png') no-repeat;
+}
+.list_row_type3 .adult_layer {
+	top:6px;
+	left:1px;
+	width:303px;
+	height:303px;
+	background:url('//image.wemakeprice.com/images/2014/list/bg_adult_303.png') no-repeat;
+}
+.list_row_type4 .adult_layer {
+	top:6px;
+	left:1px;
+	width:224px;
+	height:224px;
+	background:url('//image.wemakeprice.com/images/2014/list/bg_adult_224.png') no-repeat;
+}
+.list_row_type5 .adult_layer {
+	top:0;
+	left:0;
+	width:449px;
+	height:248px;
+	background:url('//image.wemakeprice.com/images/2014/list/bg_adult_449_248.png') no-repeat;
+}
+.list_sellout .adult_layer {
+	position:absolute;
+	top:1px;
+	left:1px;
+	width:214px;
+	height:214px;
+	background:url('//image.wemakeprice.com/images/2014/list/bg_adult_214.png') no-repeat;
+}/*매진임박*/
+.section_shopping .adult_layer {
+	top:0px;
+	left:0px;
+	width:184px;
+	height:184px;
+	background:url('//image.wemakeprice.com/images/2014/list/bg_adult_184.png') no-repeat;
+}/*md추천 */
+.list_real .adult_layer{
+	top:0px;
+	left:0px;
+	width:70px;
+	height:70px;
+	background:url('//image.wemakeprice.com/images/2014/list/bg_adult_70.png') no-repeat;
+}/*최근본상품*/
+.list_layer .adult_layer {
+	position:absolute;
+	top:0;
+	left:10px;
+	width:45px;
+	height:45px;
+	background:url('//image.wemakeprice.com/images/2014/list/bg_adult_45.png') no-repeat;
+	z-index:15;
+}/*헤더 장바구니*/
+
+/*마감임박*/
+.sold_out .bg_layer{
+	position:absolute;
+	z-index:50;
+}
+.list_row_type2 .sold_out .bg_layer {
+	top:6px;
+	left:1px;
+	width:461px;
+	height:254px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_461.png') no-repeat;
+}
+.list_row_type3 .sold_out .bg_layer {
+	top:6px;
+	left:1px;
+	width:303px;
+	height:303px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_303.png') no-repeat;
+}
+.list_row_type4 .sold_out .bg_layer {
+	top:6px;
+	left:1px;
+	width:214px;
+	height:214px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_214.png') no-repeat;
+}
+.list_row_type5 .sold_out .bg_layer {
+	top:0;
+	left:0;
+	width:449px;
+	height:248px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_449_248.png') no-repeat;
+}
+.list_sellout .sold_out .bg_layer {
+	top:7px;
+	left:7px;
+	width:200px;
+	height:200px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_200_200.png') no-repeat;
+}
+.section_shopping .sold_out .bg_layer {
+	top:0px;
+	left:0px;
+	width:184px;
+	height:184px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_184_184.png') no-repeat;
+}
+.product_recommend .sold_out .bg_layer {
+	top:0px;
+	left:0px;
+	width:150px;
+	height:150px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_150_150.png') no-repeat;
+}
+.deals4u .sold_out .bg_layer {
+	top:0px;
+	left:0px;
+	width:150px;
+	height:150px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_120_120.png') no-repeat;
+}
+.list_real .sold_out {
+	overflow:hidden;
+	position:absolute;
+	left:0;
+	top:0;
+	width:70px;
+	height:70px;
+	background:url('//image.wemakeprice.com/images/front/common/img_soldout_70_70.png') no-repeat;
+	font-size:0;
+	line-height:0;
+	text-indent:-999em;
+	z-index:50;
+}/*최근본상품*/
+
+/*판매종료*/
+.deal_end .bg_layer{
+	z-index:50;
+}
+.list_row_type2 .deal_end .bg_layer {
+	top:6px;
+	left:1px;
+	width:461px;
+	height:254px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_461.png') no-repeat;
+}
+.list_row_type3 .deal_end .bg_layer {
+	top:6px;
+	left:1px;
+	width:303px;
+	height:303px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_303.png') no-repeat;
+}
+.list_row_type4 .deal_end .bg_layer {
+	top:6px;
+	left:1px;
+	width:214px;
+	height:214px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_214.png') no-repeat;
+}
+.list_row_type5 .deal_end .bg_layer {
+	top:0;
+	left:0;
+	width:449px;
+	height:248px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_449_248.png') no-repeat;
+}
+.list_sellout .deal_end .bg_layer {
+	top:7px;
+	left:7px;
+	width:200px;
+	height:200px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_200_200.png') no-repeat;
+}
+.section_shopping .deal_end .bg_layer {
+	top:0px;
+	left:0px;
+	width:184px;
+	height:184px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_184_184.png') no-repeat;
+}
+.product_recommend .deal_end .bg_layer {
+	top:0px;
+	left:0px;
+	width:150px;
+	height:150px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_150_150.png') no-repeat;
+}
+.deals4u .deal_end .bg_layer {
+	top:0px;
+	left:0px;
+	width:150px;
+	height:150px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_120_120.png') no-repeat;
+}
+/*오픈준비중 */
+.stand_by .bg_layer{
+	position:absolute;
+	z-index:50;
+}
+.list_row_type2 .stand_by .bg_layer {
+	top:6px;
+	left:1px;
+	width:461px;
+	height:254px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_standby_461.png') no-repeat;
+}
+.list_row_type3 .stand_by .bg_layer {
+	top:6px;
+	left:1px;
+	width:303px;
+	height:303px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_standby_303.png') no-repeat;
+}
+.list_row_type4 .stand_by .bg_layer {
+	top:6px;
+	left:1px;
+	width:214px;
+	height:214px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_standby_214.png') no-repeat;
+}
+.list_row_type5 .stand_by .bg_layer {
+	top:0;
+	left:0;
+	width:449px;
+	height:248px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_standby_449_248.png') no-repeat;
+}
+.section_ing .list_row_type4 .sold_out .bg_layer {
+	top:6px;
+	left:1px;
+	width:224px;
+	height:224px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_224.png') no-repeat;
+}
+.section_ing .list_row_type4 .deal_end .bg_layer {
+	top:6px;
+	left:1px;
+	width:224px;
+	height:224px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_224.png') no-repeat;
+}
+.section_ing .list_row_type4 .stand_by .bg_layer {
+	top:6px;
+	left:1px;
+	width:224px;
+	height:224px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_standby_224.png') no-repeat;
+}
+.recom_goods .list_row_type4 .sold_out .bg_layer {
+	top:6px;
+	left:1px;
+	width:224px;
+	height:224px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_soldout_224.png') no-repeat;
+}
+.recom_goods .list_row_type4 .deal_end .bg_layer {
+	top:6px;
+	left:1px;
+	width:224px;
+	height:224px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_deal_end_224.png') no-repeat;
+}
+.recom_goods .list_row_type4 .stand_by .bg_layer {
+	top:6px;
+	left:1px;
+	width:224px;
+	height:224px;
+	background:url('//image.wemakeprice.com/images/2013/list/bg_standby_224.png') no-repeat;
+}

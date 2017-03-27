@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.aside__bigad {
+	position:relative;
+	width:110px;
+	margin-bottom:40px;
+	li {
+		margin-top:10px;
+	}
+	li:first-child {
+		margin-top:0;
+	}
+	a {
+		display:block;
+	}
+}

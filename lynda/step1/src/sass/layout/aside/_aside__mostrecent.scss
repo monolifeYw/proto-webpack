@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+.aside__mostrecent {
+	position:relative;
+	width:110px;
+	height:309px;
+	z-index:300;
+}
+.aside__mostrecent.fixed .mostrecent-inner {
+	position:fixed;
+	top:30px;
+}
+.aside__mostrecent .box_realbox {
+	display:block;
+	width:70px;
+	padding:10px 19px 10px 19px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#ddd;
+	background-color:#fff;
+}
+.aside__mostrecent .box_realbox .tit_real {
+	display:block;
+	width:100%;
+	height:30px;
+	font-size:11px;
+	line-height:20px;
+	letter-spacing:-1px;
+	white-space:nowrap;
+}
+.aside__mostrecent .box_realbox .tit_real strong, .box_realbox .tit_real h2 {
+	display:inline;
+	color:#333333;
+	font-weight:bold;
+	text-indent:0 !important;
+	font-size:11px !important;
+	line-height:20px !important;
+}
+.aside__mostrecent .box_realbox .tit_real em {
+	padding-left:3px;
+	font:bold 10px/14px Tahoma;
+	color:#ce1710;
+	letter-spacing:0;
+}
+.aside__mostrecent .list_real {
+	height:240px;
+	font-size:0;
+	line-height:0;
+}
+.aside__mostrecent .list_real li {
+	position:relative;
+	margin-bottom:10px;
+	z-index:140;
+}
+.aside__mostrecent .list_real .thumb {
+	display:block;
+	width:70px;
+	height:70px;
+}
+.aside__mostrecent .list_real .thumb img {
+	width:70px;
+	height:70px;
+}
+.aside__mostrecent .list_real .thumb .frame {
+	display:none;
+	z-index:20;
+	position:absolute;
+	top:0;
+	left:0;
+	width:68px;
+	height:68px;
+	border:1px solid #6a747d;
+}
+.aside__mostrecent .list_real .on .thumb .frame {
+	display:block;
+}
+.aside__mostrecent .list_real .box_info {
+	display:none;
+	z-index:20;
+	position:absolute;
+	top:0;
+	right:70px;
+	width:145px;
+	height:55px;
+	padding:15px 12px 0 12px;
+	background-color:#6a747d;
+	font-size:12px;
+	line-height:16px;
+	color:#fff;
+	text-align:left;
+	white-space:nowrap;
+}
+.aside__mostrecent .list_real .on .box_info {
+	display:block;
+}
+.aside__mostrecent .list_real .box_info .name {
+	overflow:hidden;
+	width:145px;
+	padding-top:4px;
+	font-size:11px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.aside__mostrecent .list_real .box_info .price {
+	display:block;
+	font:bold 15px/20px tahoma;
+}
+.aside__mostrecent .list_real .box_info .won {
+	font-weight:bold;
+	font-size:14px;
+	font-family:Arial,'돋움',dotum;
+}
+.aside__mostrecent .list_real .box_info .etc {
+	margin-left:3px;
+}
+.aside__mostrecent .list_real .btn_real {
+	display:none;
+	overflow:hidden;
+	z-index:20;
+	position:absolute;
+	top:0;
+	right:0;
+	width:15px;
+	height:15px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/common/btn_mostrecent_close.gif) no-repeat;
+	text-indent:-9999px;
+}
+.aside__mostrecent .list_real .on .btn_real {
+	display:block;
+}
+.aside__mostrecent .no_list {
+	height:217px;
+	padding-top:23px;
+	line-height:17px;
+	text-align:center;
+	letter-spacing:-1px;
+}
+.aside__mostrecent .quick_paging {
+	display:block;
+	overflow:hidden;
+	padding:0 0 2px;
+}
+.aside__mostrecent .quick_paging a, .quick_paging button {
+	float:left;
+	width:15px;
+	height:15px;
+	background:url(//image.wemakeprice.com/images/front/common/tit_banner_v4.png) no-repeat;
+	font-size:0;
+	line-height:0;
+	text-indent:-9999px;
+	cursor:pointer;
+}
+.aside__mostrecent .quick_paging .btn_paging_prev {
+	background-position:0 -536px;
+}
+.aside__mostrecent .quick_paging .btn_paging_prev:hover,
+.aside__mostrecent .quick_paging .btn_paging_prev:focus {
+	background-position:0 -552px;
+}
+.aside__mostrecent .quick_paging .btn_paging_next {
+	background-position:-14px -536px;
+}
+.aside__mostrecent .quick_paging .btn_paging_next:hover,
+.aside__mostrecent .quick_paging .btn_paging_next:focus {
+	background-position:-14px -552px;
+}
+.aside__mostrecent .quick_paging .numbering {
+	float:left;
+	width:40px;
+	height:15px;
+	font-size:11px;
+	line-height:15px;
+	font-family:Verdana;
+	color:#999;
+	text-align:center;
+}
+.aside__mostrecent .quick_paging .numbering .on {
+	color:#333;
+}
+.aside__mostrecent .list_real .adult_layer {
+	position:absolute;
+	z-index:15;
+	top:0px;
+	left:0px;
+	width:70px;
+	height:70px;
+	background:url(//image.wemakeprice.com/images/2014/list/bg_adult_70.png) no-repeat;
+	}
+.aside__mostrecent .list_real .sold_out {
+	position:absolute;
+	z-index:15;
+	overflow:hidden;
+	left:0;
+	top:0;
+	width:70px;
+	height:70px;
+	background:url(//image.wemakeprice.com/images/front/common/img_soldout_70_70.png) no-repeat;
+	font-size:0;
+	line-height:0;
+	text-indent:-999em;
+	}

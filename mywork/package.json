@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "node_modules/.bin/webpack-dev-server --progress --watch",
-    "svr": "NODE_ENV=development npm run server",
-    "clean": "rimraf dist",
-    "start": "npm run clean && nodemon server.config.js"
+    "webpackserver": "node_modules/.bin/webpack-dev-server --progress --watch",
+    "server": "NODE_ENV=development nodemon server.config.js",
+    "clean": "rimraf dist"
   },
   "author": "",
   "license": "ISC",

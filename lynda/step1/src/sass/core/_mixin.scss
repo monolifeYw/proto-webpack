@@ -1,0 +1,298 @@
+@charset "utf-8";
+//
+// Float
+//
+
+// Clearfix
+@mixin clearfix() {
+	*zoom:1;
+	&:before,
+	&:after {
+		display:table;
+		content:'';
+	}
+	&:after {
+		clear:both;
+	}
+}
+
+// Center block
+@mixin center-block() {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+//
+// Only Screen readers
+//
+@mixin sr-only() {
+	overflow:hidden;
+	position:absolute;
+	width:1px;
+	height:1px;
+	margin:-1px;
+	padding:0;
+	clip:rect(0, 0, 0, 0);
+	border:0;
+}
+
+
+//
+// Abbreviate
+// 말줄임시 사용
+//
+@mixin abbreviate() {
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+
+//
+// Opacity
+//
+@mixin opacity($opacity) {
+	opacity:$opacity;
+	// IE8 filter
+	$opacity-ie:($opacity * 100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity-ie})"; // IE8
+	filter:alpha(opacity=#{$opacity-ie}); // IE7
+}
+
+
+//
+// Box shadow
+//
+@mixin box-shadow($shadow...) {
+	-webkit-box-shadow:$shadow;
+	box-shadow:$shadow;
+}
+
+
+//
+// Border radius
+//
+@mixin border-top-radius($radius) {
+	border-top-right-radius:$radius;
+	border-top-left-radius:$radius;
+}
+@mixin border-right-radius($radius) {
+	border-top-right-radius:$radius;
+	border-bottom-right-radius:$radius;
+}
+@mixin border-bottom-radius($radius) {
+	border-bottom-right-radius:$radius;
+	border-bottom-left-radius:$radius;
+}
+@mixin border-left-radius($radius) {
+	border-top-left-radius:$radius;
+	border-bottom-left-radius:$radius;
+}
+
+
+//
+// Gradient
+//
+
+// Vertical gradient, from top to bottom
+@mixin gradient-vertical($start-color: #fff, $end-color: #f9f9f9, $solid-color:#fafafa, $start-percent: 0%, $end-percent: 100%) {
+	// $start-color, $end-color, $solid-color 기본 색상은 그대로 사용하면서 percent만 변경하고 싶을때 아래 예시와 같이 사용
+	// 예 ) @include gradient-vertical(null, null, null, 10%, 90%);
+	@if ($start-color == null) {
+		$start-color: #fff;
+	}
+	@if ($end-color == null) {
+		$end-color: #f9f9f9;
+	}
+	@if ($solid-color == null) {
+		$solid-color: #fafafa;
+	}
+	background-color:$solid-color; // Old browser
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop($start-percent, $start-color), color-stop($end-percent, $end-color)); // Chrome, Safari4+
+	background-image:-webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // Chrome10+, Safari5.1+
+	background-image:-moz-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // Firefox 3.6+
+	background-image:-ms-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // IE 10+
+	background-image:-o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // Opera 11.10+
+	background-image:linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); // Standard, IE 10+, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE 6-9
+}
+
+// Horizontal gradient, from left to right
+@mixin gradient-horizontal($start-color: #fff, $end-color: #f9f9f9, $solid-color:#fafafa, $start-percent: 0%, $end-percent: 100%) {
+	// $start-color, $end-color, $solid-color 기본 색상은 그대로 사용하면서 percent만 변경하고 싶을때 아래 예시와 같이 사용
+	// 예 ) @include gradient-horizontal(null, null, null, 10%, 90%);
+	@if ($start-color == null) {
+		$start-color: #fff;
+	}
+	@if ($end-color == null) {
+		$end-color: #f9f9f9;
+	}
+	@if ($solid-color == null) {
+		$solid-color: #fafafa;
+	}
+	background-color:$solid-color; // Old browser
+	background-image:-webkit-gradient(linear, left top, right top, color-stop($start-percent, $start-color), color-stop($end-percent, $end-color)); // Chrome, Safari4+
+	background-image:-webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Chrome10+, Safari5.1+
+	background-image:-moz-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Firefox 3.6+
+	background-image:-ms-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // IE 10+
+	background-image:-o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Opera 11.10+
+	background-image:linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); // Standard, IE 10+, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE 6-9
+}
+
+
+//
+// Transition
+//
+
+// Transition full value
+@mixin transition($transition...) {
+	-webkit-transition:$transition;
+	-moz-transition:$transition;
+	transition:$transition;
+}
+
+// Transition each set option
+@mixin transition-option($options, $transitions) {
+	-webkit-transition-#{$options}:$transitions;
+	-moz-transition-#{$options}:$transitions;
+	transition-#{$options}:$transitions;
+}
+
+// Transition propery
+@mixin transition-property($property...) {
+	@include transition-option('property', $property);
+}
+
+// Transition delay
+@mixin transition-delay($delay...) {
+	@include transition-option('delay', $delay);
+}
+
+// Transition duration
+@mixin transition-duration($duration...) {
+	@include transition-option('duration', $duration);
+}
+
+// Transition transform
+@mixin transition-transform($transform...) {
+	@include transition-option('transform', $transform);
+}
+
+
+//
+// Transform
+//
+
+// Transform full value
+@mixin transform($transforms) {
+	-webkit-transform:$transforms;
+	-moz-transform:$transforms;
+	-ms-transform:$transforms;
+	-o-transform:$transforms;
+	transform:$transforms;
+}
+
+// Transform rotate
+@mixin rotate($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+// Transform rotateX
+@mixin rotateX($deg) {
+	@include transform(rotateX(#{$deg}deg));
+}
+
+// Transform rotateY
+@mixin rotateY($deg) {
+	@include transform(rotateY(#{$deg}deg));
+}
+
+// Transform scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// Transform translate
+@mixin translate($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// Transform translate3d
+@mixin translate3d($x, $y, $z) {
+	@include transform(translate3d($x, $y, $z));
+}
+
+// Transform skew
+@mixin skew($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// Transform origin
+@mixin transform-origin($origin) {
+	-webkit-transform-origin:$origin;
+	-moz-transform-origin:$origin;
+	-ms-transform-origin:$origin;
+	-o-transform-origin:$origin;
+	transform-origin:$origin;
+}
+
+
+//
+// Animation
+//
+@mixin animation($animation) {
+	-webkit-animation:$animation;
+	animation:$animation;
+}
+@mixin animation-name($name) {
+	-webkit-animation-name:$name;
+	animation-name:$name;
+}
+@mixin animation-duration($duration) {
+	-webkit-animation-duration:$duration;
+	animation-duration:$duration;
+}
+@mixin animation-timing-function($timing-function) {
+	-webkit-animation-timing-function:$timing-function;
+	animation-timing-function:$timing-function;
+}
+@mixin animation-delay($delay) {
+	-webkit-animation-delay:$delay;
+	animation-delay:$delay;
+}
+@mixin animation-iteration-count($iteration-count) {
+	-webkit-animation-iteration-count:$iteration-count;
+	animation-iteration-count:$iteration-count;
+}
+@mixin animation-direction($direction) {
+	-webkit-animation-direction:$direction;
+	animation-direction:$direction;
+}
+
+
+//
+// Keyframes
+//
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+
+//
+// User select
+//
+@mixin user-select($select) {
+	-webkit-user-select:$select;
+	-moz-user-select:$select;
+	-ms-user-select:$select;
+	user-select:$select;
+}

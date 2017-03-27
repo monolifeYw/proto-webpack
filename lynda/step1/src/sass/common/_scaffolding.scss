@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/* Scaffolding */
+body,h1,h2,h3,h4,th,td,input,select,button {
+	font-weight:normal;
+	font-size:$font-size-base;
+	font-family:$font-family-base;
+	line-height:$line-height-base;
+	color:$text-base;
+}
+
+/* 레이어팝업 오픈시 html태그에 추가되는 클래스 (스크롤 비노출) */
+html.no-scroll,
+html.no-scroll body {
+	overflow:hidden;
+}
+
+/* Layout */
+body {
+	overflow-y:scroll;
+	*overflow-y:auto;
+	min-width:937px;
+}
+
+a, a:active, a:visited {
+	color:$link-color;
+	text-decoration:none;
+	cursor:pointer;
+
+	&:hover {
+		color:$link-color-hover;
+		text-decoration:none;
+	}
+}

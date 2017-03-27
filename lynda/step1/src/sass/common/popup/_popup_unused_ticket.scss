@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* 미사용티켓 환불신청_ 계정 유무 레이어 팝업 */
+.qna_guide {width:530px;}
+.qna_guide .layer_content img {margin-top:30px;}
+.qna_guide .layer_content .content_guide {margin-top:10px;}
+.qna_guide .layer_content .content_guide label {color:#2db69e;font-weight:bold;}
+/* 미사용티켓 환불신청_ 계정 유무 레이어 팝업 */
+
+
+/* 미사용티켓 환불신청_ 계정 유무 레이어 팝업 */
+.return_guide .layer_content .text_btn, .return_guide .layer_guide span {display:block;background-image:url('//image.wemakeprice.com/images/2013/popup/popup.png');background-repeat:no-repeat;}
+
+.return_guide {width:365px;max-height:295px;}
+.return_guide.type2 {min-height:201px;}
+
+.return_guide .layer_content {border-bottom:1px #eee solid;}
+.return_guide .layer_content .content_tab {width:365px;height:34px;margin-top:30px;}
+.return_guide .layer_content .content_tab a {display:block;float:left;width:183px;height:31px;border-top:1px #dedede solid;border-bottom:2px #e01e21 solid;color:#666;}
+.return_guide .layer_content .content_tab a:visited {color:#666;}
+.return_guide .layer_content .content_tab a span {display:block;float:left;width:181px;height:22px;padding-top:9px;border-left:1px #dedede solid;border-right:1px #dedede solid;text-align:center;}
+.return_guide .layer_content .content_tab a.selected {width:182px;height:32px;border-top:2px #e01e21 solid;border-bottom:0px;color:#ef2011;font-weight:bold;}
+.return_guide .layer_content .content_tab a.selected span {width:178px;height:24px;padding-top:8px;border-left:2px #e01e21 solid;border-right:2px #e01e21 solid;}
+
+.return_guide .layer_content .content_text {display:none;width:100%;overlfow:hidden;}
+.return_guide .layer_content .content_text.active {display:block;}
+.return_guide .layer_content .content_text.type1 {height:65px;margin-top:31px;}
+.return_guide .layer_content .content_text.type2 {height:143px;margin-top:9px;}
+.return_guide .layer_content .content_text.type3 {display:block;width:auto;margin-top:20px;padding:19px 0px 16px 19px;border-top:1px #dedede solid;border-left:1px #dedede solid;border-right:1px #dedede solid;border-bottom:1px #cacaca solid;color:#333;}
+
+.return_guide .layer_content .content_text .text_guide {display:block;height:13px;margin-bottom:8px;font-size:11px;color:#ef2011;}
+
+.return_guide .layer_content .content_text .text_left {float:left;width:264px;color:#333;text-align:left;overflow:hidden;}
+.return_guide .layer_content .content_text.type1 .text_left {height:35px;}
+.return_guide .layer_content .content_text.type2 .text_left {height:75px;}
+.return_guide .layer_content .content_text.type2 .text_left input {width:249px;height:29px;margin-bottom:5px;padding:4px 4px 0px 4px;border-top:1px #bebebe solid;border-left:1px #bebebe solid;border-bottom:1px #d7d7d7 solid;border-right:1px #d7d7d7 solid;color:#999;*margin-bottom:0px;*line-height:22px;}
+
+.return_guide .layer_content .text_sub {display:inline-block;float:left;width:100%;height:22px;margin-top:5px;}
+.return_guide .layer_content .text_sub a {display:block;float:left;height:10px;margin-top:6px;line-height:13px;font-size:11px;color:#666;overflow:hidden;}
+.return_guide .layer_content .text_sub a:visited {color:#666;}
+.return_guide .layer_content .text_sub a.find_id {width:66px;height:13px;margin-right:9px;border-right:1px #ccc solid;}
+.return_guide .layer_content .text_sub a.find_pw {height:13px;}
+.return_guide .layer_content .text_btn {float:left;text-indent:-9999px;overflow:hidden;}
+.return_guide .layer_content .text_btn.join {width:101px;height:35px;background-position:-400px -89px;}
+.return_guide .layer_content .text_btn.login {width:101px;height:75px;background-position:0px -290px;}
+.return_guide .layer_content .text_btn.fblogin {float:right;width:101px;height:22px;margin-top:0px;background-position:0px -370px;}
+
+.return_guide .layer_guide {padding-top:6px;}
+.return_guide .layer_guide.type2 {padding-top:4px;border-top:3px #f7f7f7 solid;}
+.return_guide .layer_guide span {margin-top:2px;padding-left:6px;line-height:16px;font-size:11px;color:#999;background-position:-506px -88px;}
+
+.return_guide .layer_btn {overflow:hidden;text-align:center;}
+.return_guide .layer_btn a.btn_mobile {width:110px;background-position:-210px -130px;}
+.return_guide .layer_btn a.btn_ipin {width:110px;margin-left:1px;background-position:-325px -130px;}
+.return_guide .layer_btn a.btn_okay {margin-left:1px;}
+/* 미사용티켓 환불신청_ 계정 유무 레이어 팝업 */

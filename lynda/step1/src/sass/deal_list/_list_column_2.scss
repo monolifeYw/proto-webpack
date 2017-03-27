@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+.list_row_type2 {
+	width:948px;
+}
+.list_row_type2 li {
+	width:463px;
+	margin:0 9px 2px 0;
+	padding:5px 0 0;
+}
+.list_row_type2 .img_percent {
+	top:177px;
+	left:373px;
+}
+.list_row_type2 .link {
+	height:385px;
+	padding:0;
+	border-width:1px;
+	border-style:solid;
+	border-color:#ddd;
+	background-color:#f9f9f9;
+}
+.list_row_type2 a.link:hover,
+.list_row_type2 .select .link {
+	border-bottom:1px solid #e73535;
+}
+.list_row_type2 .box_sticker {
+	top:1px;
+	right:12px;
+}
+.list_row_type2 .box_thumb,
+.list_row_type2 .box_thumb img {
+	width:461px;
+	height:254px;
+}
+.list_row_type2 .box_thumb img {
+	display:block;
+	position:absolute;
+	top:6px;
+	left:1px;
+}
+.list_row_type2 .box_desc {
+	position:absolute;
+	top:270px;
+	left:13px;
+	display:block;
+	width:431px;
+	height:88px;
+}
+.list_row_type2 .box_desc .tit_desc {
+	height:24px;
+	font-weight:bold;
+	font-size:14px;
+	color:#333;
+	line-height:24px;
+}
+.list_row_type2 .box_desc .discount {
+	margin-top:-3px;
+}
+.list_row_type2 .box_desc .price {
+	padding-top:4px;
+}
+.list_row_type2 .box_desc .txt_info {
+	padding-top:2px;
+}
+.list_row_type2 .txt_num {
+	top:59px;
+	right:0px;
+}
+.list_row_type2 .box_delivery {
+	top:242px;
+	left:7px;
+}
+.list_row_type2 .box_card {
+	position:absolute;
+	top:239px;
+	background-color:#393939;
+	opacity:0.8;
+	overflow:hidden;
+	width:449px;
+}
+.list_row_type2 .card_option span.option_l {
+	display:inline-block;
+	float:left;
+	margin-left:12px;
+}
+
+/* 기획전 2단 딜리스트 오버 */
+.section_list .list_row_type2 {
+	padding-left:1px;
+}
+.section_list .list_row_type2 span.type02 .card_option {
+	bottom:1px;
+	margin:0;
+	left:1px;
+	width:461px;
+}
+.section_list .list_row_type2 li:hover span.type02,
+.section_list .list_row_type2 li.select span.type02,
+.section_list .list_row_type2 li.select:hover span.type02 {
+	width:461px;
+	height:384px;
+	margin:-1px 0 0 -1px;
+	border:2px solid #ef2011;
+	background-color:#f9f9f9;
+}
+.section_list .list_row_type2 span.type02 .box_desc .tit_desc:hover {
+	text-decoration:underline;
+}
+.section_list .list_row_type2 span.type02 .card_option .option_r:hover .tit_cut .tit {
+	color:#666;
+	text-decoration:underline;
+}
+.section_list .list_row_type2 li.select span.type02, .section_list .list_row_type2 li.select:hover span.type02 {
+	background-color:#e73535 !important;
+}
+.section_list .list_row_type2 li.select span, .section_list .list_row_type2 li.select strong {
+	color:#fff !important;
+}
+.section_list .list_row_type2 li.select .card_option {
+	width:463px;
+	left:2px;
+	bottom:0px;
+	border-top:1px #e96161 solid;
+}
+.section_list .list_row_type2 li.select .card_option .option_r {
+	border-left:1px #e96161 solid;
+}

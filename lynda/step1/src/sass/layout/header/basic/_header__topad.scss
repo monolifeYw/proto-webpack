@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/** Header - 광고 **/
+.header__topad {
+	position:relative;
+	float:right;
+}
+.header__topad .list_ad {
+	overflow:hidden;
+	width:190px;
+	height:79px;
+}
+.header__topad .list_ad a {
+	display:block;
+}
+.header__topad .btn_page {
+	position:absolute;
+	top:12px;
+	right:3px;
+	overflow:hidden;
+	float:left;
+	width:30px;
+	height:15px;
+	background:url(//image.wemakeprice.com/images/2013/common/btn_comm_v9.png) no-repeat 1px 0;
+}
+.header__topad .btn_page a,
+.header__topad .btn_page button {
+	overflow:hidden;
+	float:left;
+	width:15px;
+	height:15px;
+	font-size:0;
+	line-height:0;
+	text-indent:-9999px
+}

@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/* 간편회원가입 */
+.wrap_join {position:absolute;top:50%;left:50%;width:1160px;height:620px;padding-top:160px;margin:-390px 0 0 -580px;text-align:center;}
+.box_join {position:relative;overflow:hidden;margin:0 auto;padding:20px;width:440px;height:421px;background:url('//image.wemakeprice.com/images/2013/common/join/bg_join.png') 0 0 no-repeat;vertical-align:top;}
+.box_join .box_content {float:left;overflow:hidden;width:440px;height:421px;}
+.box_join .box_banner {float:left;width:220px;height:421px;}
+.box_join .box_banner img {vertical-align:top;}
+.box_join .join_con, .box_join .find_con {position:relative;overflow:hidden;width:380px;height:365px;padding:25px 30px 0;text-align:left;}
+.box_join .btn_email_close{float: left;padding:5px 10px;height: 21px;width:420px;background-color: #2E2E2E;}
+.box_join .txt{color: #fff;float: left;font-size: 12px;line-height: 21px;padding-left: 8px;}
+.box_join .bg_cont {display:block;overflow:hidden;text-indent:-9999px;font-size:0;line-height:0;background:url('//image.wemakeprice.com/images/2013/common/join/img_join.png') no-repeat;}
+.box_join .ico_close {float: left;height: 21px;width: 21px;background-position:-360px 0;}
+.box_join h1 {width:380px;height:97px;padding: 0 0 6px 0;}
+.box_join .box_gray {position:relative;width:340px;padding:21px 19px 0 19px;margin:0 auto;border:1px solid #e7e7e7;background-color:#f7f7f7;}
+.box_join .login {height:130px;margin-bottom:18px;}
+.box_join .login h2 {width:70px;height:16px;margin:0 0 7px 0;background-position:0 -80px;}
+.box_join .login .item{position:relative;height:40px;}
+.box_join .login .inp {float: left;height:22px;padding:5px 10px;width: 184px;background-color: #fff;border: 1px solid #d9d9d9;}
+.box_join .login .i_label {position:absolute;top:11px;left:11px;color:#bbb;font-size:12px;}
+.box_join .login .red_label {color:#ee3737;}
+.box_join .txt_notice {height:20px;padding:0 0 0 25px;color:#ee3737;font-size:11px;line-height:20px;background:url('//image.wemakeprice.com/images/2013/common/join/img_join.png') -360px -30px no-repeat;}
+.box_join .txt_joininfo {padding:0 0 10px 0;text-align:center;line-height:13px;font-size:11px;color:#999;}
+.box_join .txt_joininfo a,.box_join .txt_joininfo a:link {text-decoration:underline !important;color:#999;}
+.box_join .find {color:#777;font-size: 11px;line-height: 12px;}
+.box_join .find a{color:#777;}
+.box_join .find span {float:left;}
+.box_join .find .link_id {display:block;float:left;padding: 0 8px 0 12px;border-right:1px solid #d9d9d9}
+.box_join .find .link_pw {display:block;float:left;padding: 0 8px;border-right:1px solid #d9d9d9}
+.box_join .find .link_join {float:left;margin: 0 0 0 8px;}
+.box_join .email_join {height:107px;margin-bottom:15px;}
+.box_join .email_join .txt_tit {width:302px;height:15px;margin:6px 0 9px 0;background-position:0 -370px;}
+.box_join .email_join .i_label {position:absolute;top:67px;left:36px;color:#333;font-size:14px;letter-spacing:-1px;}
+.box_join .email_join .inp{width:308px;height:18px;margin:0 0 4px 0;color:#333;line-height:18px;font-size:14px;padding:15px;border:1px solid #ee3737;}
+
+.box_join .list_join li{position:relative;overflow:hidden;}
+.box_join .list_join label {position:absolute;top:9px;left:10px;color:#666;font-weight:bold;}
+.box_join .list_join .inp {padding:5px 10px;height:18px;width:163px;line-height:18px;border:1px solid #dedede;}
+.box_join .list_join select {padding:5px;height:28px;width:173px;line-height:18px;color:#666;border:1px solid #dedede;}
+.box_join .list_join .txt_result {clear:both;float:left;color: #e01e21;font-size: 11px;line-height: 20px;white-space: nowrap;}
+.box_join .list_join .join_phone .txt_result {clear:both;float:left;display:block;width:280px;overflow:hidden;color: #e01e21;font-size: 11px;line-height: 20px;white-space: nowrap;text-overflow: ellipsis;}
+.box_join .list_join .email {height:78px;}
+.box_join .list_join .email .w1{width:109px;}
+.box_join .list_join .email .w2{width:102px;}
+.box_join .list_join .email select {width:102px;}
+.box_join .list_join .email p {height:17px;width:380px;padding:11px 0 0 0;font-size:11px;line-height:11px;text-align:center;letter-spacing:-1px;color:#999;background:url('//image.wemakeprice.com/images/2013/common/join/img_join.png') 0 -180px no-repeat;}
+.box_join .list_join .join_pw {height:50px;}
+.box_join .list_join .join_pw div {position:relative;float:left;}
+.box_join .list_join .join_pw .pw1 {width:195px;}
+.box_join .list_join .join_pw .pw2 {width:185px;}
+.box_join .list_join .join_pw .pw2 input {width:163px;}
+.box_join .list_join .join_name {float:left;width:130px;height:50px;}
+.box_join .list_join .join_name .inp {width:95px;}
+
+
+
+.list_join .join_birth .zender2 #zender1 {position:absolute;top:8px;left:155px;}
+.list_join .join_birth .zender2 #label_zender1 {position:absolute;top:7px;left:172px;letter-spacing:-1px;}
+.list_join .join_birth .zender2 #zender2 {position:absolute;top:8px;left:207px;}
+.list_join .join_birth .zender2 #label_zender2 {position:absolute;top:7px;left:224px;letter-spacing:-1px;}
+.list_join .join_birth .zender2 #zender_error {position:absolute;top:29px;left:153px;letter-spacing:-1px;}
+
+.box_join .list_join .join_birth {height:50px;}
+.box_join .list_join .join_birth .year {width:30px;margin:0 6px 0 0;}
+.box_join .list_join .join_birth .m {left:75px;}
+.box_join .list_join .join_birth .month {width:17px;margin:0 6px 0 0;}
+.box_join .list_join .join_birth .d {left:123px}
+.box_join .list_join .join_birth .day {width:17px;}
+.box_join .list_join .join_phone {height:51px;}
+.box_join .list_join .phonenum_write {float:left;width:195px;}
+.box_join .list_join .phonenum_write .label_uephone {display: block;position:absolute;top:0;left:0;overflow: hidden;height:1px;width:1px;font-size:0;text-indent: -9999px;background: red;}
+.box_join .list_join .phonenum_write select {float:left;width:55px;}
+.box_join .list_join .phonenum_write input {width:29px;}
+.box_join .list_join .phonenum_btn {float:left;position:relative;width:185px;height:30px;}
+.box_join .list_join .btn_auth1 {width:79px;height:30px;background-position:-140px -100px;}
+.box_join .list_join .btn_auth2 {float:left;width:65px;height:30px;margin:0 4px 0 0;background-position:-180px -330px;}
+.box_join .list_join .btn_auth3 {float:left;width:57px;height:30px;background-position:-265px -330px;}
+.box_join .list_join .label_authnum {font-weight:normal;left:6px;letter-spacing:-1px;}
+.box_join .list_join .inp_authnum {float:left;margin:0 3px 0 0;padding: 5px;width:44px;}
+.box_join .list_join .txt_time {position:absolute;top:33px;right:0;padding: 0 5px 0 0;font-size:11px;}
+.box_join .list_join .phonenum_btn .step2 {display:none;}
+.box_join .join_check {overflow:hidden;}
+.box_join .join_check  li {height:15px;padding:2px 0 0 0;}
+.box_join .join_check .c1,.box_join .join_check .c3 {clear:both;float:left;width:128px;}
+.box_join .join_check .c2,.box_join .join_check .c4 {float:left;width:252px;}
+.box_join .join_check input {float:left;margin:0 5px 0 0;padding:0;height:13px;width: 13px;}
+.box_join .join_check label {float:left;font-size:11px;letter-spacing:-1px;margin:1px 8px 0 0;}
+.box_join .join_check .btn_question {float:left;width:14px;height:13px;background-position:-360px -56px;}
+.box_join .join_check a.bg_cont {float:left;width:52px;height:16px;background-position:-225px -100px;margin:-2px 0 0 0;}
+.box_join .limit14 {padding: 4px 0 7px 10px;margin:0 0 10px 0;font-size:11px;color: #E01E21;border-bottom:1px solid #ddd;background:url('//image.wemakeprice.com/images/2013/common/join/img_join.png')  -358px -92px no-repeat;}
+.box_join .join_btn_box {margin:0 auto;width:284px;overflow:hidden;}
+.box_join .join_btn_box .btn_mjoin {float:left;display: block;margin:0 5px 0 0;width:151px;height:53px;background:url('//image.wemakeprice.com/images/2013/common/join/img_join.png') 0 -435px no-repeat;}
+.box_join .join_btn_box .btn_mjoin input {display:block;overflow:hidden;width:100%;height:53px;border:0 none;font-size:0;line-height:0;text-indent:-9999px;cursor:pointer;background:none;}
+.box_join .join_btn_box .btn_flogin {float:left;width:123px;height:26px;background-position:-140px -150px;margin:0 0 1px 0;}
+.box_join .join_btn_box .btn_mloin {float:left;width:123px;height:26px;background-position:-265px -150px;}
+.box_join .join_question {position:absolute;top:241px;left:150px;padding:0 0 0 6px;background:url('//image.wemakeprice.com/images/2013/common/join/question_box.gif') 0 -93px no-repeat;}
+.box_join .c3 .join_question {background-position:0 -75px;}
+.box_join .join_question .in_question {display:block;padding:10px;font-size:11px;color:#999;line-height: 16px;letter-spacing: -1px;border-top:1px solid #585858;border-right:1px solid #585858;border-bottom:1px solid #585858;background:#fff;}
+.box_join .join_question .subject {display:block;color: #E01E21;}
+.box_join .join_question .btn_layerclose {position:absolute;top:7px;right:7px ;width:13px;height:13px;background-position:-290px -100px;}
+.box_join .id_find {width:380px;overflow:hidden;}
+.box_join .pw_find {width:380px;overflow:hidden;}
+.box_join .id_find h2 {position:absolute;left:30px;top:128px;overflow:hidden;}
+.box_join .id_find h2 a {width:190px;height:32px;background-position:0 -295px;}
+.box_join .id_find h2 a.on {background-position:0 -260px;}
+.box_join .pw_find h2 {position:absolute;left:220px;top:128px;overflow:hidden;}
+.box_join .pw_find h2 a {width:190px;height:32px;background-position:-190px -260px;}
+.box_join .pw_find h2 a.on {background-position:-190px -295px;}
+.box_join .phone_box {position:absolute;top:189px;left:30px;width:181px;border-right:1px solid #ddd;padding:0 8px 0 0;}
+.box_join .email_box {position:absolute;top:189px;left:220px;width:181px;padding:0 0 0 9px;}
+.box_join .phone_box h3 {width:73px;height:14px;background-position:-90px -80px;}
+.box_join .email_box h3 {width:36px;height:14px;background-position:-180px -80px;}
+.box_join .find_con ul {padding:12px 0 25px 0;}
+.box_join .find_con li {position:relative;padding:0 0 5px 0;}
+.box_join .i2_label {position:absolute;top:9px;left:11px;}
+.box_join .find_con input {padding:5px 10px;height:18px;width:159px;line-height:18px;font-size:12px;border:1px solid #dedede;}
+.box_join .find_con label {color:#666;font-size:12px;font-weight:bold;}
+.box_join .find_con select {padding:4px 6px;height:28px;width:62px;line-height:20px;color:#666;font-size:12px;font-weight:bold;border:1px solid #dedede;}
+.box_join .find_con .pn input {width:33px;padding:5px 5px;}
+.box_join .find_con .btn_findok {width:129px;height:40px;margin:0 auto;background-position:-265px -215px;}
+.box_join .result_box {position:absolute;top:189px;left:30px;width:380px;}
+.box_join .result_box .find_txt {padding:13px 0 0 98px;margin:0 0 25px 0;height:69px;line-height:20px;border-bottom:1px solid #ddd;background:url('//image.wemakeprice.com/images/2013/common/join/bg_icon.gif') 35px 14px no-repeat;}
+.box_join .result_box .btn_resultok {width:169px;height:35px;margin:0 auto;background-position:0 -330px;}
+.box_join .pw_find .phone_box, .box_join .pw_find .email_box, .box_join .pw_find .result_box {display: none;}
+.box_join  button {display: block;text-indent:-9999px;background:url('//image.wemakeprice.com/images/2013/common/join/img_join.png') no-repeat;}
+.box_join .login .btn {position:absolute;top:44px;right:18px;}
+.box_join .login .btn_login {width:129px;height:47px;margin-bottom:2px;background-position:0 -100px;}
+.box_join .login .btn_facebook {width:129px;height:26px;background-position:0 -150px;}
+.box_join .btn_box {float:none;width:189px;margin:0 auto;}
+.box_join .btn_login {width:189px;height:40px;margin-bottom:5px;background-position:0 -390px;}
+.box_join .btn_facebook {width:189px;height:26px;background-position:-195px -390px;}
+
+/* 회원여부 확인 */
+.layer_confirm_login {width:430px;}
+.layer_confirm_login .box_gray_content {margin-top:17px;padding:27px 0 26px;background-color:#f7f7f7;color:#666;text-align:center;}
+.layer_confirm_login .popup--wrap_btn .button {float:left;width:140px;margin-left:10px;}
+.layer_confirm_login .popup--wrap_btn .button:first-child {margin-left:0;}
+
+
+/* 휴면 아이디 재사용 안내 */
+.layer-quiescence-id {position:relative;width:430px;margin:105px auto 0;padding:32px 30px 25px 30px;border:5px solid #fe1409;background:#fff;color:#333;}
+.layer-quiescence-id .title {padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid #666;font-size:16px;color:#333;font-weight:bold;}
+.layer-quiescence-id .content p {padding-top:5px;line-height:18px;}
+.layer-quiescence-id .content span {color:#ce1710;}
+.layer-quiescence-id .content .text-small a,
+.layer-quiescence-id .content .text-small a:hover,
+.layer-quiescence-id .content .text-small a:focus {color:#999;font-size:11px;text-decoration:underline;}
+.layer-quiescence-id .btn-area {display:block;background:url('//image.wemakeprice.com/images/2014/popup/btn_pop_pass.png') no-repeat;text-indent:-9999px;}
+.layer-quiescence-id .btn-wmp-service {width:180px;height:36px;margin:25px auto 14px;background-position:0 -280px;}
+.layer-quiescence-id .btn-close {position:absolute;top:30px;right:29px;width:22px;height:22px;background-position:-190px 0;}
+
+
+/* 회원가입 이용약관 팝업 */
+.lp_wrap_agree {width:475px;padding:30px;border:5px solid #ff140a;background-color:#fff;}
+.lp_wrap_agree .tit {position:relative;height:27px;padding:0 0 8px 0;margin-bottom:20px;border-bottom:1px solid #666;line-height:1;}
+.lp_wrap_agree .tit h1 {font-size:16px;font-weight:bold;color:#333;letter-spacing:-1px;}
+.lp_wrap_agree .title_btn {overflow:hidden;position:absolute;top:-8px;right:0;width:23px;height:23px;background:url('//image.wemakeprice.com/images/2013/popup/popup.png') no-repeat 0 -251px;text-indent:-9999px;}
+.lp_wrap_agree .tab_list {padding:9px 19px 9px;border-bottom:1px solid #ccc;background:#f7f7f7;}
+.lp_wrap_agree .tab_list a {display:inline-block;font-size:11px;color:#666;line-height:15px;}
+.lp_wrap_agree .tab_list a.agree{width:95px;}
+.lp_wrap_agree .tab_list a.locate{width:150px;padding-left:5px;}
+.lp_wrap_agree .tab_list a:hover,
+.lp_wrap_agree .tab_list a.selected {font-weight:bold;color:#666;}
+.lp_wrap_agree .tab_list .txt_bar {color:#ccc;line-height:15px;}
+
+.lp_wrap_agree .box_notice_agree {border:1px solid #ccc;}
+.box_notice_agree .agree_cnt {line-height:18px;letter-spacing:-1px;}
+.box_notice_agree .agree_cnt ul{padding:0 0 5px 0;}
+.box_notice_agree .agree_cnt li{padding:3px 0 0 0;}
+.box_notice_agree .agree_cnt h3{padding:3px 0 0 0;font-weight:bold;}
+.box_notice_agree .agree_cnt h3:first-child{padding:0 0 0 0;font-weight:bold;}
+.box_notice_agree .agree_cnt h4{font-weight:bold;}
+.box_notice_agree .agree_cnt .depth-1{padding:3px 0 3px 15px;}
+.box_notice_agree .agree_cnt .depth-2{padding:3px 0 3px 30px;}
+.box_notice_agree .agree_cnt .style-blt-1{padding:3px 0 0 10px;text-indent:-10px;}
+.box_notice_agree .agree_cnt .style-blt-2{padding:3px 0 0 15px;text-indent:-15px;}
+.box_notice_agree .box_scroll {overflow-x:hidden;overflow-y:auto;height:92px;padding:17px 19px 16px;font-size:11px;color:#666;line-height:18px;}
+.box_notice_agree .box_scroll dt {margin:12px 0 5px;font-weight:bold;}
+.box_notice_agree .box_scroll dt:first-child {margin-top:0;}
+.box_notice_agree .box_scroll .under-line{margin:12px 0 5px;text-decoration:underline;font-weight:normal;}.layer-quiescence-id .btn-close {position:absolute;top:30px;right:29px;width:22px;height:22px;background-position:-190px 0;}

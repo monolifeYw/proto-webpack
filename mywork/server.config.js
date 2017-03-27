@@ -7,8 +7,12 @@ var router = require('./routes/common-routes');
 
 var app = express();
 
+var manifestLoader = require('./middleware/manifest');
+
 // set environment //
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+var pkg = require('./package.json');
 
 console.log('DEV', env);
 console.log('Path', __dirname + '/public');
@@ -19,7 +23,9 @@ app.use(express.static(__dirname + '/public'));
 
 // set view engine
 var hbs = exphbs.create({
-    extname: '.hbs'
+    extname: '.hbs',
+    partialsDir: 'views/partials/'
+    // helpers: require('./views/helpers/helpers')
   });
 
 app.engine('hbs', hbs.engine);
@@ -30,11 +36,16 @@ app.set('view cache', false);
 // set logger 
 app.use(logger('short'));
 
+console.log('pkg.version', pkg.version);
+
+// manifest Loader
+app.use(manifestLoader('./static/dist/manifest-' + pkg.version + '.json'));
+
 // set router
 app.use(router);
 
 // webpack middleware
-if (env === 'development') {
+if (env !== 'development') {
   var webpackMiddleware = require('webpack-dev-middleware');
   var webpack = require('webpack');
   var config = require('./webpack.config');
@@ -45,6 +56,9 @@ if (env === 'development') {
     },
     publicPath: '/dist'
   }
+  // webpack-hot-middleware: 
+  // - 파일이 수정 될 때 번들이 완료된 파일을 새로 로딩하는게 아닌, 
+  //   바뀐 부분만 패치하는 방식으로 업데이트하는 기능을 지원하는 라이브러리
   var webpackDevMiddlewareInstance = webpackMiddleware(webpackCompiler, opts);
   
   app.use(webpackDevMiddlewareInstance);

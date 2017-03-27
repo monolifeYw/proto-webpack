@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* 기획전,검색 4단 딜리스트 */
+.section_list .list_row_type4 {
+	width:948px;
+	padding:0 0 0 1px;
+}
+.section_list .list_row_type4 li {
+	width:226px;
+	margin:0 10px 2px 0;
+	padding:5px 0 0;
+}
+.section_list .list_row_type4 .img_percent {
+	top:138px;
+	left:133px;
+}
+.section_list .list_row_type4 .link {
+	padding:9px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#ddd;
+	background-color:#f9f9f9;
+}
+.section_list .list_row_type4 a.link:hover,
+.section_list .list_row_type4 .select .link {
+	border-color:#e73535;
+}
+.section_list .list_row_type4 .type04 {
+	height:360px;
+}
+.section_list .list_row_type4 .box_sticker {
+	top:1px;
+	right:9px;
+}
+.section_list .list_row_type4 .box_thumb,
+.section_list .list_row_type4 .box_thumb img {
+	width:224px;
+	height:224px;
+}
+.section_list .list_row_type4 .box_thumb img {
+	position:absolute;
+	top:6px;
+	left:1px;
+}
+.section_list .list_row_type4 .box_desc {
+	display:block;
+	height:84px;
+	padding:30px 0 0;
+	position:absolute;
+	top:237px;
+	left:15px;
+	width:204px;
+}
+.section_list .list_row_type4 .box_desc .tit_desc {
+	height:24px;
+	padding-top:1px;
+	font-weight:bold;
+	font-size:14px;
+	color:#333;
+	line-height:24px;
+}
+.section_list .list_row_type4 .box_desc .discount {
+	margin-top:-2px;
+}
+.section_list .list_row_type4 .box_desc .price {
+	padding-top:5px;
+}
+.section_list .list_row_type4 .txt_num {
+	top:0;
+	right:0;
+}
+.section_list .list_row_type4 .box_delivery {
+	top:203px;
+	left:10px;
+}
+.section_list .list_row_type4 .box_card {
+	position:absolute;
+	top:200px;
+	background-color:#393939;
+	opacity:0.8;
+	overflow:hidden;
+	width:206px;
+}
+
+/* 기획전,검색 4단 딜리스트 오버 */
+.section_list .list_row_type4 span.type04 .card_option {
+	bottom:2px;
+	width:222px;
+	left:4px;
+	margin:0 -2px;
+	padding:0 -1px;
+}
+.section_list .list_row_type4 span.type04 .card_option .cut {
+	width:85px;
+}
+.section_list .list_row_type4 span.type04 .card_option .option_r {
+	padding-left:3px;
+}
+.section_list .list_row_type4 span.type04 .card_option .option_r .tit_cut .txt {
+	float:right;
+	padding:1px 5px 0 0;
+	color:#333;
+}
+.section_list .list_row_type4 span.type04 .card_option .option_l {
+	margin-left:11px;
+}
+.section_list .list_row_type4 li.select span.type04,
+.section_list .list_row_type4 li:hover span.type04,
+.section_list .list_row_type4 li.select:hover span.type04 {
+	margin:-1px 0 0 -1px;
+	padding:9px 8px 8px;
+	width:208px;
+	border:2px solid #ef2011;
+}
+.section_list .list_row_type4 span.type04 .box_desc .tit_desc:hover {
+	text-decoration:underline;
+}
+.section_list .list_row_type4 span.type04 .card_option .option_r:hover .tit_cut .tit {
+	text-decoration:none;color:#e84242;
+}
+.section_list .list_row_type4 li.select span.type04,
+.section_list .list_row_type4 li.select:hover span.type04 {
+	background-color:#e73535 !important;
+}
+.section_list .list_row_type4 li.select span,
+.section_list .list_row_type4 li.select strong {
+	color:#fff !important;
+}
+.section_list .list_row_type4 li.select .card_option {
+	width:226px;
+	left:2px;
+	bottom:0px;
+	border-top:1px #e96161 solid;
+}
+.section_list .list_row_type4 li.select .card_option .option_r {
+	border-left:1px #e96161 solid;
+}

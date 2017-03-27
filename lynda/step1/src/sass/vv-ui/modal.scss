@@ -1,0 +1,91 @@
+html.none-scroll,
+.none-scroll body {
+  overflow:hidden;
+}
+
+.vv__modal {
+  display:none;
+  overflow-x:hidden;
+  overflow-y:auto;
+  z-index:10001;
+  outline:0;
+
+  &,
+  &-dim {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+
+  &-dim {
+    z-index:-1;
+    background-color:transparent;
+  }
+
+  &-window {
+    margin:30px auto;
+  }
+
+  &-open {
+    .vv__modal {
+      display:block;
+    }
+
+    &.has-dim {
+      .vv__modal-dim {
+        z-index:10000;
+        background-color:#000;
+        @include opacity(.7);
+      }
+      &.has-animation .vv__modal-dim {
+        @include animation(modalDimFade .15s ease);
+      }
+    }
+
+    &.has-animation {
+      .vv__modal {
+        @include animation(modalWindowFade .45s ease);
+        .vv__modal-window {
+          @include animation(modalSlideDown .45s ease);
+        }
+      }
+    }
+  }
+
+  &-scrollbar-measure {
+    overflow:scroll;
+    position:absolute;
+    top:-9999px;
+    width:50px;
+    height:50px;
+  }
+}
+
+@include keyframes(modalDimFade) {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:.7;
+  }
+}
+
+@include keyframes(modalWindowFade) {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@include keyframes(modalSlideDown) {
+  0% {
+    @include translate(0, -80px);
+  }
+  100% {
+    @include translate(0, 0);
+  }
+}

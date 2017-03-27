@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/** Header - logo **/
+.header__order_logo {
+	float:left;
+	position:relative;
+}
+.header__order_logo .logo {
+	display:block;
+	overflow:hidden;
+	float:left;
+	width:260px;
+	height:79px;
+}
+.header__order_logo .logo_decoration {
+	float:left;
+}
+.header__order_logo .logo_bg {
+	display:inline-block;
+	width:135px;
+	height:79px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -263px;
+}

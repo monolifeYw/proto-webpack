@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/** Layout - Order(장바구니, 결제 레이아웃) **/
+.order .header {
+	background:none;
+}
+.order .header_inner {
+	overflow:hidden;
+	width:937px;
+	margin:0 auto;
+	padding:30px 0 6px;
+	font-size:0;
+	line-height:0;
+	*zoom:1;
+}
+.order .header_inner:before,
+.order .header_inner:after {
+	display:table;
+	content:'';
+}
+.order .header_inner:after {
+	clear:both;
+}

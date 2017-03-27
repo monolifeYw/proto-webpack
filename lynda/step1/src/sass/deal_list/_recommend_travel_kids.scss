@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+/* 2단 추천여행 , 추천컬쳐&키즈 공통 */
+.login_af .travel_best .inner,
+.login_af .culturekids_best .inner {
+	position:relative;height:458px;
+}
+.section_travel .list_row_type6,
+.section_culturekids .list_row_type6 {
+	overflow:visible;
+	width:918px;
+	height:379px;
+	margin:10px 0 70px 20px;
+	background:none;
+	zoom:1;
+	position:relative;
+	display:block;
+}
+.section_travel .list_row_type6:after,
+.section_culturekids .list_row_type6:after {
+	content:'.';
+	display:block;
+	overflow:hidden;
+	width:100%;
+	height:0;
+	text-indent:-9999px;
+}
+.section_culturekids .list_row_type6 li,
+.section_travel .list_row_type6 li {
+	width:434px;
+	height:369px;
+	padding:10px 0 0 0;
+	margin:0 25px 0 0;
+	position:relative;
+}
+* + html .section_travel .list_row_type6 li,
+* + html .section_culturekids .list_row_type6 li {
+	width:434px;
+	height:391px;
+	margin:0 25px 20px 0;
+	position:relative;
+	overflow:hidden;
+}
+.section_travel .list_row_type6 li .link,
+.section_culturekids .list_row_type6 li .link {
+	border:1px solid #ddd;
+	height:367px;
+	background-color:#fff;
+}
+.section_travel .list_row_type6 .box_desc,
+.section_culturekids .list_row_type6 .box_desc {
+	position:absolute;
+	top:260px;
+	left:20px;
+	display:block;
+	height:87px;
+	width:393px;
+}
+.section_travel .list_row_type6 .box_desc .price,
+.section_culturekids .list_row_type6 .box_desc .price {
+	float:left;
+	padding:6px 0 0;
+}
+.section_travel .list_row_type6 .txt_num,
+.section_culturekids .list_row_type6 .txt_num {
+	top:60px;
+	right:0;
+	color:#333;
+}
+.login_af .travel_best .inner .page_count,
+.login_af .culturekids_best .inner .page_count {
+	position:absolute;
+	bottom:20px;
+	left:410px;
+}
+.login_af .travel_best .inner .page_count .count,
+.login_af .culturekids_best .inner .page_count .count {
+	color:#666666;
+	float:left;
+	font:bold 11px/23px Tahoma;
+	padding-right:6px;
+}
+.login_af .travel_best .inner .page_count .btn_page,
+.login_af .culturekids_best .inner .page_count .btn_page {
+	background:url(//image.wemakeprice.com/images/2013/common/btn_comm_v9.png) no-repeat scroll right 0 transparent;
+	float:left;
+	height:25px;
+	overflow:hidden;
+	width:61px;
+}
+.login_af .travel_best .inner .page_count span.btn_page a,
+.login_af .culturekids_best .inner .page_count span.btn_page a {
+	float:left;
+	font-size:0;
+	height:25px;
+	line-height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+	width:30px;
+}
+.section_travel .list_row_type6 .box_best,
+.section_culturekids .list_row_type6 .box_best {
+	top:0;
+	left:0;
+}
+.section_travel .list_row_type6 .box_best .ico_comm,
+.section_culturekids .list_row_type6 .box_best .ico_comm {
+	margin:10px 0 0 0;
+}
+.section_travel .list_row_type6 .img_percent,
+.section_culturekids .list_row_type6 .img_percent {
+	top:157px;
+	left:351px;
+}
+.section_travel .list_row_type6 .link .detail,
+.section_culturekids .list_row_type6 .link .detail {
+	display:block;
+	height:295px;
+}
+.section_travel .list_row_type6 .box_sticker,
+.section_culturekids .list_row_type6 .box_sticker {
+	position:absolute;
+	top:6px;
+	right:6px;
+	z-index:1;
+}
+.section_travel .list_row_type6 .box_thumb,
+.section_travel .list_row_type6 .box_thumb img,
+.section_culturekids .list_row_type6 .box_thumb,
+.section_culturekids .list_row_type6 .box_thumb img {
+	width:432px;
+	height:239px;
+}
+* + html .section_travel .list_row_type6 .box_thumb,
+.section_travel .list_row_type6 .box_thumb img ,
+* + html .section_culturekids .list_row_type6 .box_thumb,
+.section_culturekids .list_row_type6 .box_thumb img {
+	width:432px;
+	height:238px;
+}
+.section_travel .list_row_type6 span.link .box_desc .sale,
+.section_culturekids .list_row_type6 span.link .box_desc .sale {
+	color:#333;
+}
+.section_travel .list_row_type6 .box_delivery,
+.section_culturekids .list_row_type6 .box_delivery {
+	top:230px;
+	left:0;
+}
+.section_travel .list_row_type6 .box_card,
+.section_culturekids .list_row_type6 .box_card {
+	position:absolute;
+	top:219px;
+	background-color:#393939;
+	opacity:0.8;
+	overflow:hidden;
+	width:432px;
+}
+.section_travel .list_row_type6 .box_desc .tit_desc,
+.section_culturekids .list_row_type6 .box_desc .tit_desc {
+	height:24px;
+	font-weight:bold;
+	font-size:16px;
+	color:#333;
+	line-height:24px;
+}
+.section_travel .list_row_type6 .box_desc .discount,
+.section_culturekids .list_row_type6 .box_desc .discount {
+	line-height:100%;
+}
+
+/* 추천 2단 딜리스트 오버 */
+.section_travel .list_row_type6 span.type03 .card_option,
+.section_culturekids .list_row_type6 span.type03 .card_option {
+	position:absolute;
+	top:346px;
+	left:2px;
+	width:430px;
+	height:30px;
+}
+.section_travel .list_row_type6 li:hover span.type03 .card_option,
+.section_culturekids .list_row_type6 li:hover span.type03 .card_option {
+	left:2px;
+	width:430px;
+	bottom:1px;
+}
+.section_travel .list_row_type6 li:hover .link,
+.section_culturekids .list_row_type6 li:hover .link {
+	width:432px;
+	margin:-1px 0 0 -1px;
+	border:2px solid #ef2011;
+	background-color:#fff;
+}
+.section_travel .list_row_type6 span.type03 .box_desc .tit_desc:hover,
+.section_culturekids .list_row_type6 span.type03 .box_desc .tit_desc:hover {
+	text-decoration:underline;
+}
+.section_travel .list_row_type6 span.type03 .card_option .option_r:hover .tit_cut .tit,
+.section_culturekids .list_row_type6 span.type03 .card_option .option_r:hover .tit_cut .tit {
+	color:#666;
+	text-decoration:underline;
+}
+
+/* 추천컬쳐&키즈 */
+.login_af .culturekids_best {
+	overflow:hidden;
+	position:relative;
+}
+.login_af .section_culturekids {
+	border-bottom:3px solid #f7f7f7;
+	overflow:hidden;
+	width:100%;
+}
+.login_af .section_culturekids .inner {
+	overflow:hidden;
+	width:935px;
+	border:1px solid #d4d4d4;
+	border-bottom:1px solid #acacac;
+	background-color:#f9f9f9;
+}
+* + html .login_af .section_culturekids .inner {
+	padding-bottom:20px;
+}
+.login_af .culturekids_best .cul_kids a {
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.section_culturekids .list_row_type6 .card_option span.option_r {
+	border-left:1px solid #eee;
+	color:#666666;
+	float:right;
+	font-size:11px;
+	letter-spacing:-1px;
+	line-height:31px;
+	width:203px;
+}
+.section_culturekids .list_row_type6 .card_option span.option_r a {
+	margin-left:4px;
+}
+.section_culturekids .list_row_type6 .card_option span.option_r a:hover {
+	text-decoration:underline;
+	color:#fff;
+}
+.section_culturekids .list_row_type6 .card_option span.option_r a img {
+	margin-left:13px;
+	margin-right:13px;
+	position:absolute;
+	right:7px;
+	top:8px;
+}
+.section_culturekids .list_row_type6 .card_option span.option_l {
+	display:inline-block;
+	float:left;
+	margin-left:5px;
+}
+
+.section_culturekids .list_row_type6 .ico_delivery_card {
+	background:url(//image.wemakeprice.com/images/2013/common/icon_card.png) no-repeat scroll 17px 5px transparent;
+	color:#FFFFFF;
+	float:left;
+	font-size:12px;
+	height:19px;
+	line-height:19px;
+	overflow:hidden;
+	padding:2px 4px 0 37px;
+	width:auto;
+}
+.section_culturekids .list_row_type6 .card_option {
+	bottom:20px;
+}
+.section_culturekids .list_row_type6 span.link:hover .card_option .option_r,
+.section_culturekids .list_row_type6 span.link:hover .card_option .option_r a,
+.section_culturekids .list_row_type6 span.link:hover .card_option {
+	color:#666;
+}
+.section_culturekids .list_row_type6 span.link:hover .card_option {
+	border-top:1px solid #eee;
+	float:left;
+	left:0;
+	overflow:hidden;
+	position:absolute;
+	width:100%;
+}
+
+/* 추천여행 */
+.travel_best {
+	position:relative;
+	width:100%;
+}
+.section_travel {
+	border-bottom:3px solid #f7f7f7
+}
+.section_travel .inner {
+	overflow:hidden;
+	width:935px;
+	margin-top:20px;
+	border:1px solid #ddd;
+	border-bottom:1px solid #acacac;
+	background-color:#f9f9f9;
+}
+* + html .section_travel .inner {
+	padding-bottom:20px;
+}

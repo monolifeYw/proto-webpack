@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+//== Color
+//## 메인 색상
+
+$red-e73535 			: #e73535	!default;
+$red-ce1710 			: #ce1710	!default;
+$gray-666 				: #666		!default;
+$gray-333 				: #333 		!default;
+$gray-999 				: #999 		!default;
+$gray-f1f1f1 			: #f1f1f1	!default;
+$gray-f9f9f9 			: #f9f9f9	!default;
+$gray-ddd 				: #ddd		!default;
+$gray-e0e0e0 			: #e0e0e0	!default;
+$white					: #fff		!default;
+
+
+//## 폰트에 사용 되는 배색
+$text-base				: $gray-666;
+$text-gray-light		: $gray-999;
+$text-gray-dark			: $gray-333;
+$text-red				: $red-ce1710;
+
+//## 면에 적용되는 배색
+$bg-base 				: $white;
+$bg-gray-light			: $gray-f9f9f9;
+$bg-gray-dark			: $gray-f1f1f1;
+
+//## 라인에 적용되는 배색
+$line-gray 				: $gray-ddd ;
+$line-gary-dark			: $gray-333;
+$line-red				: $red-e73535;
+
+
+//== Buttons
+//
+//## 버튼 폰트 컬러, 버튼 백그라운드, 버튼 라인 지정
+$btn-font-weight		: normal !default;
+
+$btn-white-color		: $gray-666;
+$btn-white-bg			: $white;
+$btn-white-border 		: $gray-e0e0e0;
+
+$btn-gray-color			: $white;
+$btn-gray-bg			: $gray-666;
+$btn-gray-border 		: $gray-666;
+
+$btn-primary-color		: $white;
+$btn-primary-bg			: $red-e73535;
+$btn-primary-border		: $red-e73535;
+
+
+//== Typography
+//
+//## 폰트와 관련된 타입
+$font-family-base		: 돋움, dotum, sans-serif !default;
+
+$font-size-base			: 12px !default;
+$font-size-sm			: 11px !default;
+$font-size-lg			: 14px !default;
+$font-size-xl			: 16px !default;
+$font-size-xxl			: 18px !default;
+
+
+//== Link style
+$link-color				: $gray-666;
+$link-color-hover		: $gray-666;
+
+
+//== line-height
+$line-height-base 		: 1.5 !default;

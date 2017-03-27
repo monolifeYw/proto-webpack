@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+// 기존 로고 css - 확인 안됨
+.logo_wmp {float:left;width:89px;padding-top:5px;font-size:0}
+.logo_wmp_v2 {float:left;width:41px;padding-top:8px;font-size:0}
+.logo_wmp_v2 a {display:block;width:41px;height:15px;text-indent:-9999px;background:url(http://www.wemakeprice.com/images/front/common/logo_top.png) no-repeat;}
+
+// 현재 로고 반영
+.header__member_logo {
+	float:left;
+	padding-top:8px;
+	font-size:0
+}
+.header__member_logo a {
+	display:block;
+	width:64px;
+	height:14px;
+	text-indent:-9999px;
+	background:url(//image.wemakeprice.com/images/resources/wmp/pages/member/logo-member.png) no-repeat;
+}

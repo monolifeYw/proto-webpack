@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*소멸예정 포인트*/
+.afpoint {width:380px;}
+.afpoint .point_status_now {line-height:14px;overflow:hidden;margin-top:20px;padding:14px 20px 14px 20px;background:#fff;border:1px solid #dedede;color:#666666;font-size:12px;font-weight:bold;}
+.afpoint .point_status_now .point {font-size:14px;font-family:Tahoma;color:#ce1710}
+.afpoint .point_status_now .p {color:#666666;}
+.afpoint .point_status_box_wrap {overflow:hidden;margin-top:20px;width:100%;height:195px;border-top:2px solid #ef2011;border-bottom:1px solid #aaaaaa}
+.afpoint .point_status_box_head {text-align:center;line-height:14px;overflow:hidden;padding:11px 0px 10px 0px;color:#333;font-size:12px;background:url('//image.wemakeprice.com/images/2013/mypage/tbl_tit_bg2.jpg') repeat-x;border-bottom:1px solid #aaaaaa;}
+.afpoint .point_status_box_head li.extinc_point {width:116px;float:left;border-right:1px solid #eaeaea;}
+.afpoint .point_status_box_head li {width:263px;float:left;}
+.afpoint .point_status_box {width:380px;height:159px;overflow:auto;}
+.afpoint .point_status_box li {overflow: hidden;padding:13px 0px 12px 0px;border-top:1px solid #eaeaea;line-height:14px;color:#666;}
+.afpoint .point_status_box li:first-child {border-top:0 none;}
+.afpoint .point_status_box li span {display:inline-block;zoom:1;*display:inline;}
+.afpoint .point_status_box li .point {width:116px;text-align:center;}
+.afpoint .point_status_box li .date {padding-left:16px;text-align:left;}
+.afpoint .point_status_box li .date .today {color:#ce1710;}
+.afpoint .point_text {margin-top:12px;}
+.afpoint .point_text li {line-height:18px;padding-left:7px;background: url('//image.wemakeprice.com/images/2013/mypage/dot_mypage.gif') no-repeat scroll 0 5px transparent;font-size:11px;color:#999;}
+.afpoint .layer_btn {height:77px;}
+.afpoint .layer_btn .btn_okay {margin-top:25px;}
+.afpoint .layer_btn .btn_cancel {margin-top:25px;}

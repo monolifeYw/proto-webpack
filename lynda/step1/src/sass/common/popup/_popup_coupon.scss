@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/* 할인쿠폰 */
+.coupon_popup_content {width:520px;overflow:hidden;}
+.coupon_popup_content h1 {float:left;width:520px;height:120px;overflow:hidden;text-indent:-9999px;font-size:0;line-height:0;background:url('//image.wemakeprice.com/images/2013/popup/w_coupon_common.png') no-repeat;}
+.coupon_popup_content .inner {float:left;padding:30px;width:460px;background-color:#fff;}
+.coupon_popup_content .txt_info {margin-bottom:17px;border-bottom:3px solid #f7f7f7;}
+.coupon_popup_content .txt_info ul {padding:16px 19px;border-width: 1px;border-style: solid;border-color:#dedede #dedede #cacaca;color:#333;}
+.coupon_popup_content .txt_info ul li {padding-left:7px;line-height:19px;background:url('//image.wemakeprice.com/images/2013/mypage/dot_mypage.gif') 0 9px no-repeat;}
+.coupon_popup_content .txt_info ul li strong {color:#ef2011;}
+.coupon_popup_content .list_box {border-top:2px solid #ef2011;padding:35px 0 20px 0;background:url('//image.wemakeprice.com/images/2013/popup/w_coupon_thead.jpg') no-repeat;}
+.coupon_popup_content .table_list {height:120px;overflow:hidden;overflow-y:scroll;border-top:1px solid #aaaaaa;border-bottom:1px solid #aaaaaa;}
+.coupon_popup_content .coupon_list {width:460px;text-align:center;}
+.coupon_popup_content .coupon_list thead th{height:0;overflow:hidden;text-indent:-9999px;font-size:0;line-height:0;}
+.coupon_popup_content .coupon_list td, .coupon_popup_content .coupon_list tbody th{padding:11px 0;height:38px;color:#666;border-top:1px solid #eaeaea;text-align:19px;}
+.coupon_popup_content .coupon_list .fst td,.coupon_popup_content .coupon_list tbody .fst th {border-top:none;}
+.coupon_popup_content .coupon_list .sum {width:70px;color:#ef2011;font-weight:bold;}
+.coupon_popup_content .coupon_list .condition {padding-left:16px;width:174px;text-align:left;}
+.coupon_popup_content .coupon_list .condition .case{display:block;}
+.coupon_popup_content .coupon_list .date {padding-left:17px;width:83px;text-align:left;}
+.coupon_popup_content .coupon_list .use {width:100px;}
+.coupon_popup_content .btn_close {display:block;margin:0 auto;width:90px;height:36px;overflow:hidden;text-indent:-9999px;font-size:0;line-height:0;background:url('//image.wemakeprice.com/images/2013/popup/w_coupon_common.png') 0 -125px no-repeat;}
+.coupon_popup_content .todayclose_box {float:left;height:31px;width:100%;line-height:31px;background:#f5f5f5 url('//image.wemakeprice.com/images/2013/popup/w_coupon_dot.jpg') top left repeat-x;}
+.coupon_popup_content legend {overflow:hidden;text-indent:-9999px;font-size:0;line-height:0;}
+.coupon_popup_content .todayclose_box .in {float:right;margin-right:30px;font-size:11px;color:#999;}
+.coupon_popup_content .todayclose_box .in label {line-height:13px;}
+
+/* 20131111_ 할인쿠폰 레이어팝업 */
+.salecoupon .layer_title, .salecoupon .layer_content h2 span, .salecoupon .layer_content .content_tableul li span, .salecoupon .layer_content .content_table td.table_content1 span, .salecoupon .layer_btn a, .salecoupon .layer_bottom {display:block;background-image:url('//image.wemakeprice.com/images/2013/popup/popup_lcoupon.png');background-repeat:no-repeat;}
+.salecoupon .layer_content, .salecoupon .layer_btn {display:block;background-image:url('//image.wemakeprice.com/images/2013/popup/popup_lcoupon_repeat.png');background-repeat:repeat-y;}
+
+.salecoupon {width:592px;padding:0px 0px 38px 0px;border:0px;background-color:transparent;}
+
+.salecoupon .layer_title {position:relative;height:151px;padding:0px;border:0px;}
+.salecoupon .layer_title h1 {display:block;height:0px;text-indent:-9999px;overflow:hidden;}
+.salecoupon .layer_title .title_btn {width:50px;height:50px;margin-top:37px;right:10px;background-image:none;}
+
+.salecoupon .layer_content {padding:34px 94px 25px 46px;}
+.salecoupon .layer_content h2 {display:block;height:16px;color:#4c0002;font-size:16px;text-align:center;}
+.salecoupon .layer_content h2 strong {display:inline-block;line-height:16px;vertical-align:top;}
+.salecoupon .layer_content h2 strong.red {font-family:Tahoma;color:#ff080e;}
+.salecoupon .layer_content h2 span {display:inline-block;height:16px;text-indent:-9999px;overflow:hidden;}
+.salecoupon .layer_content h2 span.content_title1 {width:151px;margin:0px 9px 0px 5px;background-position:0px -216px;}
+.salecoupon .layer_content h2 span.content_title2 {width:77px;background-position:-191px -216px;}
+
+.salecoupon .layer_content .content_tableul {display:table;height:35px;margin-top:18px;border-top:1px #b15c00 solid;border-bottom:1px #e9e1d1 solid;background-color:#faf7f0;}
+.salecoupon .layer_content .content_tableul li {display:table-cell;height:35px;text-align:center;vertical-align:middle;*display:inline;*top:50%;*padding-top:8px;*zoom:1;}
+.salecoupon .layer_content .content_tableul li span {display:inline-block;height:12px;text-indent:-9999px;*text-indent:0px;*font-size:0px;overflow:hidden;}
+.salecoupon .layer_content .content_tableul li.tableul_title1 {width:180px;}
+.salecoupon .layer_content .content_tableul li.tableul_title1 span {width:76px;background-position:0px -236px;}
+.salecoupon .layer_content .content_tableul li.tableul_title2 {width:150px;}
+.salecoupon .layer_content .content_tableul li.tableul_title2 span {width:41px;background-position:-81px -236px;}
+.salecoupon .layer_content .content_tableul li.tableul_title3 {width:122px;}
+.salecoupon .layer_content .content_tableul li.tableul_title3 span {width:42px;background-position:-127px -236px;}
+
+.salecoupon .layer_content .content_wrap {max-height:236px;border-bottom:1px #b96d1a solid;overflow-x:hidden;overflow-y:auto;}
+.salecoupon .layer_content .content_table {width:100%;border-collapse:separate;border-spacing:0px;}
+.salecoupon .layer_content .content_table thead, .salecoupon .layer_content .content_table tbody {border-collapse:separate;border-spacing:0px;}
+.salecoupon .layer_content .content_table th {height:0px;margin:0px;padding:0px;font-size:0px;line-height:0px;color:#fff;overflow:hidden;}
+.salecoupon .layer_content .content_table th.table_title1 {width:180px;}
+.salecoupon .layer_content .content_table th.table_title2 {width:150px;}
+.salecoupon .layer_content .content_table th.table_title3 {width:122px;}
+
+.salecoupon .layer_content .content_table td {height:104px;margin:0px;padding:0px;border-bottom:1px #e9e1d1 solid;text-align:center;color:#666;vertical-align:middle;}
+.salecoupon .layer_content .content_table td.table_content1 span {display:inline-block;width:113px;height:36px;padding-top:19px;font-size:14px;color:#e33334;background-position:-273px -216px;}
+.salecoupon .layer_content .content_table td.table_content1 p {display:block;width:120px;height:15px;margin:7px auto 0px auto;font-size:12px;color:#85532e;font-weight:bold;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.salecoupon .layer_content .content_table td.table_content2 {font-size:11px;color:#85532e;}
+
+.salecoupon .layer_btn {padding-bottom:16px;}
+.salecoupon .layer_btn a {display:inline-block;width:198px;height:51px;margin:0px 60px 0px 0px;background-position:-391px -216px;}
+
+.salecoupon .layer_bottom {height:25px;background-position:0px -156px;}
+.salecoupon .layer_bottom label {display:inline-block;width:100px;height:15px;text-indent:-9999px;vertical-align:top;overflow:hidden;}
+/* 20131111_ 할인쿠폰 레이어팝업 */
+
+/* 쿠폰사용 레이어팝업 */
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_title, .usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_sticker {display:block;background-image:url('//image.wemakeprice.com/images/2013/popup/popup_coupon.png');background-repeat:no-repeat;}
+
+.usecoupon {width:610px;}
+.usecoupon .layer_content {position:relative;overflow:hidden;}
+.usecoupon .layer_content .content_left {float:left;width:403px;padding:30px 20px 0px 0px;}
+.usecoupon .layer_content .content_left .left_title {width:100%;height:21px;border-bottom:1px #ddd solid;}
+.usecoupon .layer_content .content_left .left_title strong {float:left;color:#333;}
+.usecoupon .layer_content .content_left .left_title .title_subtext {float:left;margin-left:5px;font-size:11px;color:#999;line-height:14px;*width:135px;}
+.usecoupon .layer_content .content_left .left_title span {float:right;font-size:11px;color:#666;vertical-align:top;*width:138px;line-height: 1em;}
+.usecoupon .layer_content .content_left .left_title.sub span.coupon_input {*width:150px;}
+.usecoupon .layer_content .content_left .left_title span input {float:left;*width:12px;*height:12px;}
+.usecoupon .layer_content .content_left .left_title span label {display:block;float:right;margin:2px 0px 0px 4px;}
+
+.usecoupon .layer_content .content_left .left_cont {width:100%;height:219px;/*min-height:219px;max-height:365px;*/ margin:10px 0px 40px 0px;overflow-x:hidden;overflow-y:auto;}
+.usecoupon .layer_content .content_left .left_cont.sub {margin-bottom:0px;}
+.usecoupon .layer_content .content_left .left_cont li {float:left;width:100%;height:63px;margin-bottom:10px;}
+.usecoupon .layer_content .content_left .left_cont li .chkradio {float:left;margin:25px 0px 0px 10px;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap {display:block;float:left;width:340px;margin-left:20px;overflow:hidden;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_title {float:left;width:127px;height:46px;margin-right:19px;padding:15px 0px 0px 11px;border:1px #ddd solid;background-position:0px 0px;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_title strong {display:block;overflow:hidden;color:#ce1710;font-family:Tahoma, Dotum;line-height:17px;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_title strong span {font-size:16px;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_title strong span.title_subtext {font-size:14px;letter-spacing:-1px;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_title .title_text1, .usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_title .title_text2 {margin:7px 0px 0px -1px;font-size:11px;color:#333;letter-spacing:-1px;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_title .title_text2 {margin-left:3px;color:#ce1710;}
+
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_sticker {float:left;width:39px;height:16px;margin:5px 0px 0px 1px;text-indent:-9999px;overflow:hidden;background-position:0px -66px;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_text1, .usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_text2 {display:block;float:left;width:178px;margin-top:5px;line-height:12px;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_text1 {margin-top:6px;font-size:11px;color:#333;}
+.usecoupon .layer_content .content_left .left_cont li .cont_textwrap .cont_text2 {color:#999;}
+
+
+.usecoupon .layer_content .content_right {float:left;width:157px;padding:30px 15px 0px 15px;background-color:#f9fafb;}
+.usecoupon .layer_content .content_right .right_title {margin:-2px 0px 10px 0px;}
+.usecoupon .layer_content .content_right .right_title strong {color:#333;line-height:19px;}
+
+.usecoupon .layer_content .content_right .right_cont {width:155px;height:130px;border:1px #dedede solid;background-color:#fff;}
+.usecoupon .layer_content .content_right .right_cont li {float:left;width:135px;height:25px;padding:7px 10px 0px 10px;}
+.usecoupon .layer_content .content_right .right_cont li.top, .usecoupon .layer_content .content_right .right_cont li.btm {height:18px;padding-top:15px;}
+.usecoupon .layer_content .content_right .right_cont li.cont_text1 {background-color:#f0f3f5;}
+
+.usecoupon .layer_content .content_right .right_cont li span {font-size:11px;color:#666;}
+.usecoupon .layer_content .content_right .right_cont li .cont_left {float:left;}
+.usecoupon .layer_content .content_right .right_cont li .cont_right {float:right;}
+.usecoupon .layer_content .content_right .right_cont li.cont_text2 .cont_right {color:#ce1710;}
+
+.usecoupon .layer_content .content_right .right_btm {position:absolute;bottom:30px;}
+.usecoupon .layer_content .content_right .right_btm .btm_title {color:#666;}
+.usecoupon .layer_content .content_right .right_btm .btm_price {display:block;margin-top:6px;font-family:Tahoma, Dotum;font-size:22px;color:#ce1710;text-align:right;}
+.usecoupon .layer_content .content_right .right_btm .btm_price span {display:block;float:left;width:140px;}
+.usecoupon .layer_content .content_right .right_btm .btm_price label {position:relative;display:block;float:left;width:17px;margin-top:6px;right:-3px;font-size:16px;}
+/* 쿠폰사용 레이어팝업 */
+
+/* Layer popup - 쿠폰 사용하기 */
+.layer-use-coupon .wrap-tit-sub {margin:28px 0 5px;*zoom:1;}
+.layer-use-coupon .wrap-tit-sub:before,
+.layer-use-coupon .wrap-tit-sub:after {display:table;content:'';}
+.layer-use-coupon .wrap-tit-sub:after {clear:both;}
+.layer-use-coupon .wrap-tit-sub .tit-sub {float:left;margin-right:13px;font-weight:bold;color:#393939;}
+.layer-use-coupon .wrap-tit-sub .txt-sub {float:left;margin-top:1px;font-size:11px;color:#aaa;letter-spacing:-1px;}
+.layer-use-coupon .wrap-tit-sub .txt-sub .ico-global-exclaim {float:left;margin-right:4px;}
+
+.layer-use-coupon .tbl-use-coupon {width:100%;}
+.layer-use-coupon .tbl-use-coupon th,
+.layer-use-coupon .tbl-use-coupon td {padding-right:10px;padding-left:10px;color:#666;text-align:center;}
+.layer-use-coupon .tbl-use-coupon th {padding-top:10px;padding-bottom:7px;border-width:1px 0 1px 1px;border-style:solid;border-color:#ddd transparent #ddd #eaeaea;background-color:#f9f9f9;}
+.layer-use-coupon .tbl-use-coupon th:first-child {border-left:0;}
+.layer-use-coupon .tbl-use-coupon td {padding-top:13px;padding-bottom:13px;border-bottom:1px solid #eaeaea;}
+.layer-use-coupon .tbl-use-coupon tbody tr:last-child td {border-bottom-color:#aaa;}
+.layer-use-coupon .tbl-use-coupon tfoot td {padding:25px 20px 24px;background-color:#f9f9f9;font-weight:bold;text-align:right;}
+.layer-use-coupon .tbl-use-coupon .price-total {display:inline-block;min-width:80px;padding-left:16px;color:#ce1710;}
+
+.layer-use-coupon .select-list-group {width:201px;}
+.layer-use-coupon .select-list-group .list-select {padding-top:4px;padding-bottom:4px;}
+.layer-use-coupon .select-list-group .action-select {overflow:hidden;text-overflow:ellipsis;font-size:12px;color:#393939;white-space:nowrap;}
+.layer-use-coupon .select-list-group .list-select .link-menu {padding:5px 7px 3px;white-space:normal;}
+.layer-use-coupon .select-list-group .list-select .link-menu .txt {padding:0;}
+.layer-use-coupon .select-list-group .list-select .link-menu .label {margin-left:0;}
+.layer-use-coupon .select-list-group .list-select .selected .link-menu {font-weight:normal;color:#aaa;cursor:default;}
+.layer-use-coupon [class*="btn-coupon"] {float:left;width:110px;height:36px;border-width:1px;border-style:solid;font-weight:bold;font-size:14px;}
+.layer-use-coupon .btn-coupon-use {border-color:#e51b13;background-color:#e51b13;color:#fff;}
+.layer-use-coupon .btn-coupon-cancel {margin-left:6px;border-color:#d0d0d0;background-color:#fff;color:#393939;}

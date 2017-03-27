@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* 옵션검색 가격비교 레이어팝업 - 공통스타일 사용 X */
+.layer-price-compare {width:873px;padding:27px 30px 50px;border:1px solid #393939;}
+.layer-price-compare .ico-price-compare {background:url('//image.wemakeprice.com/images/resources/wmp/popup/price-compare/ico-price-compare.png') no-repeat;}
+.layer-price-compare .btn-price-compare {display:block;overflow:hidden;background:url('//image.wemakeprice.com/images/resources/wmp/popup/price-compare/btn-price-compare.png?20150922_1') no-repeat;text-indent:-9999px;}
+.layer-price-compare .pop-head {position:relative;margin-bottom:30px;padding-bottom:10px;border-bottom:2px solid #333;}
+.layer-price-compare .pop-head .tit {font-weight:bold;font-size:16px;color:#333;}
+.layer-price-compare .pop-head .txt-beta {overflow:hidden;float:left;width:29px;height:11px;margin:3px 0 0 4px;background:url('//image.wemakeprice.com/images/resources/wmp/popup/price-compare/txt-beta.png') no-repeat 0 0;text-indent:-9999px;}
+.layer-price-compare .pop-head .btn-close {position:absolute;top:1px;right:0;width:17px;height:17px;background-position:0 0;}
+.layer-price-compare .pop-cont {*zoom:1;}
+.layer-price-compare .pop-cont:before,
+.layer-price-compare .pop-cont:after {display:table;content:'';}
+.layer-price-compare .pop-cont:after {clear:both;}
+.layer-price-compare .wrap-represent {float:left;width:200px;}
+.layer-price-compare .wrap-represent .wrap-thumb {width:200px;height:200px;background:url('//image.wemakeprice.com/images/resources/wmp/popup/price-compare/bg-thumb-default-200.png') no-repeat 0 0;}
+.layer-price-compare .wrap-represent .thumb {display:block;}
+.layer-price-compare .wrap-represent .tit-product {padding-top:18px;font-weight:bold;font-size:16px;line-height:22px;color:#333;word-break:break-all;}
+.layer-price-compare .wrap-represent .low-price {padding-top:13px;}
+.layer-price-compare .wrap-represent .low-price dt {color:#888;}
+.layer-price-compare .wrap-represent .low-price dd {font-weight:bold;font-size:16px;}
+.layer-price-compare .wrap-represent .low-price a {color:#f7120a;}
+.layer-price-compare .wrap-represent .low-price a:hover,
+.layer-price-compare .wrap-represent .low-price a:focus {text-decoration:underline;}
+.layer-price-compare .wrap-represent .low-price .txt-won {font-size:14px;}
+.layer-price-compare .wrap-represent .wrap-report {padding-top:14px;*zoom:1;}
+.layer-price-compare .wrap-represent .wrap-report:before,
+.layer-price-compare .wrap-represent .wrap-report:after {display:table;content:'';}
+.layer-price-compare .wrap-represent .wrap-report:after {clear:both;}
+.layer-price-compare .wrap-represent .btn-report {float:left;*min-width:45px;}
+.layer-price-compare .wrap-represent .btn-report .ico-report {float:left;width:13px;height:13px;margin:1px 3px 0 0;background-position:0 0;}
+.layer-price-compare .wrap-represent .btn-report .txt {float:left;color:#888;}
+.layer-price-compare .wrap-compare-price {float:right;width:643px;}
+.layer-price-compare .tab-sort {position:relative;z-index:1;margin-bottom:16px;padding-left:1px;*zoom:1;}
+.layer-price-compare .tab-sort:before,
+.layer-price-compare .tab-sort:after {display:table;content:'';}
+.layer-price-compare .tab-sort:after {clear:both;}
+.layer-price-compare .tab-sort li {float:left;position:relative;margin-left:-1px;}
+.layer-price-compare .tab-sort a {display:block;width:213px;height:38px;padding-top:4px;border:1px solid #ddd;background-color:#f7f7f7;line-height:38px;color:#333;text-align:center;}
+.layer-price-compare .tab-sort a:hover,
+.layer-price-compare .tab-sort a:focus {background-color:#f3f3f3;}
+.layer-price-compare .tab-sort .active {z-index:1;}
+.layer-price-compare .tab-sort .active a {border-color:#00a6af;background-color:#00a6af;font-weight:bold;color:#fff;}
+.layer-price-compare .notice-area {position:absolute;top:14px;right:36px;line-height:1.5;text-align:left;}
+.layer-price-compare .notice-area .btn-notice {width:17px;height:17px;background-position:-20px 0;}
+.layer-price-compare .active .notice-area .btn-notice {background-position:-40px 0;}
+.layer-price-compare .notice-area .ico-arr {display:none;position:absolute;top:100%;left:1px;z-index:2;width:15px;height:8px;margin-top:6px;background-position:0 -25px;}
+.layer-price-compare .layer-notice {display:none;position:absolute;top:100%;left:-162px;z-index:1;margin-top:13px;padding:17px 19px 15px;border:1px solid #464646;background-color:#fff;color:#333;white-space:nowrap;}
+.layer-price-compare .notice-area:hover .ico-arr,
+.layer-price-compare .notice-area:hover .layer-notice {display:block;}
+.layer-price-compare .layer-notice .tit-notice {display:block;}
+.layer-price-compare .layer-notice .txt-notice {display:block;padding-top:6px;}
+.layer-price-compare .wrap-list-sort {overflow-x:hidden;overflow-y:auto;position:relative;width:100%;max-height:611px;padding-right:16px;}
+.layer-price-compare .list-sort {width:643px;border-top:1px solid #eee;}
+.layer-price-compare .list-sort li {height:30px;padding:16px 10px 14px 0;border-bottom:1px solid #eee;line-height:30px;color:#333;*zoom:1;}
+.layer-price-compare .list-sort li:before,
+.layer-price-compare .list-sort li:after {display:table;content:'';}
+.layer-price-compare .list-sort li:after {clear:both;}
+.layer-price-compare .list-sort li:hover {background-color:#f9f9f9;}
+.layer-price-compare .list-sort .txt-sub {font-family:dotum, '돋움';color:#aaa;}
+.layer-price-compare .list-sort .number {float:left;width:28px;margin:-2px 16px 0 0;font-size:14px;font-style:italic;color:#aaa;text-align:center;}
+.layer-price-compare .list-sort .price {float:left;width:128px;margin:-2px 10px 0 0;font-weight:bold;font-size:14px;}
+.layer-price-compare .list-sort .price a {color:#333;}
+.layer-price-compare .list-sort .price a:hover,
+.layer-price-compare .list-sort .price a:focus {text-decoration:underline;}
+.layer-price-compare .list-sort .price .txt-won {font-size:12px;}
+.layer-price-compare .list-sort .condition {float:left;width:198px;margin-right:10px;}
+.layer-price-compare .list-sort .condition a {color:#333;}
+.layer-price-compare .list-sort .condition a:hover .txt-delivery {text-decoration:underline;}
+.layer-price-compare .list-sort .delivery {float:left;width:182px;min-height:1px;margin-right:10px;}
+.layer-price-compare .list-sort .delivery .txt-now {color:#5c6dc3;}
+.layer-price-compare .list-sort .delivery img {position:relative;top:-1px;}
+.layer-price-compare .list-sort .btn-sort {float:left;width:51px;height:29px;}
+.layer-price-compare .list-sort .btn-report {background-position:0 -20px;}
+.layer-price-compare .list-sort .btn-view {background-position:0 -50px;}
+.layer-price-compare .list-sort li:first-child .price {font-size:16px;color:#f7120a;}
+.layer-price-compare .list-sort li:first-child .price a {color:#f7120a;}
+.layer-price-compare .list-sort li:first-child .price .txt-won {font-size:14px;}
+.layer-price-compare .list-sort .selected {background-color:#f9f9f9;}
+.layer-price-compare .list-sort .selected .number {background:url('//image.wemakeprice.com/images/resources/wmp/popup/price-compare/ico-dot-selected.png') no-repeat 50% 0;color:#666;}
+.layer-price-compare .sum-delivery .list-sort .condition {margin-top:-2px;font-family:tahoma;font-size:14px;}
+.layer-price-compare .sum-delivery .list-sort .condition a {color:#00a6af;}
+.layer-price-compare .sum-delivery .list-sort .condition .txt-delivery {font-weight:bold;}
+.layer-price-compare .sum-delivery .list-sort .condition .txt-won {font-family:dotum, '돋움';font-size:12px;}
+.layer-price-compare .sum-delivery .list-sort li:first-child .price a {color:#333;}
+.layer-price-compare .sum-delivery .list-sort li:first-child .condition {font-size:16px;}
+.layer-price-compare .sum-delivery .list-sort li:first-child .condition a {color:#f7120a;}
+.layer-price-compare .sum-delivery .list-sort li:first-child .condition .txt-won {font-size:14px;}
+.layer-price-compare .pop-footer {margin-top:40px;}
+.layer-price-compare .pop-footer .btn-close {width:88px;height:44px;margin:0 auto;background-position:0 -80px;}
