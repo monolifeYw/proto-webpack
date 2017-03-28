@@ -17,6 +17,10 @@ var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var pkg = require('./package.json');
 
+var url = require('url');
+
+var proxy = require('proxy-middleware');
+
 console.log('DEV', env);
 console.log('Path', __dirname + '/public');
 
@@ -53,10 +57,15 @@ if (env === 'development') {
   var config = require('./webpack.config');
   var webpack = require('webpack');
   var webpackCompiler = webpack(config);
-  var opts = Object.assign({}, config.devServer, {
-    publicPath: '/dist'
+
+  // dev server
+  Object.keys(config.entry).forEach(function (prop) {
+    config.entry[prop].unshift('webpack/hot/dev-server');
   });
-  var devServer = new webpackDevServer(webpackCompiler, opts);
+  config.entry['wds'] = `webpack-dev-server/client?http://localhost:8081/`
+
+
+  var devServer = new webpackDevServer(webpackCompiler, config.devServer);
   devServer.listen(8081, function () {
     console.log('Webpack-dev-server is listening... 8081');
   });

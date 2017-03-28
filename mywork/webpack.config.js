@@ -46,12 +46,12 @@ module.exports = {
   // 이 entry 포인트로 require, @import 등 모듈간의 의존성을 순차적으로 해석하며 의존성 트리를 구성
   entry: {
     // 'vendor': path.join(__dirname, '/src/vendor.js'),
-    'vendor': './src/vendor.js',  // in context path
+    'vendor': ['./src/vendor.js'],  // in context path
     'app': [
       path.join(__dirname, '/src/bootstrap_test.js'),
       path.join(__dirname, '/src/app_index.js')
     ],
-    'app2': path.join(__dirname, '/src/app_index_other.js')
+    'app2': [path.join(__dirname, '/src/app_index_other.js')]
 
     // 'app2': path.join(__dirname, '/src/App')
 
@@ -329,9 +329,15 @@ module.exports = {
       ?, noInfo?, quiet?, serverSideRender?, index?, log?, warn? 
     }
    */
+  
+  // webpack-dev-server 에서 compile 되고 읽혀지는 파일은 
+  // 실제 물리적 파일로 저장되는 것이 아니라 메모리상 에서 컴파일 되어 읽고 있다는 것
   devServer: {
     // 특정 컨텐츠 기반의 루트 지정
     // 서버루트의 기준 폴더 http://localhost:8080/
+    // 
+    // webpack-dev-server 는 ./static 폴더에서 static 파일을 참조. 
+    // 소스 파일을 감시하고 변경될 때마다 번들은 다시 컴파일.
     // contentBase: './static',
 
     // host
@@ -340,11 +346,19 @@ module.exports = {
     // 사용할 포트 지정 (기본값 8080)
     port: '8081',
 
+    // Automatic Refresh (자동으로 페이지를 새로고침) - iframe, inline
     // 작은 클라이언트 엔트리를 Bundle에 삽입해 페이지 변경시(수정) 자동 새로 고침 된다.
+    // 전체 페이지에 대한 실시간 리로딩(“Live Reloading”) 옵션
+    // 
+    // Inline mode with Node.js API
+    // webpack-dev-server 모듈 에는 webpack 설정에 대한 액세스 권한이 없으므로
+    // webpack-dev-server 설정 inline:true 플래그를 Nodejs 와 연결할 수 없음
+    // 사용자는 webpack-dev-server 클라이언트 엔트리 포인트를 webpack을 통해서 추가 해야 함
     inline: true,
 
     // Hot Module Reloading
     // devServer 설정이 작동하지 않는 경우 (hot, inline)
+    // hot 은 컴포넌트가 수정 될 경우 그 수정된 부분만 리로드 해주는 부분 모듈 리로딩(“Hot Module Reloading”) 옵션
     // - package CLI : webpack-dev-server --hot --inline
     
     hot: true,   // 컴포넌트 수정 될 경우, 그 수정된 부분만 reload
@@ -356,7 +370,16 @@ module.exports = {
 
     stats: {
       colors: true
-    }
+    },
+
+    //  It is recommended that devServer.publicPath is the same as output.publicPath
+    //  브라우저 루트 아래로 이용가능한 번들 파일의 이름
+    //  
+    //  수정 된 번들은 publicPath (API 참조)에 지정된 relative 경로에 기록된 위치에 저장
+    //  구성된 output 디렉토리 에는 아직 기록되지 않음
+    //  번들이 이미 동일한 URL 경로에 있는 경우 메모리의 번들이 우선순위가 높음
+    //  http://frontend.diffthink.kr/2016/12/docs-webpack-dev-server.html
+    publicPath: '/dist/'
 
 
     /*watchOptions: {
