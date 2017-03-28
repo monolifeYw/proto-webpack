@@ -4,6 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const pkg = require('../package.json');
 
+var env = process.env.NODE_ENV || 'development';
+
 var assets;
 
 // Object.assign
@@ -28,7 +30,7 @@ function resourceUtil(assets) {
   }
 
   // console.log(Object.assign({}, {css: assetsCss}, {js: assetsJs}));
-  return Object.assign({}, {root: 'http://localhost:8081/dist/'}, {css: assetsCss}, {js: assetsJs});
+  return Object.assign({}, {css: assetsCss}, {js: assetsJs});
 };
 
 router.route('/')
@@ -36,7 +38,10 @@ router.route('/')
 
     // console.log('local', res.locals.webAssets());
     // res.locals.webAssets();
-    assets = resourceUtil(res.locals.webAssets());
+
+    assets = (env === 'development') ? null : resourceUtil(res.locals.webAssets());
+    
+
     // console.log('pkg', pkg);
     // var manifestPath = 'http://localhost:8081/dist/manifest-' + pkg.version + '.json';
     // console.log('manifestPath', manifestPath);

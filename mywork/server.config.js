@@ -13,7 +13,7 @@ var manifestLoader = require('./middleware/manifest');
 var webpackDevServer = require('webpack-dev-server');
 
 // set environment //
-var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+var ENV = require('./build-configs/env');
 
 var pkg = require('./package.json');
 
@@ -21,8 +21,10 @@ var url = require('url');
 
 var proxy = require('proxy-middleware');
 
-console.log('DEV', env);
-console.log('Path', __dirname + '/public');
+const path = require('path');
+
+// console.log('DEV', ENV.ENV);
+// console.log('Path', __dirname + '/public');
 
 // set middleware //
 // public path
@@ -45,15 +47,18 @@ app.use(logger('short'));
 
 console.log('pkg.version', pkg.version);
 
-// manifest Loader
-app.use(manifestLoader('./static/dist/manifest-' + pkg.version + '.json'));
 
 // set router
 app.use(router);
 
+
+
+// manifest Loader
+// app.use(manifestLoader('./static/dist/manifest-' + pkg.version + '.json'));
+
 // webpack server
 // 서버를 2개로 띄우기 위함
-if (env === 'development') {
+if (ENV.ENV === 'development') {
   var config = require('./webpack.config');
   var webpack = require('webpack');
   var webpackCompiler = webpack(config);
@@ -62,14 +67,23 @@ if (env === 'development') {
   Object.keys(config.entry).forEach(function (prop) {
     config.entry[prop].unshift('webpack/hot/dev-server');
   });
-  config.entry['wds'] = `webpack-dev-server/client?http://localhost:8081/`
+
+  const proxyUrl = 'http://' + ENV.SVR_WDS_HOST + ':' + ENV.SVR_WDS_PORT + '/';
+  // config.entry['wds'] = `webpack-dev-server/client?http://${ENV.SVR_WDS_HOST}:${ENV.SVR_WDS_PORT}/`
+  config.entry['wds'] = 'webpack-dev-server/client?' + proxyUrl;
+
+  // proxy url
+  console.log('###############', url.parse(path.join(proxyUrl, 'dist')));
+  // app.use('/dist/', proxy(url.parse(path.join(proxyUrl, 'dist'))));
+  app.use('/dist/', proxy(url.parse('http://' + ENV.SVR_WDS_HOST + ':' + ENV.SVR_WDS_PORT + '/dist/')));
 
 
   var devServer = new webpackDevServer(webpackCompiler, config.devServer);
-  devServer.listen(8081, function () {
-    console.log('Webpack-dev-server is listening... 8081');
+  devServer.listen(ENV.SVR_WDS_PORT, function () {
+    console.log('Webpack-dev-server is listening...', ENV.SVR_WDS_PORT);
   });
 }
+
 
 
 // webpack middleware
@@ -109,6 +123,6 @@ app.use(function (err, req, res, next) {
 
 
 // set server 
-app.listen(8080, function () {
-  console.log('Server Start!!! 8080');
+app.listen(ENV.SVR_EXP_PORT, function () {
+  console.log('Server Start!!!', ENV.SVR_EXP_PORT);
 });

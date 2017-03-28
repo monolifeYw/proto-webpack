@@ -6,6 +6,7 @@ var app = express();
 
 // ==============================
 var url = require('url');
+var path = require('path');
 
 // url.parse(urlStr, [parseQueryString], [slashesDenoteHost])
 // URL 문자열을 받아서 객체를 반환
@@ -36,6 +37,11 @@ urlParse Url
 var __url = 'http://localhost:8081/dist/';
 var __urlParse = url.parse(__url);
 var __proxy = proxy(__urlParse);
+
+var __url1 = 'http://localhost:8081/'
+var __url2 = path.join(`${__url1}`, 'dist');
+
+console.log(__url2);
 
 // console.log('__urlParse', __urlParse);
 // console.log('__proxy', __proxy);

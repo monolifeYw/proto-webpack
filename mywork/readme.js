@@ -83,7 +83,10 @@ new webpack.ProvidePlugin({
 })
 
 
+또한 OccurrenceOrderPlugin을 추가할 수도 있습니다.
 
+이 플러그인은 발생 횟수에 따라서 모듈 및 청크 id를 할당합니다. 자주 사용되는 id가 낮은(짧은) id를 얻습니다. 
+이 id는 예측(predictable)이 가능하며, 전체 파일 크기를 줄이는데(역자주: 파일 용량을 줄이는 것과는 무관함) 추천됩니다.
 
 
 
