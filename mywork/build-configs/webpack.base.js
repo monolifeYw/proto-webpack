@@ -97,6 +97,7 @@ module.exports = {
       }
     }),
 
+    /*
     // uglify plugin
     new webpack.optimize.UglifyJsPlugin({
       mangle: false,  // 난독화
@@ -105,9 +106,9 @@ module.exports = {
       compress: {
         warnings: true,
         // optional: don't convert foo["bar"] to foo.bar
-        properties: false,
+        properties: false
 
-        unused: true 
+        // unused: true 
       },
       output: {
         comments: false, // 주석 삭제 여부
@@ -117,7 +118,8 @@ module.exports = {
       // 1->2 
       sourceMap: true
     }),
-
+    */
+   
     // global variables
     new webpack.BannerPlugin('*******************\n Wemakeprice Frontend Bundling \n********************'),
 

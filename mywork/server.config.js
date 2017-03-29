@@ -1,25 +1,25 @@
 // import 
-var express = require('express');
-var logger = require('morgan');
-var exphbs = require('express-handlebars');
+const express = require('express');
+const logger = require('morgan');
+const exphbs = require('express-handlebars');
 
-var router = require('./routes/common-routes');
+const router = require('./routes/common-routes');
 
-var app = express();
+const app = express();
 
-var manifestLoader = require('./middleware/manifest');
+const manifestLoader = require('./middleware/manifest');
 
 // dev server
-var webpackDevServer = require('webpack-dev-server');
+const webpackDevServer = require('webpack-dev-server');
 
 // set environment //
-var ENV = require('./build-configs/env');
+const ENV = require('./build-configs/env');
 
-var pkg = require('./package.json');
+const pkg = require('./package.json');
 
-var url = require('url');
+const url = require('url');
 
-var proxy = require('proxy-middleware');
+const proxy = require('proxy-middleware');
 
 const path = require('path');
 
@@ -31,7 +31,7 @@ const path = require('path');
 app.use(express.static(__dirname + '/public'));
 
 // set view engine
-var hbs = exphbs.create({
+const hbs = exphbs.create({
     extname: '.hbs',
     partialsDir: 'views/partials/'
     // helpers: require('./views/helpers/helpers')
@@ -59,26 +59,22 @@ app.use(router);
 // webpack server
 // 서버를 2개로 띄우기 위함
 if (ENV.ENV === 'development') {
-  var config = require('./webpack.config');
-  var webpack = require('webpack');
-  var webpackCompiler = webpack(config);
-
+  const config = require('./webpack.config');
+  const webpack = require('webpack');
+  
   // dev server
   Object.keys(config.entry).forEach(function (prop) {
+    // config.entry[prop].unshift('webpack/hot/only-dev-server');
     config.entry[prop].unshift('webpack/hot/dev-server');
   });
+  
+  // webpack-dev-server/client?http://«path»:«port»/
+  config.entry['wds'] = 'webpack-dev-server/client?' + ENV.SVR_WDS_PATH;
 
-  const proxyUrl = 'http://' + ENV.SVR_WDS_HOST + ':' + ENV.SVR_WDS_PORT + '/';
-  // config.entry['wds'] = `webpack-dev-server/client?http://${ENV.SVR_WDS_HOST}:${ENV.SVR_WDS_PORT}/`
-  config.entry['wds'] = 'webpack-dev-server/client?' + proxyUrl;
+  app.use('/dist/', proxy(url.parse(ENV.SVR_WDS_PATH + 'dist')));
 
-  // proxy url
-  console.log('###############', url.parse(path.join(proxyUrl, 'dist')));
-  // app.use('/dist/', proxy(url.parse(path.join(proxyUrl, 'dist'))));
-  app.use('/dist/', proxy(url.parse('http://' + ENV.SVR_WDS_HOST + ':' + ENV.SVR_WDS_PORT + '/dist/')));
-
-
-  var devServer = new webpackDevServer(webpackCompiler, config.devServer);
+  const webpackCompiler = webpack(config);
+  const devServer = new webpackDevServer(webpackCompiler, config.devServer);
   devServer.listen(ENV.SVR_WDS_PORT, function () {
     console.log('Webpack-dev-server is listening...', ENV.SVR_WDS_PORT);
   });
@@ -110,14 +106,14 @@ if (env !== 'development') {
 // set error
 // 404
 app.use(function (req, res, next) {
-  var err = new Error('not found');
+  const err = new Error('not found');
   err.status = 404;
   next(err);
 });
 
 // Base error
 app.use(function (err, req, res, next) {
-  var status = err.status || 500;
+  const status = err.status || 500;
   res.status(status).render('error', {status: status, layout: false});
 });
 

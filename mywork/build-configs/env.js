@@ -30,6 +30,8 @@ module.exports = (function () {
 
   ENV.SVR_WDS_PORT = 8081;
 
+  ENV.SVR_WDS_PATH = 'http://' + ENV.SVR_WDS_HOST + ':' + ENV.SVR_WDS_PORT + '/';
+
   ENV.SET_ESLINT_PATH = path.join(ENV.SOURCE_DIR, '.eslintrc');
 
   return ENV;

@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "webpackserver": "node_modules/.bin/webpack-dev-server --progress --watch",
-    "server": "NODE_ENV=development nodemon server.config.js",
-    "server-hmr": "npm run server -- --inline --hot",
+    "server": "NODE_ENV=development node server.config.js",
+    "server-hmr": "npm run server --inline --hot",
+    "server-hmr2": "npm run server -- --hmr",
     "clean": "rimraf dist"
   },
   "author": "",

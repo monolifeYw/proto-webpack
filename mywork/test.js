@@ -13,6 +13,17 @@ var path = require('path');
 var urlParse = url.parse('http://www.wemakeprice.com');
 // console.log('urlParse', urlParse);
 // console.log('urlParse type', typeof urlParse);
+// 
+// 
+// 
+
+
+var __path1 = path.resolve('http://localhost:8080', 'dist');
+var __path2 = path.join(__dirname, 'dist');
+console.log(__path1);
+
+
+
 /*
 
 urlParse Url 
