@@ -6,8 +6,8 @@
   "scripts": {
     "webpackserver": "node_modules/.bin/webpack-dev-server --progress --watch",
     "server": "NODE_ENV=development node server.config.js",
-    "server-hmr": "npm run server --inline --hot",
-    "server-hmr2": "npm run server -- --hmr",
+    "server-hmr2": "npm run server --inline --hot",
+    "server-hmr": "npm run server -- --hmr",
     "clean": "rimraf dist"
   },
   "author": "",
@@ -28,7 +28,8 @@
     "style-loader": "^0.15.0",
     "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.10.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "^2.4.2",
+    "yargs": "^7.0.2"
   },
   "dependencies": {
     "express": "^4.15.2",

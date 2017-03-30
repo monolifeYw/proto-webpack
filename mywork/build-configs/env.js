@@ -3,8 +3,20 @@ const env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 // import
 const path = require('path');
 
+// yargs
+const argv = require('yargs').options({
+  hmr: {
+    default: false, type: 'boolean'
+  },
+
+  hot: {
+    default: false, type: 'boolean'
+  }
+}).argv;
+
 module.exports = (function () {
 
+  console.log('argv', argv);
   const ENV = {};
   
   ENV.ENV = env;
@@ -33,6 +45,12 @@ module.exports = (function () {
   ENV.SVR_WDS_PATH = 'http://' + ENV.SVR_WDS_HOST + ':' + ENV.SVR_WDS_PORT + '/';
 
   ENV.SET_ESLINT_PATH = path.join(ENV.SOURCE_DIR, '.eslintrc');
+
+  // hot module replacement
+  ENV.SVR_HMR_MODE = argv.hmr;
+
+  // hot module replacement : 처음 리로딩 여부
+  ENV.SVR_HOT_MODE = argv.hmr && argv.hot;
 
   return ENV;
 })();

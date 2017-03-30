@@ -63,6 +63,7 @@ if (ENV.ENV === 'development') {
   const webpack = require('webpack');
   
   // dev server
+  /*
   Object.keys(config.entry).forEach(function (prop) {
     // config.entry[prop].unshift('webpack/hot/only-dev-server');
     config.entry[prop].unshift('webpack/hot/dev-server');
@@ -70,9 +71,10 @@ if (ENV.ENV === 'development') {
   
   // webpack-dev-server/client?http://«path»:«port»/
   config.entry['wds'] = 'webpack-dev-server/client?' + ENV.SVR_WDS_PATH;
-
+  */
+ 
   app.use('/dist/', proxy(url.parse(ENV.SVR_WDS_PATH + 'dist')));
-
+  console.log('config', config);
   const webpackCompiler = webpack(config);
   const devServer = new webpackDevServer(webpackCompiler, config.devServer);
   devServer.listen(ENV.SVR_WDS_PORT, function () {

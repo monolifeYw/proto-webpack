@@ -1,9 +1,15 @@
 // env
-const environment = require('./build-configs/env');
+const ENV = require('./build-configs/env');
 
 // config require
-const requireConfig = require(`./build-configs/webpack.${environment.ENV}`)(environment);
+const webpackConfig = require(`./build-configs/webpack.${ENV.ENV}`)(ENV);
 
-console.log('requireConfig',requireConfig);
+if (ENV.SVR_HMR_MODE) {
+  Object.keys(webpackConfig.entry).forEach(function (prop) {
+    webpackConfig.entry[prop].unshift('webpack/hot/dev-server');
+  });
 
-module.exports = requireConfig;
+  webpackConfig.entry['wds'] = 'webpack-dev-server/client?' + ENV.SVR_WDS_PATH;
+}
+
+module.exports = webpackConfig;

@@ -17,6 +17,39 @@ var urlParse = url.parse('http://www.wemakeprice.com');
 // 
 // 
 
+const ENVIRON = require('./build-configs/env');
+
+
+
+function setConfig(...pipeConf) {
+  const envConfig = require('./build-configs/webpack.development')(ENVIRON);
+  console.log(pipeConf);
+  pipeConf.map(function (fn) {
+    console.log('@@@@@@', fn, pipeConf);
+    fn(envConfig);
+  })
+}
+
+setConfig(function (conf) {
+  console.log('setConfig', conf);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var __path1 = path.resolve('http://localhost:8080', 'dist');
 var __path2 = path.join(__dirname, 'dist');
