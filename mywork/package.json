@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpackserver": "node_modules/.bin/webpack-dev-server --progress --watch",
-    "server": "NODE_ENV=development node server.config.js",
-    "server-hmr2": "npm run server --inline --hot",
+    "server": "node server.config.js",
     "server-hmr": "npm run server -- --hmr",
-    "clean": "rimraf dist"
+    "server-dist": "NODE_ENV=production npm run server",
+    "compile": "npm run clean && webpack --progress",
+    "compile-dist": "npm run clean-dist && NODE_ENV=production webpack --progress",
+    "clean": "rimraf build/*",
+    "clean-dist": "rimraf dist/*"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +24,7 @@
     "css-loader": "^0.27.3",
     "eslint": "^3.18.0",
     "eslint-loader": "^1.6.3",
+    "expose-loader": "^0.7.3",
     "extract-text-webpack-plugin": "^2.1.0",
     "handlebars": "^4.0.6",
     "handlebars-loader": "^1.4.0",
@@ -31,6 +34,7 @@
     "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-dev-server": "^2.4.2",
+    "webpack-hot-middleware": "^2.18.0",
     "yargs": "^7.0.2"
   },
   "dependencies": {
@@ -38,6 +42,7 @@
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.6",
     "handlebars-loader": "^1.4.0",
+    "jquery": "1.12.4",
     "morgan": "^1.8.1",
     "rimraf": "^2.6.1"
   }

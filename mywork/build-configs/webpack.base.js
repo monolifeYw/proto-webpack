@@ -25,7 +25,8 @@ module.exports = {
       ENV.SOURCE_DIR + '/app_index.js'
     ],
     'app2': [ENV.SOURCE_DIR + '/app_index_other.js'],
-    'handle': [ENV.SOURCE_DIR + '/handlebars']
+    'handle': [ENV.SOURCE_DIR + '/handlebars'],
+    'entryProto': [ENV.SOURCE_DIR + '/entryProto.js']
   },
 
   resolve: {

@@ -23,6 +23,11 @@ const proxy = require('proxy-middleware');
 
 const path = require('path');
 
+
+const webpackMiddleware = require('./middleware/webpack.dev.middleware');
+
+// console.log('webpackMiddleware', webpackMiddleware);
+
 // console.log('DEV', ENV.ENV);
 // console.log('Path', __dirname + '/public');
 
@@ -58,20 +63,12 @@ app.use(router);
 
 // webpack server
 // 서버를 2개로 띄우기 위함
-if (ENV.ENV === 'development') {
+/*if (ENV.ENV === 'development') {
   const config = require('./webpack.config');
   const webpack = require('webpack');
   
   // dev server
-  /*
-  Object.keys(config.entry).forEach(function (prop) {
-    // config.entry[prop].unshift('webpack/hot/only-dev-server');
-    config.entry[prop].unshift('webpack/hot/dev-server');
-  });
   
-  // webpack-dev-server/client?http://«path»:«port»/
-  config.entry['wds'] = 'webpack-dev-server/client?' + ENV.SVR_WDS_PATH;
-  */
  
   app.use('/dist/', proxy(url.parse(ENV.SVR_WDS_PATH + 'dist')));
   // console.log('config', config);
@@ -80,7 +77,22 @@ if (ENV.ENV === 'development') {
   devServer.listen(ENV.SVR_WDS_PORT, function () {
     console.log('Webpack-dev-server is listening...', ENV.SVR_WDS_PORT);
   });
+}*/
+
+// webpack Dev server
+if (ENV.ENV === 'development') {
+  // case.1 
+  app.use(webpackMiddleware.devMid);
+
+  if (ENV.SVR_HMR_MODE) {
+    app.use(webpackMiddleware.hotMid);
+  }
+
+  // case.2 연구 대상
+  // app.use(webpackMiddleware(app, ENV));
 }
+
+
 
 
 
