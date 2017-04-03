@@ -33,8 +33,8 @@ app.use(express.static(__dirname + '/public'));
 // set view engine
 const hbs = exphbs.create({
     extname: '.hbs',
-    partialsDir: 'views/partials/'
-    // helpers: require('./views/helpers/helpers')
+    partialsDir: 'views/partials/',
+    helpers: require('./src/handlebars/helpers/serverHelpers')
   });
 
 app.engine('hbs', hbs.engine);
@@ -74,7 +74,7 @@ if (ENV.ENV === 'development') {
   */
  
   app.use('/dist/', proxy(url.parse(ENV.SVR_WDS_PATH + 'dist')));
-  console.log('config', config);
+  // console.log('config', config);
   const webpackCompiler = webpack(config);
   const devServer = new webpackDevServer(webpackCompiler, config.devServer);
   devServer.listen(ENV.SVR_WDS_PORT, function () {

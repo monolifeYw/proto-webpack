@@ -21,6 +21,26 @@ const ENVIRON = require('./build-configs/env');
 
 
 
+console.log('ENVIRON, ', path.resolve(ENVIRON.SOURCE_DIR, 'handlebars'));
+
+
+
+const envUrl = './build-configs/env/';
+
+console.log('envUrl', path.basename(envUrl));
+
+
+
+
+
+
+
+
+
+
+
+
+
 function setConfig(...pipeConf) {
   const envConfig = require('./build-configs/webpack.development')(ENVIRON);
   console.log(pipeConf);

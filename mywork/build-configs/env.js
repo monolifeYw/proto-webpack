@@ -24,7 +24,10 @@ module.exports = (function () {
   ENV.isProd = (env === 'production');
 
   // Path = root
-  ENV.BASE_PATH = path.resolve(__dirname, '..');
+  // ENV.ROOT_PATH = process.cwd();
+
+  // ENV.BASE_PATH = path.resolve(__dirname, '..');
+  ENV.BASE_PATH = process.cwd();
 
   ENV.SOURCE_DIR = path.resolve(ENV.BASE_PATH, 'src');
 

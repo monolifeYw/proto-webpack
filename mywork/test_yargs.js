@@ -3,6 +3,7 @@ const argv = require('yargs').argv;
 console.log(argv);
 console.log('_', argv._);
 
+console.log('process.cwd', process.cwd());
 
 /*
 node test_yargs.js -v

@@ -1,0 +1,28 @@
+<div class="header__wrap">
+  
+  {{!-- base --}}
+  <div id="teamName">
+    <h1>{{teamName}}</h1>
+  </div>
+
+  {{!-- helper --}}
+  <div id="teamGrade">
+    {{json teamName}}
+  </div>
+
+  <div id="teamGrade2">
+
+  </div>
+
+  {{!-- partial --}}
+  <div id="teamMember">
+    {{> team/teamMember teamMembers}} 
+  </div>
+
+  <div id="teamMember2">
+    {{#teamMembers}}
+      {{this}}!
+    {{/teamMembers}}
+  </div>
+  
+</div>

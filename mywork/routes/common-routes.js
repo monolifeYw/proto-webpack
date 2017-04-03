@@ -48,12 +48,15 @@ router.route('/')
     // assets = JSON.parse(fs.readFileSync('http://localhost:8081/dist/manifest-' + pkg.version + '.json', 'utf-8'));
     
 
-    console.log('assets', assets);
+    // console.log('assets', assets);
 
     res.render('index', {
       layout: false, 
       title: 'Dummy Page', 
-      manifest: assets
+      srcInfo: {
+        manifest: assets,
+        devTime: new Date().getTime()
+      }
     });
   });
 

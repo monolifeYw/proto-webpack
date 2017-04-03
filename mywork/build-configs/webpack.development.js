@@ -25,7 +25,8 @@ module.exports = (ENV) => {
       path: ENV.BUILD_PATH,
       filename: '[name].bundle.js',
       chunkFilename: '[name].[id].bundle.js',
-      publicPath: ENV.PUBLIC_PATH
+      publicPath: ENV.PUBLIC_PATH,
+      libraryTarget: 'umd'
     },
 
     plugins: [

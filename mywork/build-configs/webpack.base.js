@@ -24,14 +24,33 @@ module.exports = {
       ENV.SOURCE_DIR + '/bootstrap_test.js',
       ENV.SOURCE_DIR + '/app_index.js'
     ],
-    'app2': [ENV.SOURCE_DIR + '/app_index_other.js']
+    'app2': [ENV.SOURCE_DIR + '/app_index_other.js'],
+    'handle': [ENV.SOURCE_DIR + '/handlebars']
   },
 
   resolve: {
     extensions: ['.js', '.hbs', '.css', '.scss'],
-
-    modules: ['node_modules']
+    modules: [
+      'node_modules',
+      ENV.SOURCE_DIR
+    ]
   },
+
+  externals: [{
+    'handlebars/runtime': {
+      root: 'Handlebars',
+      amd: 'handlebars.runtime',
+      commonjs2: 'handlebars/runtime',
+      commonjs: 'handlebars/runtime'
+    },
+
+    'handlebars': {
+      root: 'Handlebars',
+      amd: 'Handlebars',
+      commonjs: 'handlebars',
+      commonjs2: 'handlebars'
+    }
+  }],
 
   module: {
     rules: [
@@ -49,6 +68,18 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+
+      // hbs
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader',
+        options: {
+          helperDirs: [
+            ENV.SOURCE_DIR + '/handlebars/helpers'
+          ],
+          runtime: 'handlebars/runtime'
+        }
       },
 
       // scss
@@ -89,7 +120,7 @@ module.exports = {
           // Fail only on errors
           // 실패해도 빌드를 계속 진행할 것인가에 대한 부분
           failOnWarning: false,
-          failOnError: true,
+          failOnError: false, // @@@@@@@@ true 로 변경해야 함
           configFile: ENV.SET_ESLINT_PATH,
           useEslintrc: true,
           cache: false
