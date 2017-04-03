@@ -88,6 +88,8 @@ if (ENV.ENV === 'development') {
     app.use(webpackMiddleware.hotMid);
   }
 
+  app.use(webpackMiddleware.abc);
+
   // case.2 연구 대상
   // app.use(webpackMiddleware(app, ENV));
 }

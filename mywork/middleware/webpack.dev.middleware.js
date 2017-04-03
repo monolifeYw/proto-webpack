@@ -10,12 +10,25 @@ const webpackDevOpts = webpackConfig.devServer;
 
 const webpackCompiler = webpack(webpackConfig);
 
-// const webpackDevMiddlewareInstance = webpackMiddleware(webpackCompiler, webpackDevOpts);
+const test = require('./custom.mid');
 
+// const webpackDevMiddlewareInstance = webpackMiddleware(webpackCompiler, webpackDevOpts);
+var t = test('testmode:');
+console.log('ttttt', t);
 module.exports = {
   devMid: webpackMiddleware(webpackCompiler, webpackDevOpts),
-  hotMid: webpackHotMiddleware(webpackCompiler)
+  hotMid: webpackHotMiddleware(webpackCompiler),
+  abc: t
 }
+/*
+function abc(m) {
+  const mode = m;
+  console.log('===========', abc)
+  return function (req, res, next) {
+    console.log('abc mode', mode);
+    console.log('abc', this);
+  }
+}*/
 
 /*module.exports = (app, ENV) => {
   console.log('ENV && ENV.SVR_HMR_MODE', ENV && ENV.SVR_HMR_MODE);

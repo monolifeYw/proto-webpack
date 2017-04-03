@@ -9,7 +9,8 @@ if (ENV.SVR_HMR_MODE) {
     webpackConfig.entry[prop].unshift('webpack/hot/dev-server');
   });
 
-  webpackConfig.entry['wds'] = 'webpack-hot-middleware/client?' + ENV.SVR_WDS_PATH;
+  webpackConfig.entry['wds'] = 'webpack-hot-middleware/client?path=/__webpack_hmr';
+  // webpackConfig.entry['wds'] = 'webpack-hot-middleware/client?' + ENV.SVR_WDS_PATH;
 }
 
 module.exports = webpackConfig;

@@ -11,7 +11,7 @@ import {pi} from './MathAPI';
 
   console.log(MathAPI.pi);
   console.log(pi);
-  console.log('!@##', pi);
+  console.log('##', pi);
   console.log(render);
   console.log(App);
 })();
