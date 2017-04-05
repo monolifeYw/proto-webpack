@@ -12,14 +12,37 @@ const webpackCompiler = webpack(webpackConfig);
 
 const test = require('./custom.mid');
 
+console.log('webpackCompiler name', webpackCompiler.name);
+
 // const webpackDevMiddlewareInstance = webpackMiddleware(webpackCompiler, webpackDevOpts);
-var t = test('testmode:');
-console.log('ttttt', t);
-module.exports = {
+
+/*module.exports = {
   devMid: webpackMiddleware(webpackCompiler, webpackDevOpts),
   hotMid: webpackHotMiddleware(webpackCompiler),
-  abc: t
+};
+*/
+
+function useWM(app) {
+  app.use(webpackMiddleware(webpackCompiler, webpackDevOpts));
+  app.use(webpackHotMiddleware(webpackCompiler));
 }
+
+
+module.exports = {
+  useWM: useWM
+}
+
+
+/*webpackCompiler.plugin('done', function() {
+  console.log("Clearing /client/ module cache from server");
+  Object.keys(require.cache).forEach(function(id) {
+    // console.log('id', (/[\/\\]src[\/\\]/.test(id)));
+    if (/[\/\\]src[\/\\]/.test(id)) delete require.cache[id];
+  });
+});*/
+
+
+
 /*
 function abc(m) {
   const mode = m;

@@ -70,12 +70,9 @@ module.exports = (ENV) => {
 
       // inline: true,
 
-      hot: ENV.SVR_HOT_MODE,
+      // hot: true, //ENV.SVR_HOT_MODE,
 
-      // proxying하기 원하는 URL을 설정. 현재 백엔드 서버 호스트를 설정
-      /*proxy: {
-        '*': 'http://' + ENV.SVR_EXP_HOST + ':' + ENV.SVR_EXP_PORT
-      },*/
+      // reload: true,
 
       stats: {
         assets: true,

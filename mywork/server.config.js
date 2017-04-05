@@ -26,6 +26,8 @@ const path = require('path');
 
 const webpackMiddleware = require('./middleware/webpack.dev.middleware');
 
+const chokidar = require('chokidar');
+
 // console.log('webpackMiddleware', webpackMiddleware);
 
 // console.log('DEV', ENV.ENV);
@@ -79,22 +81,32 @@ app.use(router);
   });
 }*/
 
+
 // webpack Dev server
 if (ENV.ENV === 'development') {
-  // case.1 
+
+  webpackMiddleware.useWM(app);
+  /*// case.1 
   app.use(webpackMiddleware.devMid);
 
   if (ENV.SVR_HMR_MODE) {
     app.use(webpackMiddleware.hotMid);
-  }
-
-  app.use(webpackMiddleware.abc);
+  }*/
 
   // case.2 연구 대상
   // app.use(webpackMiddleware(app, ENV));
 }
 
+/*const watcher = chokidar.watch('./src');
 
+watcher.on('ready', function() {
+  watcher.on('all', function() {
+    console.log("Clearing /server/ module cache from server");
+    Object.keys(require.cache).forEach(function(id) {
+      if (/[\/\\]src[\/\\]/.test(id)) delete require.cache[id];
+    });
+  });
+});*/
 
 
 
