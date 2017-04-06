@@ -29,6 +29,22 @@ module.exports = {
     'entryProto': [ENV.SOURCE_DIR + '/entryProto.js']
   },
 
+  externals: [{
+    'handlebars/runtime': {
+      root: 'Handlebars',
+      amd: 'handlebars.runtime',
+      commonjs2: 'handlebars/runtime',
+      commonjs: 'handlebars/runtime'
+    },
+
+    'handlebars': {
+      root: 'Handlebars',
+      amd: 'Handlebars',
+      commonjs: 'handlebars',
+      commonjs2: 'handlebars'
+    }
+  }],
+
   resolve: {
     extensions: ['.js', '.hbs', '.css', '.scss'],
     modules: [
