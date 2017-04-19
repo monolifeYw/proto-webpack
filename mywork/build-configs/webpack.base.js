@@ -19,31 +19,15 @@ const path = require('path');
 module.exports = {
 
   entry: {
-    'vendor': [ENV.SOURCE_DIR + '/vendor.js'],  // in context path
-    'app': [
-      ENV.SOURCE_DIR + '/bootstrap_test.js',
-      ENV.SOURCE_DIR + '/app_index.js'
-    ],
-    'app2': [ENV.SOURCE_DIR + '/app_index_other.js'],
+    // 'vendor': [ENV.SOURCE_DIR + '/vendor.js'],  // in context path
+    // 'app': [
+    //   ENV.SOURCE_DIR + '/bootstrap_test.js',
+    //   ENV.SOURCE_DIR + '/app_index.js'
+    // ],
+    // 'app2': [ENV.SOURCE_DIR + '/app_index_other.js'],
     'handle': [ENV.SOURCE_DIR + '/handlebars'],
-    'entryProto': [ENV.SOURCE_DIR + '/entryProto.js']
+    // 'entryProto': [ENV.SOURCE_DIR + '/entryProto.js']
   },
-
-  externals: [{
-    'handlebars/runtime': {
-      root: 'Handlebars',
-      amd: 'handlebars.runtime',
-      commonjs2: 'handlebars/runtime',
-      commonjs: 'handlebars/runtime'
-    },
-
-    'handlebars': {
-      root: 'Handlebars',
-      amd: 'Handlebars',
-      commonjs: 'handlebars',
-      commonjs2: 'handlebars'
-    }
-  }],
 
   resolve: {
     extensions: ['.js', '.hbs', '.css', '.scss'],
@@ -53,7 +37,7 @@ module.exports = {
     ]
   },
 
-  externals: [{
+  /*externals: [{
     'handlebars/runtime': {
       root: 'Handlebars',
       amd: 'handlebars.runtime',
@@ -67,7 +51,7 @@ module.exports = {
       commonjs: 'handlebars',
       commonjs2: 'handlebars'
     }
-  }],
+  }],*/
 
   module: {
     rules: [
@@ -81,11 +65,11 @@ module.exports = {
       },
 
       // js
-      {
+      /*{
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      },
+      },*/
 
       // hbs
       {
@@ -97,6 +81,18 @@ module.exports = {
           ],
           runtime: 'handlebars/runtime'
         }
+      },
+
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader',
+        query: {
+          helperDirs: [
+            ENV.SOURCE_DIR + '/handlebars/helpers'
+          ],
+          runtime: 'handlebars/runtime'
+        },
+        exclude: /node_modules/
       },
 
       // scss

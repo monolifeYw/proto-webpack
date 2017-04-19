@@ -6,7 +6,12 @@ const baseConf = require('./webpack.base');
 
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
+const ExternalsPlugin = require('webpack2-externals-plugin');
+
 module.exports = (ENV) => {
+
+
+  console.log('##########', baseConf.externals);
 
   return {
     context: ENV.BASE_PATH,
@@ -17,6 +22,23 @@ module.exports = (ENV) => {
 
     entry: baseConf.entry,
 
+    externals: [{
+      'handlebars/runtime': {
+        global: 'Handlebars',
+        amd: 'handlebars.runtime',
+        commonjs2: 'handlebars/runtime',
+        commonjs: 'handlebars/runtime'
+      },
+
+      'handlebars': {
+        global: 'Handlebars',
+        amd: 'Handlebars',
+        commonjs: 'handlebars',
+        commonjs2: 'handlebars'
+      }
+    }],
+    // externals: [/handlebars.runtime/],
+    
     resolve: baseConf.resolve,
 
     module: baseConf.module,
@@ -38,6 +60,10 @@ module.exports = (ENV) => {
           // console.log('count', count);
         }
       }),
+
+      /*new ExternalsPlugin({
+
+      })*/
 
       // hmr Plugins
       // OccurenceOrderPlugin removed.

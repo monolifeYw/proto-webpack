@@ -2,7 +2,8 @@
 const ENV = require('./build-configs/env');
 
 // config require
-const webpackConfig = require(`./build-configs/webpack.${ENV.ENV}`)(ENV);
+// const webpackConfig = require(`./build-configs/webpack.${ENV.ENV}`)(ENV);
+const webpackConfig = require('./build-configs/webpack.test');
 
 if (ENV.SVR_HMR_MODE) {
   Object.keys(webpackConfig.entry).forEach(function (prop) {
@@ -26,7 +27,7 @@ if (ENV.SVR_HMR_MODE) {
   (We can set __webpack_public_path__ dynamically at runtime in the entry point, see note of output.publicPath)
    */
 
-  webpackConfig.entry['wds'] = 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true';
+  // webpackConfig.entry['wds'] = 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true';
   // webpackConfig.entry['wds'] = 'webpack-hot-middleware/client?' + ENV.SVR_WDS_PATH;
 }
 

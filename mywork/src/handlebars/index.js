@@ -20,13 +20,14 @@ if (module && module.hot) {
 
 // const handlebars = require('handlebars/runtime');
 
-// console.log('handlebars', handlebars);
-console.log('Handlebars!!', Handlebars);
+// console.log('handlebars', handlebars['default']);
+// console.log('Handlebars!!', Handlebars);
 
 
 
 const data = {
   teamName: 'frontend',
+  teamCheck: true,
   teamGrade: 88,
   teamMembers: [
     'lee', 'park', 'yaawg', 'haeawh2a', 'l22', '!!!n', 'jw'
