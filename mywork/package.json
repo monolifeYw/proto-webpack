@@ -10,7 +10,8 @@
     "compile": "npm run clean && webpack --progress",
     "compile-dist": "npm run clean-dist && NODE_ENV=production webpack --progress",
     "clean": "rimraf build/*",
-    "clean-dist": "rimraf dist/*"
+    "clean-dist": "rimraf dist/*",
+    "glob": "node ./build-configs/glob/entryLoader.js"
   },
   "author": "",
   "license": "ISC",
